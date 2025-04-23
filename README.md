@@ -49,3 +49,26 @@
     <strong>Abril, 2024</strong>
 </p>
 <br>
+
+<h1 align="center">Registro de versiones del Informe</h1>
+</br>
+<table>
+        <thead>
+            <tr>
+                <th>Versión</th>
+                <th>Fecha</th>
+                <th>Autor</th>
+                <th>Descripción de modificaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1.0</th>
+                <td>04/09/2024</td>
+                <td>Ricardo Barrutia</td>
+                <td>Se añadiò el Startup profile.</td>
+            </tr>
+       </tbody>
+</table>
+<br><br>
+            
