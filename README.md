@@ -143,59 +143,31 @@
     <td><b>Conclusiones</b></td>
   </tr>
   <tr>
-    <td><b>Participa en equipos
-multidisciplinarios con eficacia,
-eficiencia y objetividad, en el
-marco de un proyecto en
-soluciones de ingeniería de
-software.</b></td>
+    <td><b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b></td>
     <td> TB1<br><br>
          <b>Luna Morales, Gianfranco</b><br>
-Colaboró eficazmente en un equipo multidisciplinario en un proyecto de soluciones de ingeniería de software, participando activamente en la realización de actividades clave del Capítulo 3, que incluyen To-Be Scenario Mapping, elaboración de User Stories, Impact Mapping y creación del Product Backlog. Además, demostró habilidad para discutir y priorizar los puntos más relevantes junto al equipo.
+--------------
 <br><br> 
-<b>Medina Chocce, Karito Dianeth</b><br>
-Desarrolló y ejecutó con éxito los siguientes elementos relacionados con diseño y gestión de sistemas web y aplicaciones, cumpliendo con estándares y guías específicas:
-- Elaboración de directrices de estilo generales y específicas para web.
-- Diseño de arquitectura de la información y sistemas de organización.
-- Desarrollo de sistemas de etiquetado, SEO y metaetiquetas.
-- Implementación de sistemas de búsqueda y navegación.
-- Diseño de interfaces de usuario y wireframes para páginas de aterrizaje y aplicaciones web.
-- Creación de mock-ups y prototipos para páginas de aterrizaje y aplicaciones web.
-- Diagramación de flujos de usuario y wireframes para aplicaciones web.
-- Gestión de código fuente y desarrollo de guías y convenciones de estilo para el código.
-Estas actividades demuestran su capacidad para abordar eficazmente proyectos de diseño y desarrollo web, aplicando principios y prácticas estándar para lograr resultados efectivos y funcionales.
+<b>----------</b><br>
+-------------
 <br><br>
 
   <tr>
-    <td><b>Conoce al menos un sector
-empresarial o dominio de
-aplicación de soluciones de
-software.</b></td>
+    <td><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b></td>
     <td> TB1<br><br>
          <b>Luna Morales, Gianfranco</b><br>
-       Colaboró eficazmente en un equipo multidisciplinario en un proyecto de soluciones de ingeniería de software, participando activamente en la implementación de actividades clave del Capítulo 3 relacionadas con To-Be Scenario Mapping, User Stories, Impact Mapping y Product Backlog, demostrando así su comprensión y aplicación en el sector de soluciones de ingeniería de software. Realizó una entrevista a un segmento objetivo del proyecto.
+      ------
 <br><br> 
         
-<b>Medina Chocce, Karito Dianeth</b><br>
-Se destacó en el diseño y gestión de sistemas web y aplicaciones, cumpliendo con estándares específicos y guiando el desarrollo mediante wireframes, mock-ups y la implementación de interfaces y funcionalidades clave. Realizó una entrevista a un segmento objetivo del proyecto.
+<b>-----</b><br>
+------.
         <br><br> <td>TB1<br><br>
-    En conclusión, la capacidad de trabajar eficazmente en un equipo es fundamental para el éxito de nuestra startup. Al proporcionar liderazgo, fomentar un entorno colaborativo e inclusivo, establecer objetivos claros, planificar tareas y cumplir con esos objetivos, podemos maximizar nuestra productividad y alcanzar nuestras metas de manera más efectiva. Es crucial que todos los miembros del equipo estén comprometidos con estos principios para garantizar un trabajo armonioso y orientado hacia el logro de nuestros objetivos comerciales.
+    En conclusión.......
     <br><br><br><br>
-    TP1<br><br>
-    En conclusión, el equipo del proyecto demostró una distribución efectiva de roles y responsabilidades clave: Gianfranco se centró en la implementación técnica y la mejora de la planificación a través de correcciones en User Stories y el Product Backlog; Karito destacó en el diseño y desarrollo del FrontEnd mediante la creación de Wireframes, Mock-ups y la implementación del feature/dashboard; Ramón contribuyó con la implementación técnica utilizando fake API y mejoras en la estructura del sistema con correcciones en los diagramas C4; Ricardo lideró la ejecución y asignación en el marco ágil del proyecto durante el Sprint Planning 2 y Sprint Backlog 2; mientras que Rodrigo se encargó de múltiples funcionalidades críticas del sistema como sign-in-up, Data-entry y dashboard, demostrando versatilidad y habilidades técnicas. Esta combinación de habilidades permitió al equipo cubrir de manera integral el desarrollo del proyecto, asegurando tanto la implementación funcional como la mejora continua del proceso y la arquitectura del sistema.
-    <br><br><br><br>
-         <br><br><br><br>
-        TB2<br><br>
-         <b>Luna Morales, Gianfranco</b><br>
-Implementó Backend y Frontend para módulos específicos. Realizó una entrevista de validación para un segmento objetivo anteriormente entrevistado.
-<br><br> 
-<b>Medina Chocce, Karito Dianeth</b><br>
-Lideró la implementación de Backend y mejoras en el Frontend para diferentes módulos, reflejando su adaptabilidad en soluciones de software. Realizó una entrevista de validación para un segmento objetivo anteriormente entrevistado.<br><br>
-<b>Jorge Arévalo, Ramón Alejandro</b><br>
-Continuó mejorando la infraestructura del backend y frontend, asegurando la funcionalidad y eficiencia en el sector de soluciones de software. Realizó una entrevista de validación para un segmento objetivo anteriormente entrevistado.
-        <br><br> 
+  
+------
+      
 
-            <  /td>    
   </tr>
 </table>
 
