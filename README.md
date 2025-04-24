@@ -170,8 +170,11 @@ En conclusion...
     <br><br><br><br>
   
 ------
-      
+    
+  </tr>  
+</table>
 
+<br><br>
   </tr>
 </table>
 
