@@ -148,10 +148,13 @@
          <b>Luna Morales, Gianfranco</b><br>
 --------------
 <br><br> 
+        
 <b>----------</b><br>
 -------------
 <br><br>
-
+<td>TB1<br><br>
+En conclusion...
+ <br><br><br><br>   
   <tr>
     <td><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b></td>
     <td> TB1<br><br>
@@ -161,7 +164,8 @@
         
 <b>-----</b><br>
 ------.
-        <br><br> <td>TB1<br><br>
+<br><br> 
+<td>TB1<br><br>
     En conclusión.......
     <br><br><br><br>
   
