@@ -1,4 +1,4 @@
-<hr>
+![img.png](static/img/Team Members/img.png)<hr>
 
 # <center>COURSE PROJECT</center>
 
@@ -143,42 +143,32 @@
     <td><b>Conclusiones</b></td>
   </tr>
   <tr>
-    <td><b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b></td>
-    <td> TB1<br><br>
-         <b>Luna Morales, Gianfranco</b><br>
---------------
-<br><br> 
-        
-<b>----------</b><br>
--------------
-<br><br>
-<td>TB1<br><br>
-En conclusion...
- <br><br><br><br>   
+    <td>
+      <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
+    </td>
+    <td> 
+      <b><strong>TB1</strong></b>
+      <b>Luna Morales, Gianfranco</b>
+    </td>
+    <td>
+      <b><strong>TB1</strong></b> 
+      <b>En conclusión</b>
+    </td>
+  </tr>
   <tr>
-    <td><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b></td>
-    <td> TB1<br><br>
-         <b>Luna Morales, Gianfranco</b><br>
-      ------
-<br><br> 
-        
-<b>-----</b><br>
-------.
-<br><br> 
-<td>TB1<br><br>
-    En conclusión.......
-    <br><br><br><br>
-  
-------
-    
-  </tr>  
-</table>
-
-<br><br>
+    <td>
+      <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
+    </td>
+    <td> 
+      <b><strong>TB1</strong></b>
+      <b>Luna Morales, Gianfranco</b>
+    </td>
+    <td>
+      <b><strong>TB1</strong></b> 
+      <b>En conclusión</b>
+    </td>
   </tr>
 </table>
-
-<br><br>
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -186,11 +176,6 @@ En conclusion...
 
 
 ### 1.1.2. Perfiles de integrantes del equipo
-
-
-
-
-
 <table>
   <tr>
     <th>Información</th>
@@ -203,7 +188,7 @@ En conclusion...
       <p>Conocimientos y Habilidades: [<br>
       Soy estudiante de la carrera de ingeniería de Software. Me gusta la tecnología y como esta misma ha cambiado significativamente en mi tiempo de vida. Me considero alguien responsable y comprometido con los proyectos; Trato de estar a la par con mis compañeros y compartir con ellos mis conocimientos en ciertos temas específicos.]</p>
     </td>
-    <td><img src="static/img/Chapter 1/------"  alt=" " width="50%" ;"></img></td>
+    <td><img src="static/img/Chapter 1/------"  alt=" " width="50%"></td>
   </tr>
   <tr>
     <td>
@@ -212,7 +197,7 @@ En conclusion...
       <p>Conocimientos y Habilidades: [<br>
         Estudiante universitario de la carrera de ingeniería de software. Me gusta trabajar en conjunto para el desarrollo del proyecto. cuento con conocimientos en lenguajes html, css, js, c++ y Agile Project Managment.]</p>
     </td>
-   <td><img src="static/img/Chapter 1/-------" alt=" " width="50%";"></img></td>
+   <td><img src="static/img/Chapter 1/-------" alt=" " width="50%"></td>
 
   </tr>
   <tr>
@@ -222,7 +207,7 @@ En conclusion...
       <p>Conocimientos y Habilidades: [<br>
         Estudiante universitario de la carreta de ingeniería de Software. Soy una persona proactiva que buscará siempre el mejor resultado del projecto, domino diversos lenguajes y frameworks como Vue.js, java, bootstrap, golang y flutter]</p>
     </td>
-<td><img src="static/img/Chapter 1/img-Ramon.png" alt=" " width="50%";"></img></td>
+<td><img src="static/img/Team%20Members/NicolásZagal.jpg" alt=" " width="50px"></td>
   </tr>
  <tr>
     <td>
@@ -231,7 +216,7 @@ En conclusion...
       <p>Conocimientos y Habilidades: [<br>
     Me gusta observar el comportamiento de las personas para así crear un ambiente cómodo y activo; soy práctico y racional para los percances que puedan surgir. Si bien poseo conocimientos básicos en la programación en el lenguaje C + +, aportaré en lo que pueda para realizar con éxito la idea planteada.]</p>
     </td>
-<td><img src="static/img/Chapter 1/------" alt=" " width="50%";"></img></td>
+<td><img src="static/img/Chapter 1/------" alt=" " width="50%"></td>
   </tr>
  <tr>
     <td>
@@ -239,7 +224,7 @@ En conclusion...
       <p>Código: [u------]</p>
       <p>Conocimientos y Habilidades: [-------]</p>
     </td>
-<td><img src="static/img/Chapter 1/------" alt=" " width="50%";"></img></td>
+<td><img src="static/img/Chapter 1/------" alt=" " width="50%"></td>
   </tr>
 </table>
 
