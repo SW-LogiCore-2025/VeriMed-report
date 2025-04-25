@@ -40,8 +40,8 @@
             <td>U20201c429</td>
         </tr>
         <tr>
-            <td>---------</td>
-            <td>U------</td>
+            <td>Frisancho Lévano, Sebastian Mathias Salomón</td>
+            <td>U202224392</td>
         </tr>
     </table>
 </div>
@@ -317,15 +317,126 @@ Los segmentos objetivos son los siguientes:
 ## 3.4. Product Backlog
 
 # Capítulo IV: Strategic-Level Software Design
-## 4.1. Strategic-Level Attribute-Driven Design.
-### 4.1.1. Design Purpose.
-### 4.1.2. Attribute-Driven Design Inputs.
-#### 4.1.2.1. Primary Functionality (Primary User Stories).
-#### 4.1.2.2. Quality attribute Scenarios.
-#### 4.1.2.3. Constraints.
-### 4.1.3. Architectural Drivers Backlog.
-### 4.1.4. Architectural Design Decisions.
-### 4.1.5. Quality Attribute Scenario Refinements.
+
+En este capítulo se presentan las decisiones estratégicas tomadas para la arquitectura del sistema **VeriMed**, centradas en un enfoque **Attribute-Driven Design (ADD)** y **Domain-Driven Design (DDD)**. Estas decisiones están alineadas con los objetivos de transformación digital que propone la solución, garantizando trazabilidad, seguridad y escalabilidad mediante el uso de tecnologías como **blockchain** y **NFT**. Se incluye además el modelado arquitectónico utilizando el **C4 Model**, específicamente en los niveles **Context** y **Container**, permitiendo visualizar de forma clara las responsabilidades, relaciones e interacciones entre los componentes de alto nivel del sistema.
+
+## 4.1. Strategic-Level Attribute-Driven Design
+
+Esta sección describe el enfoque basado en **Attribute-Driven Design (ADD)** para guiar la construcción de VeriMed como solución innovadora contra la falsificación de medicamentos. El proceso ADD permite tomar decisiones arquitectónicas sustentadas en atributos de calidad clave, los cuales definen la forma en que la arquitectura debe responder a requerimientos no funcionales críticos como **seguridad, disponibilidad, usabilidad y escalabilidad**.
+
+### 4.1.1. Design Purpose
+
+El diseño arquitectónico de VeriMed responde a la necesidad de enfrentar la creciente falsificación de medicamentos, una problemática que, según la OMS, afecta al 10% de los fármacos en países en desarrollo. Los sistemas tradicionales de serialización han demostrado ser vulnerables ante redes criminales sofisticadas.
+
+VeriMed propone una solución basada en **blockchain** y **NFTs** para garantizar la trazabilidad y autenticidad de cada lote farmacéutico desde su origen hasta el consumidor final. El enfoque **ADD** permite priorizar atributos críticos como **seguridad, confiabilidad y usabilidad**, asegurando una arquitectura alineada con los objetivos del negocio.
+
+Esta propuesta se orienta a satisfacer las necesidades de dos segmentos clave:
+
+- **Laboratorios y fabricantes**, que buscan certificar y proteger sus productos.
+- **Pacientes**, que requieren verificar fácilmente la autenticidad de sus medicamentos.
+
+### 4.1.2. Attribute-Driven Design Inputs
+
+Esta sección recopila los insumos necesarios para tomar decisiones estratégicas de diseño, incluyendo funcionalidades clave, atributos de calidad deseados, y restricciones técnicas o de negocio.
+
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+| Epic / User Story ID | Título                             | Descripción                                                                                                                                          | Criterios de Aceptación                                                                                                      | Relacionado con (Epic ID) |
+|----------------------|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| US-01               | Escaneo de código QR                | Como paciente quiero escanear un código QR en el empaque del medicamento para verificar su autenticidad.                                            | Escenario uno: Código válido → Muestra información del lote desde blockchain. <br> Escenario dos: Código inválido → Alerta. | EPIC-01                    |
+| US-03               | Notificación de medicamentos falsos | Como paciente quiero recibir una alerta si un medicamento es falso para no consumirlo y tomar medidas inmediatas.                                   | Escaneo de medicamento falsificado → Muestra alerta roja e instrucciones para reportarlo.                                   | EPIC-01                    |
+| US-06               | Visualización del recorrido         | Como paciente quiero ver el recorrido del medicamento desde su fabricación para asegurarme de su procedencia y trazabilidad.                        | Escaneo válido → Muestra línea de tiempo del medicamento desde su origen hasta el punto de venta.                          | EPIC-01                    |
+| US-09               | Registro de lote con NFT            | Como laboratorio quiero registrar cada lote como un NFT único en la blockchain para asegurar su trazabilidad inmutable.                              | Completar formulario de lote → Se genera NFT y se almacena en la blockchain.                                                | EPIC-02                    |
+| US-10               | Generación de códigos QR            | Como laboratorio quiero generar un código QR único para cada lote para que pueda ser escaneado y verificado por los usuarios.                        | Tras registro exitoso del NFT → Se genera automáticamente un código QR.                                                     | EPIC-02                    |
+| US-16               | Verificación de integridad de lote  | Como laboratorio quiero verificar que los datos de un lote no hayan sido alterados para garantizar que la información sigue siendo confiable.       | Consulta del lote → El sistema valida el hash en blockchain.                                                               | EPIC-02                    |
+
+#### 4.1.2.2. Quality Attribute Scenarios
+
+| Atributo     | Fuente            | Estímulo                                                    | Artefacto                          | Entorno                                 | Respuesta                                                   | Medida                                         |
+|--------------|-------------------|-------------------------------------------------------------|------------------------------------|------------------------------------------|--------------------------------------------------------------|------------------------------------------------|
+| Seguridad    | Usuario externo   | Un atacante intenta modificar los datos de un lote         | Smart contract de la blockchain    | Sistema en operación expuesto a internet | El sistema rechaza la modificación                          | 100% de intentos de modificación rechazados    |
+| Disponibilidad | Usuario           | Accede al sistema para verificar medicamento               | Backend y base de datos distribuida | Alta carga o nodos caídos               | El sistema responde usando nodos activos o fallback         | 99.9% disponibilidad mensual                   |
+| Rendimiento  | Usuario (paciente)| Escanea un código QR                                       | Backend + frontend                  | Condiciones normales                    | El sistema devuelve los datos rápidamente                   | Tiempo de respuesta < 2 segundos               |
+| Escalabilidad| Laboratorio        | Se registran muchos lotes simultáneamente                  | Módulo de registro + blockchain API | Alta demanda (campañas masivas)         | El sistema escala dinámicamente                            | Soporta hasta 1000 registros por minuto        |
+| Usabilidad   | Usuario (paciente)| Escaneo sin conocimientos técnicos                         | App móvil / interfaz web            | Acceso desde smartphone                 | Guía mediante interfaz intuitiva                            | 90% de usuarios completan sin asistencia       |
+
+#### 4.1.2.3. Constraints
+
+| Technical Story ID | Título                      | Descripción                                                                                                                                  | Criterios de Aceptación                                                                                  | Relacionado con (Epic ID) |
+|--------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------------|
+| TS-01              | Uso obligatorio de Blockchain | El sistema debe utilizar blockchain para garantizar la inmutabilidad de los registros.                                                      | Los lotes deben almacenarse como NFT y verificables vía transacciones.                                   | EPIC-02                    |
+| TS-02              | Escaneo por QR obligatorio   | El sistema debe permitir verificación únicamente mediante códigos QR.                                                                       | La funcionalidad QR debe estar disponible en todas las interfaces.                                       | EPIC-01                    |
+| TS-03              | Idioma por defecto: español  | Toda la interfaz y mensajes deben estar en español.                                                                                          | El idioma predeterminado debe ser español.                                                               | EPIC-01, EPIC-02           |
+
+### 4.1.3. Architectural Drivers Backlog
+
+| Driver ID | Título de Driver                     | Descripción                                                                                           | Importancia para Stakeholders | Impacto en Technical Complexity |
+|-----------|--------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------|----------------------------------|
+| FD-01     | Registro de lotes como NFT           | Permitir registro con identificador único en blockchain.                                              | High                          | High                             |
+| FD-02     | Verificación por QR                  | Escaneo para autenticidad del medicamento.                                                            | High                          | Medium                           |
+| QA-01     | Escalabilidad                        | Adaptarse al crecimiento de usuarios y transacciones.                                                 | High                          | High                             |
+| QA-02     | Trazabilidad e inmutabilidad         | Asegurar integridad y rastreo de datos.                                                               | High                          | High                             |
+| QA-03     | Disponibilidad del sistema           | Disponibilidad 99.9% para verificación constante.                                                     | High                          | Medium                           |
+| QA-04     | Tiempo de respuesta                  | Respuesta ante escaneo menor a 3 segundos.                                                            | Medium                        | Medium                           |
+| CT-01     | Uso obligatorio de Blockchain        | Toda gestión debe estar en blockchain privada.                                                        | High                          | High                             |
+| CT-02     | Idioma por defecto: español          | Toda la interfaz debe estar en español.                                                               | Medium                        | Low                              |
+
+### 4.1.4. Architectural Design Decisions
+
+| Driver ID | Título de Driver                   | Pattern 1: Microservicios                                                                                          | Pattern 2: Arquitectura monolítica                                                                              |
+|-----------|------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| FD-01     | Registro de lotes como NFT         | Pro: Escalabilidad y separación por dominios. <br> Con: Complejidad en gestión y despliegue.                       | Pro: Sencillo de desarrollar/desplegar. <br> Con: Escalabilidad limitada.                                       |
+| QA-02     | Trazabilidad e inmutabilidad       | Pro: Trazabilidad granular por módulo. <br> Con: Riesgo de inconsistencia si no se sincroniza bien.               | Pro: Simple de implementar. <br> Con: Riesgo de cuello de botella.                                              |
+| QA-03     | Alta disponibilidad                | Pro: Distribución entre instancias. <br> Con: Gestión avanzada de redundancia necesaria.                          | Pro: Menor riesgo de fallos múltiples. <br> Con: Todo el sistema cae si el monolito falla.                      |
+| CT-01     | Uso obligatorio de Blockchain      | Pro: Integración modular con blockchain. <br> Con: Muchos puntos de integración.                                  | Pro: Lógica directa en una sola interfaz. <br> Con: Puede ser rígido y pesado.                                  |
+
+### 4.1.5. Quality Attribute Scenario Refinements
+
+#### Scenario Refinement for Scenario 1
+
+- **Scenario**: Registrar un nuevo lote como NFT.
+- **Business Goals**: Garantizar autenticidad e inmutabilidad.
+- **Attributes**: Trazabilidad, Seguridad, Integridad.
+- **Stimulus**: Laboratorio registra un lote.
+- **Components**: Backend, servicio blockchain.
+- **Source**: Usuario (laboratorio).
+- **Environment**: Operación normal.
+- **Artifact**: Módulo de registro, nodo blockchain.
+- **Response**: Registro exitoso, NFT generado.
+- **Measure**: < 5 segundos, sin pérdida.
+- **Questions**: ¿Qué pasa si falla conexión blockchain?
+- **Issues**: Necesaria lógica de reintento y verificación.
+
+#### Scenario Refinement for Scenario 2
+
+- **Scenario**: Alerta al escanear un medicamento inválido.
+- **Business Goals**: Proteger pacientes.
+- **Attributes**: Disponibilidad, Seguridad.
+- **Stimulus**: Paciente escanea QR.
+- **Components**: Frontend, backend, base de datos.
+- **Source**: Usuario (paciente).
+- **Environment**: Red móvil o Wi-Fi.
+- **Artifact**: API de verificación.
+- **Response**: Alerta de lote inválido.
+- **Measure**: < 3 segundos.
+- **Questions**: ¿Verificación offline posible?
+- **Issues**: Versión ligera en el dispositivo.
+
+#### Scenario Refinement for Scenario 3
+
+- **Scenario**: Funcionamiento bajo carga masiva.
+- **Business Goals**: Continuidad del servicio.
+- **Attributes**: Escalabilidad, Disponibilidad, Rendimiento.
+- **Stimulus**: Miles de usuarios simultáneos.
+- **Components**: Infraestructura, balanceador, base de datos.
+- **Source**: Usuarios concurrentes.
+- **Environment**: Evento de salud pública.
+- **Artifact**: Sistema completo.
+- **Response**: Escala horizontalmente.
+- **Measure**: Hasta 10,000 usuarios, < 5s de respuesta.
+- **Questions**: ¿Pruebas de carga realizadas?
+- **Issues**: Requiere pruebas de estrés y planificación.
+
 ## 4.2. Strategic-Level Domain-Driven Design.
 En esta sección, el equipo de desarrollo de VeriMed presenta el proceso seguido para la toma de decisiones arquitectónicas de nivel estratégico aplicando el enfoque de Domain-Driven Design (DDD). Este enfoque se centra en el entendimiento profundo del dominio del problema (la industria farmacéutica y el manejo de medicamentos) y cómo estructurar la solución de software en base a ese conocimiento.
 ### 4.2.1. EventStorming.
