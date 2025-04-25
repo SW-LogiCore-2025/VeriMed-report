@@ -513,6 +513,26 @@ Los segmentos objetivos son los siguientes:
 
 ## 2.2.2. Registro de entrevistas
 
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Yoleny Cordova<br>
+      <b>Edad:</b> 18 años <br>
+      <b>Distrito:</b> Jaén <br>
+      <b>Duración:</b> 06:00 minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://drive.google.com/file/d/1B2qt4G9smmQRBUSthqxa-DEpk66WVELi/view" rel="nofollow">https://goo.su/Ao2Pm</a>
+      <br>
+      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
+    </td>
+  </tr>
+</tbody></table></markdown-accessiblity-table>
 
 ## 2.2.3. Análisis de entrevistas
 
@@ -520,6 +540,13 @@ Los segmentos objetivos son los siguientes:
 
 
 <strong>Segmento objetivo 2: :</strong>
+
+Del total de pacientes entrevistados, el 85% expresó preocupación por la autenticidad de los medicamentos que consumen, lo cual evidencia un alto nivel de desconfianza hacia el mercado farmacéutico informal. Aunque un 60% indicó no tener experiencia previa con códigos QR, la mayoría manifestó estar dispuesta a aprender a usarlos si esto contribuye a garantizar su seguridad al momento de consumir medicamentos.
+
+Respecto a la información más valorada al escanear un código QR, el 100% coincidió en la importancia de conocer al fabricante, la fecha de fabricación y la ruta de distribución del producto. Esta necesidad de transparencia refuerza el valor de una plataforma como VeriMed para brindar confianza en la cadena de suministro.
+
+Asimismo, casi todos los entrevistados afirmaron sentirse cómodos utilizando su celular para temas de salud, lo que facilita la futura implementación de herramientas digitales de verificación. Además, más del 70% indicó estar dispuesto a participar en pruebas piloto o encuestas futuras, lo que muestra un alto grado de compromiso y apertura hacia tecnologías innovadoras.
+
 
 ## 2.3. Needfinding
 
