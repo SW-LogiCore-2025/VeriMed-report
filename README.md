@@ -231,7 +231,7 @@ En conclusion...
       <p>Conocimientos y Habilidades: [<br>
     Me gusta observar el comportamiento de las personas para así crear un ambiente cómodo y activo; soy práctico y racional para los percances que puedan surgir. Si bien poseo conocimientos básicos en la programación en el lenguaje C + +, aportaré en lo que pueda para realizar con éxito la idea planteada.]</p>
     </td>
-<td><img src="static/img/Chapter 1/------" alt=" " width="50%";"></img></td>
+<td><img src="static/img/Chapter 1/Gianfranco.jpg" alt=" " width="50%";"></img></td>
   </tr>
  <tr>
     <td>
