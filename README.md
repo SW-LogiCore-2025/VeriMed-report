@@ -570,7 +570,17 @@ Rosa es una paciente adulta que toma medicamentos regularmente y desea sentirse 
 
 
 ### 2.3.4. As-is Scenario Mapping
+**User Persona**: Luis M. Rodríguez.
 
+Este mapa muestra el flujo de trabajo actual de Luis M. Rodríguez, gerente de producción de un laboratorio farmacéutico. A lo largo del proceso, Luis supervisa la producción, registra manualmente los lotes, coordina la logística de distribución y gestiona documentación de cumplimiento. Sin embargo, al no contar con un sistema robusto de trazabilidad, pierde visibilidad sobre la autenticidad y ubicación del producto una vez que sale de planta
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745569620/imagen_2025-04-25_032659230_xsxzt1.png" alt="Luis Rodríguez - FarmaLife"  />
+
+**User Persona**: Rosa E. García.
+
+Este mapa describe la experiencia de Rosa E. García, una paciente adulta que compra y consume medicamentos periódicamente. Desde que recibe su receta médica hasta el momento en que ingiere su medicamento, Rosa confía en lo que le ofrecen en la farmacia, sin contar con herramientas que le permitan validar el origen del producto. Aunque revisa etiquetas y busca información en internet, no logra confirmar si el medicamento es original ni de dónde proviene realmente.
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745569656/imagen_2025-04-25_032735798_vawzdz.png" alt="Rosa Garcia "  />
 
 ### 2.4. Ubiquitous Language
 
