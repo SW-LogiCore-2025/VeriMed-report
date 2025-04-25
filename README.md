@@ -65,7 +65,13 @@
                 <th>1.0</th>
                 <td>04/23/2024</td>
                 <td>(Jefe de grupo)</td>
-                <td>Se añadiò el Startup profile.</td>
+                <td>Se añadió el Startup profile.</td>
+            </tr>
+            <tr>
+                <th>1.1</th>
+                <td>04/25/2024</td>
+                <td>Nicolás Zagal</td>
+                <td>Se desarrollaron los puntos 4.2 y 4.3</td>
             </tr>
        </tbody>
 </table>
@@ -151,15 +157,16 @@
   </tr>
   <tr>
     <td>
-      <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
+      <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </p>
     </td>
     <td> 
-      <b><strong>TB1</strong></b>
-      <b>Luna Morales, Gianfranco</b>
+      <p><strong>TB1</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong></p>
+      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega se mantuvieron comunicaciones constantes con el equipo de trabajo en función de alcanzar los objetivos planteados y retroalimentar los entregables de cada integrante</p>
     </td>
     <td>
-      <b><strong>TB1</strong></b> 
-      <b>En conclusión</b>
+      <p><strong>TB1</strong></p> 
+      <p>En conclusión</p>
     </td>
   </tr>
   <tr>
@@ -167,12 +174,13 @@
       <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
     </td>
     <td> 
-      <b><strong>TB1</strong></b>
-      <b>Luna Morales, Gianfranco</b>
+      <p><strong>TB1</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong></p>
+      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega presente el event storming y los diagramas C4 de manera clara y estructurada al equipo de trabajo asegurando un claro entendimiento por parte de todos los miembros y fijar una línea de trabajo optima</p>
     </td>
     <td>
-      <b><strong>TB1</strong></b> 
-      <b>En conclusión</b>
+      <p><strong>TB1</strong></p> 
+      <p>En conclusión</p>
     </td>
   </tr>
 </table>
