@@ -73,6 +73,12 @@
                 <td>Nicolás Zagal</td>
                 <td>Se desarrollaron los puntos 4.2 y 4.3</td>
             </tr>
+            <tr>
+                <th>1.2</th>
+                <td>04/25/2024</td>
+                <td>Sebastian Frisancho</td>
+                <td>Se desarrollaron los puntos 4.1</td>
+            </tr>
        </tbody>
 </table>
 <br><br>
@@ -233,17 +239,17 @@
     Me gusta observar el comportamiento de las personas para así crear un ambiente cómodo y activo; soy práctico y racional para los percances que puedan surgir. Si bien poseo conocimientos básicos en la programación en el lenguaje C + +, aportaré en lo que pueda para realizar con éxito la idea planteada.]</p>
     </td>
 
-<td><img src="static/img/Chapter 1/Gianfranco.jpg"width="1000" height="300" style="border-radius: 50%;"></img></td>
+<td><img src="static/img/Chapter 1/Gianfranco.jpg" width="1000" height="300" style="border-radius: 50%;"></img></td>
 
   </tr>
  <tr>
     <td>
-      <h2>[Sebastian Frisancho Lévano]</h2>
+      <h2>[Frisancho Lévano, Sebastian]</h2>
       <p>Código: [u202224392]</p>
       <p>Conocimientos y Habilidades: [<br>
-          Estudiante de 8vo ciclo de la carrera de ingeniería de software. Soy una persona perseverante con mis metas propuestas, siempre busco la manera de sacar adelante los objetivos propuestos de los proyectos. Me gusta trabajar en entornos didactos y colaborativos, sin temor a expresar mis ideas o preocupaciones a lo largo de los proyectos. Me gusta más lo que son aplicaciones móviles y frontend web.]/p>
+          Estudiante de 8vo ciclo de la carrera de ingeniería de software. Soy una persona perseverante con mis metas propuestas, siempre busco la manera de sacar adelante los objetivos propuestos de los proyectos. Me gusta trabajar en entornos didactos y colaborativos, sin temor a expresar mis ideas o preocupaciones a lo largo de los proyectos. Me gusta más lo que son aplicaciones móviles y frontend web.]</p>
     </td>
-<td><img src="static/img/Team Members/Alumno.jpg" alt=" " width="50%";"></img></td>
+<td><img src="static/img/Team Members/Alumno.jpg" width="1200" style="border-radius: 50%;"></img></td>
   </tr>
 </table>
 
@@ -375,7 +381,7 @@ User Persona: Luis M. Rodríguez
 
 User Persona: Rosa E. García 
 <td><img src="static/img/Chapter 3/impact-map-paci.jpg" alt="" width="50%" ;"></img></td>
-=======
+
 ## 3.4. Product Backlog
 
 | Orden | ID | Título | Descripción (Como... deseo... para...) | Story Points |
