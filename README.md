@@ -64,8 +64,14 @@
             <tr>
                 <th>1.0</th>
                 <td>04/23/2024</td>
-                <td>(Jefe de grupo)</td>
-                <td>Se añadiò el Startup profile.</td>
+                <td>Gianfranco Luna</td>
+                <td>Se agregó los puntos 3.1, 3.2, 3.3 y 3.4.</td>
+            </tr>
+            <tr>
+                <th>1.1</th>
+                <td>04/25/2024</td>
+                <td>Nicolás Zagal</td>
+                <td>Se desarrollaron los puntos 4.2 y 4.3</td>
             </tr>
        </tbody>
 </table>
@@ -151,15 +157,17 @@
   </tr>
   <tr>
     <td>
-      <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
+      <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </p>
     </td>
     <td> 
-      <b><strong>TB1</strong></b>
-      <b>Luna Morales, Gianfranco</b>
+      <p><strong>TB1</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó con mi comparñero con respecto a As Is para tener una mejor visión de los beneficios de utilizar la app.</p>
+      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega se mantuvieron comunicaciones constantes con el equipo de trabajo en función de alcanzar los objetivos planteados y retroalimentar los entregables de cada integrante. </p>
+      <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, me enfoqué en comunicar de forma clara y objetiva las decisiones estratégicas del diseño arquitectónico, considerando el perfil técnico y jerárquico de cada público. Esto me permitió asegurar que todos los involucrados entendieran la propuesta, sin importar su nivel de especialización.</p>
     </td>
     <td>
-      <b><strong>TB1</strong></b> 
-      <b>En conclusión</b>
+      <p><strong>TB1</strong></p> 
+      <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
     </td>
   </tr>
   <tr>
@@ -167,12 +175,14 @@
       <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
     </td>
     <td> 
-      <b><strong>TB1</strong></b>
-      <b>Luna Morales, Gianfranco</b>
+      <p><strong>TB1</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong> Se comunicó con el grupo los puntos tratados del Capítulo III, para poseer una mejor visión en el desarrollo de los puntos consecuentes, como la elaboración C4.</p>
+      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega presente el event storming y los diagramas C4 de manera clara y estructurada al equipo de trabajo asegurando un claro entendimiento por parte de todos los miembros y fijar una línea de trabajo optima</p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, cuidé que la redacción fuese precisa y accesible para públicos con distintos niveles de conocimiento técnico. Esta forma de escribir me permitió transmitir los resultados del proyecto con objetividad y transparencia, facilitando la comprensión del diseño propuesto por parte de los lectores con distintos niveles de conocimiento.</p>
     </td>
     <td>
-      <b><strong>TB1</strong></b> 
-      <b>En conclusión</b>
+      <p><strong>TB1</strong></p> 
+      <p>En conclusión: Una comunicación con diferentes áreas del equipo permite un mejor entendimiento y desarrollo de los puntos del proyecto.</p>
     </td>
   </tr>
 </table>
