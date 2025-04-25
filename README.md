@@ -560,11 +560,12 @@ listadas son independientes del uso de la solución tecnológica, y reflejan las
 
 ### 2.3.3. Empathy Mapping
 **User Persona:** Luis Rodriguez - Gerente de Producción en FarmaLife.
+Luis es Gerente de Producción en un laboratorio farmacéutico y busca soluciones innovadoras para garantizar la trazabilidad y autenticidad de sus productos. Le preocupan los errores en la distribución y el cumplimiento normativo. Está dispuesto a adoptar tecnología siempre que sea compatible con sus sistemas. Su motivación principal es optimizar procesos y proteger la reputación del laboratorio.
 
 <img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745568946/imagen_2025-04-25_031545345_qxgnht.png" alt="Luis Rodríguez - FarmaLife"  />
 
 **User Persona:** Rosa García - Paciente
-
+Rosa es una paciente adulta que toma medicamentos regularmente y desea sentirse segura al consumirlos. Le preocupa adquirir productos falsificados, pero tiene limitaciones tecnológicas. Valora la simplicidad, la confianza y la transparencia al momento de comprar en farmacias. Busca herramientas fáciles que le permitan verificar la autenticidad del medicamento desde su celular.
 <img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745569012/imagen_2025-04-25_031651783_xxyhjc.png" alt="Rosa Garcia "  />
 
 
