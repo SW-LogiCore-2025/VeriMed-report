@@ -238,11 +238,12 @@
   </tr>
  <tr>
     <td>
-      <h2>[------]</h2>
-      <p>Código: [u------]</p>
-      <p>Conocimientos y Habilidades: [-------]</p>
+      <h2>[Sebastian Frisancho Lévano]</h2>
+      <p>Código: [u202224392]</p>
+      <p>Conocimientos y Habilidades: [<br>
+          Estudiante de 8vo ciclo de la carrera de ingeniería de software. Soy una persona perseverante con mis metas propuestas, siempre busco la manera de sacar adelante los objetivos propuestos de los proyectos. Me gusta trabajar en entornos didactos y colaborativos, sin temor a expresar mis ideas o preocupaciones a lo largo de los proyectos. Me gusta más lo que son aplicaciones móviles y frontend web.]/p>
     </td>
-<td><img src="" alt=" " width="50%"></td>
+<td><img src="static/img/Team Members/Alumno.jpg" alt=" " width="50%";"></img></td>
   </tr>
 </table>
 
