@@ -514,7 +514,6 @@ Los segmentos objetivos son los siguientes:
 ## 2.2.2. Registro de entrevistas
 
 
-
 ## 2.2.3. Análisis de entrevistas
 
 <strong>Segmento objetivo 1: :</strong>
@@ -526,26 +525,93 @@ Los segmentos objetivos son los siguientes:
 
 
 ### 2.3.1. User Personas
+### Segmento 1: Laboratorios farmacéuticos y fabricantes de medicamentos
 
+Luis Rodríguez es un profesional altamente calificado que ocupa el cargo de Gerente de Producción en el laboratorio farmacéutico FarmaLife, 
+ubicado en Lima, Perú. Con formación en Ingeniería Química y más de 12 años de experiencia en el sector farmacéutico, Luis es responsable de 
+asegurar la calidad, seguridad y cumplimiento normativo de los medicamentos que produce su empresa. Su rol implica también supervisar la trazabilidad 
+y la integridad de la cadena de suministro.
 
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745568149/imagen_2025-04-25_030228314_zhdeeb.png" alt="Luis Rodríguez - FarmaLife"  />
 
+### Segmento 2: Pacientes o consumidores de medicamentos
+Rosa García es una mujer de 63 años, residente en Arequipa, Perú, actualmente jubilada después de una carrera como maestra de primaria. 
+Está casada y se encarga de su propio bienestar físico y emocional. Padece hipertensión y requiere medicación continua, lo que la convierte 
+en una consumidora frecuente de productos farmacéuticos.
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745568283/imagen_2025-04-25_030442706_ll00lp.png" alt="Rosa García - Paciente"  />
 
 ### 2.3.2. User Task Matrix 
 
 
+Este User Task Matrix presenta las tareas clave que realizan los usuarios involucrados en el sistema de trazabilidad de medicamentos basado en blockchain.Las tareas 
+listadas son independientes del uso de la solución tecnológica, y reflejan las acciones necesarias para garantizar la autenticidad, seguridad y trazabilidad de los productos farmacéuticos.
+
+| Tarea                                                                 | Frecuencia   | Importancia |
+|----------------------------------------------------------------------|--------------|-------------|
+| Supervisar producción de medicamentos                                | Siempre      | Alta        |
+| Registrar y vincular lote a sistema de trazabilidad                  | Siempre      | Alta        |
+| Verificar trazabilidad del lote                                      | Siempre      | Alta        |
+| Visualizar autenticidad mediante plataforma                          | Usualmente   | Alta        |
+| Escanear QR para verificar origen del medicamento                    | Siempre      | Alta        |
+| Leer información del fabricante o historial del producto             | Usualmente   | Media       |
+| Reportar anomalía en trazabilidad                                    | A menudo     | Media       |
 
 
-### 2.3.3. User Journey Mapping
+### 2.3.3. Empathy Mapping
+**User Persona:** Luis Rodriguez - Gerente de Producción en FarmaLife.
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745568946/imagen_2025-04-25_031545345_qxgnht.png" alt="Luis Rodríguez - FarmaLife"  />
+
+**User Persona:** Rosa García - Paciente
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745569012/imagen_2025-04-25_031651783_xxyhjc.png" alt="Rosa Garcia "  />
 
 
-
-### 2.3.4. Empathy Mapping
-
-
-### 2.3.5. As-is Scenario Mapping
+### 2.3.4. As-is Scenario Mapping
 
 
 ### 2.4. Ubiquitous Language
+
+Este glosario reúne los términos clave utilizados en el dominio de trazabilidad de medicamentos mediante tecnología blockchain.  
+Su propósito es establecer un lenguaje común, claro y sin ambigüedades entre todos los miembros del equipo y los stakeholders.
+
+1. **Pharmaceutical Lot**  
+   Conjunto de unidades de un producto medicinal que han sido elaboradas bajo las mismas condiciones de producción y están identificadas por un mismo código. Es la unidad básica de trazabilidad en el sistema.
+
+2. **Traceability**  
+   Capacidad de seguir el recorrido, la historia y el estado de un medicamento a lo largo de toda la cadena de suministro, desde el fabricante hasta el consumidor final.
+
+3. **Authenticity Verification**  
+   Proceso por el cual se valida que un medicamento es original, autorizado y no ha sido falsificado ni manipulado durante su distribución.
+
+4. **Blockchain Record**  
+   Información almacenada de forma inmutable en una red blockchain que documenta cada evento relevante relacionado a un lote de medicamentos (producción, envío, recepción, etc.).
+
+5. **Tokenized Lot**  
+   Lote farmacéutico que ha sido vinculado a un token digital único e irrepetible (NFT), lo cual permite su identificación y seguimiento en la red blockchain.
+
+6. **NFT – Non-Fungible Token**  
+   Unidad digital única que representa la identidad y la historia de un lote específico de medicamentos. Garantiza la integridad de la trazabilidad y no puede ser duplicada ni modificada.
+
+7. **QR Code**  
+   Representación gráfica escaneable que permite acceder de manera inmediata a la información relacionada al lote del medicamento, incluyendo su origen y trayectoria.
+
+8. **Supply Chain**  
+   Red de actores y procesos que participan en la fabricación, distribución, transporte y venta de un medicamento, desde el laboratorio hasta el consumidor.
+
+9. **Distribution Point**  
+   Ubicación dentro de la cadena de suministro donde el producto cambia de manos (por ejemplo, del fabricante al distribuidor, o del distribuidor a la farmacia).
+
+10. **Counterfeit Medicine**  
+    Producto que se presenta como legítimo, pero ha sido producido o comercializado sin autorización legal, sin cumplir estándares de calidad, o con ingredientes alterados.
+
+11. **Verification Platform**  
+    Aplicación web o móvil que permite al usuario escanear el medicamento y verificar su autenticidad a través de la información registrada en blockchain.
+
+12. **Origin Data**  
+    Información crítica relacionada al lugar de fabricación, laboratorio responsable, fecha de producción y eventos logísticos registrados a lo largo de la vida del lote.
+
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping
