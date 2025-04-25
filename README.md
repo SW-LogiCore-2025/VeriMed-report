@@ -64,8 +64,8 @@
             <tr>
                 <th>1.0</th>
                 <td>04/23/2024</td>
-                <td>(Jefe de grupo)</td>
-                <td>Se añadió el Startup profile.</td>
+                <td>Gianfranco Luna</td>
+                <td>Se agregó los puntos 3.1, 3.2, 3.3 y 3.4.</td>
             </tr>
             <tr>
                 <th>1.1</th>
@@ -161,12 +161,12 @@
     </td>
     <td> 
       <p><strong>TB1</strong></p>
-      <p><strong>Luna Morales, Gianfranco:</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó con mi comparñero con respecto a As Is para tener una mejor visión de los beneficios de utilizar la app.</p>
       <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega se mantuvieron comunicaciones constantes con el equipo de trabajo en función de alcanzar los objetivos planteados y retroalimentar los entregables de cada integrante</p>
     </td>
     <td>
       <p><strong>TB1</strong></p> 
-      <p>En conclusión</p>
+      <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
     </td>
   </tr>
   <tr>
@@ -175,12 +175,12 @@
     </td>
     <td> 
       <p><strong>TB1</strong></p>
-      <p><strong>Luna Morales, Gianfranco:</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong> Se comunicó con el grupo los puntos tratados del Capítulo III, para poseer una mejor visión en el desarrollo de los puntos consecuentes, como la elaboración C4.</p>
       <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega presente el event storming y los diagramas C4 de manera clara y estructurada al equipo de trabajo asegurando un claro entendimiento por parte de todos los miembros y fijar una línea de trabajo optima</p>
     </td>
     <td>
       <p><strong>TB1</strong></p> 
-      <p>En conclusión</p>
+      <p>En conclusión: Una comunicación con diferentes áreas del equipo permite un mejor entendimiento y desarrollo de los puntos del proyecto.</p>
     </td>
   </tr>
 </table>
