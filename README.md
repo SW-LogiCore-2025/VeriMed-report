@@ -213,7 +213,7 @@
       <p>Conocimientos y Habilidades: [<br>
         Estudiante universitario de la carreta de ingeniería de Software. Soy una persona proactiva que buscará siempre el mejor resultado del projecto, domino diversos lenguajes y frameworks como Vue.js, java, bootstrap, golang y flutter]</p>
     </td>
-<td><img src="static/img/Team%20Members/NicolásZagal.jpg" alt=" " width="1200"></td>
+<td><img src="static/img/Team%20Members/NicolasZagal.jpg" alt=" " width="1200"></td>
   </tr>
  <tr>
     <td>
@@ -314,8 +314,6 @@ Los segmentos objetivos son los siguientes:
 
 ## 3.3. Impact Mapping
 
-
-
 ## 3.4. Product Backlog
 
 # Capítulo IV: Strategic-Level Software Design
@@ -329,20 +327,117 @@ Los segmentos objetivos son los siguientes:
 ### 4.1.4. Architectural Design Decisions.
 ### 4.1.5. Quality Attribute Scenario Refinements.
 ## 4.2. Strategic-Level Domain-Driven Design.
+En esta sección, el equipo de desarrollo de VeriMed presenta el proceso seguido para la toma de decisiones arquitectónicas de nivel estratégico aplicando el enfoque de Domain-Driven Design (DDD). Este enfoque se centra en el entendimiento profundo del dominio del problema (la industria farmacéutica y el manejo de medicamentos) y cómo estructurar la solución de software en base a ese conocimiento.
 ### 4.2.1. EventStorming.
+Se abordó un enfoque colaborativo y visual que permitió modelar el contexto del dominio. Se exploraron las etapas de Candidate Context Discovery, Domain Message Flows Modeling y la creación de Bounded Context Canvases.
+
+##### Unstructured Exploration:
+<p>Es un enfoque visual que reúne a todas las partes interesadas para explorar el dominio de un sistema. Se utilizan notas adhesivas de diferentes colores para representar distintos elementos, facilitando la discusión y el descubrimiento de requisitos.</p>
+<img src="static/img/Chapter%204/UnstructuredExploration.png" alt="Event Storming">
+
+##### Pain Points:
+<p>Son los problemas o dificultades que enfrentan los usuarios y las partes interesadas en el contexto del sistema. Identificarlos ayuda a priorizar características y soluciones que realmente aborden las necesidades del usuario.</p>
+<img src="static/img/Chapter%204/PainPoints.png" alt="Event Storming">
+
+##### Timelines:
+<p>Se refiere a la secuencia de eventos que ocurren en el sistema a lo largo del tiempo. Establecer una línea de tiempo ayuda a visualizar cómo los eventos interactúan y afectan el flujo de trabajo, así como a identificar puntos críticos en el proceso.</p>
+<img src="static/img/Chapter 4/Timelines.png" alt="Event Storming">
+
+##### Pivotal Points:
+<p>Son momentos clave en el flujo de eventos que pueden cambiar el estado del sistema o influir significativamente en la experiencia del usuario. Identificar estos puntos ayuda a concentrar esfuerzos en las áreas más críticas.</p>
+<img src="static/img/Chapter%204/PivotalPoints.png" alt="Event Storming">
+
+##### Commands:
+<p>Son las acciones o instrucciones que un usuario o sistema puede ejecutar para provocar un cambio en el estado del sistema.</p>
+<img src="static/img/Chapter%204/Commands.png" alt="Event Storming">
+
+##### Policies:
+<p>Son las reglas o directrices que rigen cómo se deben tomar las decisiones dentro del sistema. Pueden incluir reglas de negocio que determinan cuándo se deben ejecutar ciertos comandos o cómo se deben manejar ciertos eventos.</p>
+<img src="static/img/Chapter%204/Policies.png" alt="Event Storming">
+
+##### Read Models:
+<p>Son las representaciones de los datos que se utilizan para responder a consultas o solicitudes de información. Los modelos de lectura están diseñados para optimizar la consulta de datos, separándose de los modelos de escritura para mejorar el rendimiento y la escalabilidad.</p>
+<img src="static/img/Chapter%204/ReadModels.png" alt="Event Storming">
+
+##### External Systems:
+<p>Se refiere a otros sistemas o servicios que interactúan con el sistema principal. Identificar estos sistemas ayuda a entender las dependencias y las integraciones necesarias para el funcionamiento del sistema.</p>
+<img src="static/img/Chapter%204/ExternalSystems.png" alt="Event Storming">
+
+##### Aggregates:
+<p>Son grupos de objetos que se tratan como una única unidad para la gestión de datos y la lógica de negocio. Un agregado garantiza la consistencia de sus partes en las operaciones y encapsula la lógica de negocio relacionada.</p>
+<img src="static/img/Chapter%204/Aggregates.png" alt="Event Storming">
+
+##### Bounded Contexts:
+<p>Es un límite claro dentro del dominio del sistema donde un modelo particular se aplica. Define la frontera en la que un conjunto de conceptos y términos tiene un significado específico, ayudando a evitar confusiones y a manejar complejidades en sistemas grandes y distribuidos.</p>
+<img src="static/img/Chapter%204/BoundedContext.png" alt="Event Storming">
+
+#### Link del Event Storming:  https://miro.com/app/board/uXjVIAALqDg=/?share_link_id=765648707914
+
 ### 4.2.2. Candidate Context Discovery.
+Empleando la metodología de Event Storming con enfoque en la técnica de "start-with-simple", utilizamos la línea de tiempo para identificar nuestros candidatos para nuestros contextos delimitados, los cuales son:
+
+Identificación de valores del negocio: Analizamos los valores clave que incluyen brindar al usuario la información correspondiente sobre la trazabilidad que ha seguido su medicamento desde que fue fabricado hasta que llego a sus manos, asegurando la inmutabilidad de la información.
+
+Identificación de funcionalidades clave: Identificamos las funcionalidades básicas del servicio, las cuales incluyen la verificación de la trazabilidad mediante un codigo QR y el reporte de medicamentos sospechosos.
+
+#### Factory Context
+<img src="static/img/Chapter%204/FactoryContext.png" alt="Candidate Context Discovery">
+
+#### Business Context
+<img src="static/img/Chapter%204/BusinessContext.png" alt="Candidate Context Discovery">
+
+#### Trace Context
+<img src="static/img/Chapter%204/TraceContext.png" alt="Candidate Context Discovery">
+
+#### Report Context
+<img src="static/img/Chapter%204/ReportContext.png" alt="Candidate Context Discovery">
+
 ### 4.2.3. Domain Message Flows Modeling.
+#### Registering a product on blockchain
+<img src="static/img/Chapter%204/MessageFlow1.png" alt="Domain Message Flows Modeling">
+
+#### Updating product trace on blockchain
+<img src="static/img/Chapter%204/MessageFlow2.png" alt="Domain Message Flows Modeling">
+
+#### Consulting product trace on blockchain
+<img src="static/img/Chapter%204/MessageFlow3.png" alt="Domain Message Flows Modeling">
+
+#### Reporting suspicious product trace on blockchain
+<img src="static/img/Chapter%204/MessageFlow4.png" alt="Domain Message Flows Modeling">
+
 ### 4.2.4. Bounded Context Canvases.
+#### Factory Management
+<img src="static/img/Chapter%204/ContextCanvas1.png" alt="Bounded Context Canvases">
+
+#### Business Transaction Management
+<img src="static/img/Chapter%204/ContextCanvas2.png" alt="Bounded Context Canvases">
+
+#### Traceability Verification
+<img src="static/img/Chapter%204/ContextCanvas3.png" alt="Bounded Context Canvases">
+
+#### Product Report & Audit
+<img src="static/img/Chapter%204/ContextCanvas4.png" alt="Bounded Context Canvases">
+
 ### 4.2.5. Context Mapping.
+<p>Un Context Map es un modelo visual que muestra cómo se relacionan los diferentes Bounded Contexts dentro de un sistema complejo. Es parte esencial del enfoque de Domain-Driven Design (DDD) y permite comprender las fronteras de responsabilidad de cada contexto, definir como de comunican entre si, identificas el tipo de relaciones y facilitar decisiones arquitectónicas y organizacionales.</p>
+<p>El contexto del Business depende de factory porque solo puede operar si los productos fueron creados correctamente. Del mismo modo, el contexto Trace depende de Business ya que depende de la información registrada en cada business para mostrar al usuario final la trazabilidad de su producto. Por su parte el contexto Report depende de Trace y de Factory puesto que a partir de la información de estos contextos es que se generan los reportes y auditorias para la revisión de las productoras.</p>
+<img src="static/img/Chapter%204/ContextMapping.png" alt="Context Mapping">
+
 ## 4.3. Software Architecture.
 ### 4.3.1. Software Architecture System Landscape Diagram.
+<img src="static/img/Chapter%204/LandscapeDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+
 ### 4.3.2. Software Architecture Context Level Diagrams.
+<img src="static/img/Chapter%204/ContextDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+
 ### 4.3.3. Software Architecture Container Level Diagrams.
+<img src="static/img/Chapter%204/ContainerDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+
 ### 4.3.4. Software Architecture Component Level Diagrams.
+<img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+
 ### 4.3.5. Software Architecture Deployment Diagrams
-
-
-
+<img src="static/img/Chapter%204/DeploymentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
 # Conclusiones
 # Bibliografía
