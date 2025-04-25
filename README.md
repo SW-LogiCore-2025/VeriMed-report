@@ -367,6 +367,27 @@ User Persona: Rosa E. García
 =======
 ## 3.4. Product Backlog
 
+| Orden | ID | Título | Descripción (Como... deseo... para...) | Story Points |
+|-------|----|--------|------------------------------------------|--------------|
+| 1 | US01 | Escaneo de código QR | Como paciente, deseo escanear un código QR para verificar si el medicamento es auténtico. | 3 |
+| 2 | US02 | Landing Page informativa | Como usuario, deseo acceder a una landing page con información clara sobre VeriMed para entender su uso. | 2 |
+| 3 | US09 | Registro de lote con NFT | Como laboratorio, deseo registrar un lote como NFT en blockchain para asegurar su autenticidad. | 4 |
+| 4 | US10 | Generación de códigos QR | Como laboratorio, deseo generar un código QR único por lote para permitir su verificación. | 3 |
+| 5 | US06 | Visualización del recorrido | Como paciente, deseo visualizar el recorrido del medicamento para asegurarme de su trazabilidad. | 4 |
+| 6 | US03 | Notificación de medicamentos falsos | Como paciente, deseo recibir una alerta si el medicamento escaneado es falso o sospechoso. | 3 |
+| 7 | US13 | Alertas de escaneos sospechosos | Como laboratorio, deseo recibir alertas cuando se escanee un lote en ubicaciones sospechosas. | 4 |
+| 8 | US05 | Reporte a autoridades | Como paciente, deseo reportar un medicamento sospechoso a las autoridades competentes. | 5 |
+| 9 | US14 | Análisis de métricas | Como laboratorio, deseo analizar métricas de escaneos y distribución para mejorar el control logístico. | 4 |
+| 10 | US07 | Información del medicamento | Como paciente, deseo ver información adicional del medicamento como fabricante, fecha, composición, etc. | 2 |
+| 11 | US04 | Historial de escaneos | Como paciente, deseo revisar el historial de medicamentos que he escaneado para control personal. | 3 |
+| 12 | US15 | Control de fecha de vencimiento | Como laboratorio, deseo gestionar fechas de vencimiento para alertar sobre productos caducos. | 3 |
+| 13 | US16 | Verificación de integridad | Como laboratorio, deseo verificar que los datos del lote en blockchain no han sido alterados. | 2 |
+| 14 | US08 | Modo offline para escaneo | Como paciente, deseo escanear un QR sin conexión a internet para verificar autenticidad en zonas remotas. | 5 |
+| 15 | US12 | Gestión de acceso a empleados | Como laboratorio, deseo gestionar el acceso a mi equipo para que solo usuarios autorizados manipulen datos. | 3 |
+| 16 | US11 | Ver trazabilidad de lote | Como laboratorio, deseo ver en tiempo real la trazabilidad de mis lotes para asegurar su circulación. | 3 |
+| 17 | US17 | Acceso sin registro | Como paciente, deseo verificar la autenticidad sin necesidad de registrarme para facilitar el acceso. | 2 |
+
+
 # Capítulo IV: Strategic-Level Software Design
 ## 4.1. Strategic-Level Attribute-Driven Design.
 ### 4.1.1. Design Purpose.
