@@ -205,38 +205,38 @@
   </tr>
   <tr>
     <td>
-      <h2>Pingus Rodriguez, Carlos Daniel ]</h2>
-      <p>Código: [U202113280 ]</p>
-      <p>Conocimientos y Habilidades: [<br>
-      Soy estudiante de la carrera de ingeniería de Software. Me gusta la tecnología y como esta misma ha cambiado significativamente en mi tiempo de vida. Me considero alguien responsable y comprometido con los proyectos; Trato de estar a la par con mis compañeros y compartir con ellos mis conocimientos en ciertos temas específicos.]</p>
+      <h2>Pingus Rodriguez, Carlos Daniel </h2>
+      <p>Código: U202113280 </p>
+      <p>Conocimientos y Habilidades: <br>
+      Soy estudiante de la carrera de ingeniería de Software. Me gusta la tecnología y como esta misma ha cambiado significativamente en mi tiempo de vida. Me considero alguien responsable y comprometido con los proyectos; Trato de estar a la par con mis compañeros y compartir con ellos mis conocimientos en ciertos temas específicos.</p>
     </td>
     <td><img src=""  alt=" " width="50%"></td>
   </tr>
   <tr>
     <td>
-      <h2>[Cabrera Camizan, Jeferson Smith ]</h2>
-      <p>Código: [U20211c211 ]</p>
-      <p>Conocimientos y Habilidades: [<br>
-        Estudiante universitario de la carrera de ingeniería de software. Me gusta trabajar en conjunto para el desarrollo del proyecto. cuento con conocimientos en lenguajes html, css, js, c++ y Agile Project Managment.]</p>
+      <h2>Cabrera Camizan, Jeferson Smith </h2>
+      <p>Código: U20211c211 </p>
+      <p>Conocimientos y Habilidades: <br>
+        Estudiante universitario de la carrera de ingeniería de software. Me gusta trabajar en conjunto para el desarrollo del proyecto. cuento con conocimientos en lenguajes html, css, js, c++ y Agile Project Managment.</p>
     </td>
-   <td><img src="" alt=" " width="50%"></td>
+   <td><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1745628789/imagen_2025-04-25_195308443_hzznhf.png" alt=" " width="80%"></td>
 
   </tr>
   <tr>
     <td>
-      <h2>[Zagal Vallejo, Nicolás ]</h2>
-      <p>Código: [u20201c429 6]</p>
+      <h2>Zagal Vallejo, Nicolás </h2>
+      <p>Código: u20201c4296</p>
       <p>Conocimientos y Habilidades: [<br>
-        Estudiante universitario de la carreta de ingeniería de Software. Soy una persona proactiva que buscará siempre el mejor resultado del projecto, domino diversos lenguajes y frameworks como Vue.js, java, bootstrap, golang y flutter]</p>
+        Estudiante universitario de la carreta de ingeniería de Software. Soy una persona proactiva que buscará siempre el mejor resultado del projecto, domino diversos lenguajes y frameworks como Vue.js, java, bootstrap, golang y flutter</p>
     </td>
 <td><img src="static/img/Team%20Members/NicolasZagal.jpg" alt=" " width="1200"></td>
   </tr>
  <tr>
     <td>
-      <h2>[Gianfranco Luna Morales]</h2>
-      <p>Código: [u201824343]</p>
+      <h2>Gianfranco Luna Morales</h2>
+      <p>Código: u201824343</p>
       <p>Conocimientos y Habilidades: [<br>
-    Me gusta observar el comportamiento de las personas para así crear un ambiente cómodo y activo; soy práctico y racional para los percances que puedan surgir. Si bien poseo conocimientos básicos en la programación en el lenguaje C + +, aportaré en lo que pueda para realizar con éxito la idea planteada.]</p>
+    Me gusta observar el comportamiento de las personas para así crear un ambiente cómodo y activo; soy práctico y racional para los percances que puedan surgir. Si bien poseo conocimientos básicos en la programación en el lenguaje C + +, aportaré en lo que pueda para realizar con éxito la idea planteada.</p>
     </td>
 
 <td><img src="static/img/Chapter 1/Gianfranco.jpg" width="1000" height="300" style="border-radius: 50%;"></img></td>
@@ -244,10 +244,10 @@
   </tr>
  <tr>
     <td>
-      <h2>[Frisancho Lévano, Sebastian]</h2>
-      <p>Código: [u202224392]</p>
-      <p>Conocimientos y Habilidades: [<br>
-          Estudiante de 8vo ciclo de la carrera de ingeniería de software. Soy una persona perseverante con mis metas propuestas, siempre busco la manera de sacar adelante los objetivos propuestos de los proyectos. Me gusta trabajar en entornos didactos y colaborativos, sin temor a expresar mis ideas o preocupaciones a lo largo de los proyectos. Me gusta más lo que son aplicaciones móviles y frontend web.]</p>
+      <h2>Frisancho Lévano, Sebastian</h2>
+      <p>Código: u202224392</p>
+      <p>Conocimientos y Habilidades: <br>
+          Estudiante de 8vo ciclo de la carrera de ingeniería de software. Soy una persona perseverante con mis metas propuestas, siempre busco la manera de sacar adelante los objetivos propuestos de los proyectos. Me gusta trabajar en entornos didactos y colaborativos, sin temor a expresar mis ideas o preocupaciones a lo largo de los proyectos. Me gusta más lo que son aplicaciones móviles y frontend web.</p>
     </td>
 <td><img src="static/img/Team Members/Alumno.jpg" width="1200" style="border-radius: 50%;"></img></td>
   </tr>
