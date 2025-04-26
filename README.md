@@ -530,7 +530,7 @@ Los segmentos objetivos son los siguientes:
       <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
     </td>
   </tr>
-</tbody></table></markdown-accessiblity-table>
+</tbody></table>
 
 ## 2.2.3. Análisis de entrevistas
 
