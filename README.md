@@ -1,27 +1,27 @@
 # <center>COURSE PROJECT</center>
 
-<div style="text-align: center;">
+<div style="" text-align= center>
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img alt="UPC" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"/><br>
     <strong>Ingeniería de Software - 2025-1</strong><br>
-    <strong>Arquitecrua de Software Emergentes - SW81</strong><br>
-    <strong>Profesor: ----</strong><br>
+    <strong>Arquitecturas de Software Emergentes - SW81</strong><br>
+    <strong>Profesor: Royer Edelwer Rojas Malasquez</strong><br>
     <br>INFORME DE TRABAJO FINAL - TB1
 </div>
 
-<div style="text-align: center;">
+<div style="" text-align= center>
     <strong>Startup:LogiCore</strong><br>
     <strong>Producto:VeriMed</strong>
 </div>
 
-<div style="text-align: center;">
+<div style="" text-align= center>
     <h3>Team Members:</h3>
 </div>
-<div style="display: flex; justify-content: center;">
+<div display = flex text-align=center>
     <table>
         <tr>
-            <th style="text-align:center;">Member</th>
-            <th style="text-align:center;">Code</th>
+            <th style="" text-align= center>Member</th>
+            <th style="" text-align= center>Code</th>
         </tr>
         <tr>
             <td>Luna Morales, Gianfranco</td>
@@ -46,11 +46,11 @@
     </table>
 </div>
 <br>
-<div style="text-align: center;">
-    <strong>Abril, 2024</strong>
+<div style="" text-align= center>
+    <strong>Abril, 2025</strong>
 </div>
 
-<h1 style="text-align: center">Registro de versiones del Informe</h1>
+<h1 style="" text-align= center>Registro de versiones del Informe</h1>
 <table>
         <thead>
             <tr>
@@ -63,9 +63,9 @@
         <tbody>
             <tr>
                 <th>1.0</th>
-                <td>04/23/2024</td>
-                <td>(Jefe de grupo)</td>
-                <td>Se añadiò el Startup profile.</td>
+                <td>24/04/2025</td>
+                <td>Todos</td>
+                <td>Se actualizó el reporte en GitHub para la entrega del TB1</td>
             </tr>
        </tbody>
 </table>
