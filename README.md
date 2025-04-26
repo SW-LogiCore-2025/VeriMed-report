@@ -4,7 +4,7 @@
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img alt="UPC" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"/><br>
     <strong>Ingeniería de Software - 2025-1</strong><br>
-    <strong>Arquitecrua de Software Emergentes - SW81</strong><br>
+    <strong>Arquitecturas de Software Emergentes - SW81</strong><br>
     <strong>Profesor: Royer Edelwer Rojas Malasquez</strong><br>
     <br>INFORME DE TRABAJO FINAL - TB1
 </div>
@@ -210,6 +210,8 @@
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+Somos ‘LogiCore’, un startup innovador enfocado en crear soluciones de software basadas en arquitecturas y tecnologías de última generación. Nuestro objetivo es garantizar la máxima seguridad en la distribución de medicamentos para hospitales y farmacias, ofreciendo una plataforma tecnológica integral, robusta y fácil de implementar.
+Actualmente, estamos aplicando los conocimientos adquiridos en el curso Arquitecturas de Software Emergentes para optimizar nuestro producto, el cual presentaremos como proyecto final. Esta iniciativa no solo nos permitirá validar nuestra solución, sino también perfeccionar nuestras habilidades en el desarrollo de tecnologías innovadoras.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table>
@@ -224,7 +226,7 @@
       <p>Conocimientos y Habilidades: <br>
       Soy estudiante de la carrera de ingeniería de Software. Me gusta la tecnología y como esta misma ha cambiado significativamente en mi tiempo de vida. Me considero alguien responsable y comprometido con los proyectos; Trato de estar a la par con mis compañeros y compartir con ellos mis conocimientos en ciertos temas específicos.</p>
     </td>
-    <td><img src=""  alt=" " width="50%"></td>
+    <td><img src="https://res.cloudinary.com/dydklnicb/image/upload/v1745581562/foto_carlos.jpg"  alt="foto-carlos" width="50%"></td>
   </tr>
   <tr>
     <td>
@@ -267,24 +269,49 @@
   </tr>
 </table>
 
-
 ## 1.2.  Solution Profile
-### 1.2.1. Antecedentes y problemática
+VeriMed es una plataforma innovadora que combina blockchain y tecnología NFT para erradicar la falsificación de medicamentos. Cada lote farmacéutico se registra como un token único en la cadena de bloques, vinculado a un QR escaneable que permite a pacientes, farmacias y reguladores verificar en segundos el origen, autenticidad y recorrido completo del medicamento. Frente a sistemas tradicionales opacos y manipulables, VeriMed ofrece trazabilidad inmutable, seguridad descentralizada y una interfaz intuitiva, garantizando que ningún fármaco falsificado llegue a las manos del consumidor.
 
+### 1.2.1. Antecedentes y problemática
+La falsificación de medicamentos es una crisis global que pone en riesgo millones de vidas y representa pérdidas económicas millonarias. Según la OMS, 1 de cada 10 medicamentos en países en desarrollo es falsificado, mientras que sistemas tradicionales de serialización (como códigos de barras) resultan insuficientes ante redes criminales sofisticadas. VeriMed surge como respuesta a este desafío, aprovechando el potencial de blockchain y NFTs para crear una trazabilidad inquebrantable desde el laboratorio hasta el paciente.
+
+| What	| Who	| Where |	When |	Why |
+| ----- | ---- | ------ | ------- | ---- |
+| Medicamentos falsificados o adulterados que ingresan a la cadena de suministro, representando ~$200 mil millones anuales (Interpol).	| Afectados: Pacientes (riesgo de salud), farmacias (reputación), laboratorios (pérdidas económicas), gobiernos (regulación fallida). Responsables: Redes criminales, distribuidores ilegales. |	Países en desarrollo (Asia, África, Latinoamérica) son los más vulnerables, pero el problema existe incluso en mercados regulados (EE. UU./UE). |	Crisis en aumento: La OMS reporta un incremento del 30% en incautaciones de fármacos falsos desde 2020 (post-pandemia).	| Sistemas actuales son centralizados, manipulables y no permiten verificación en tiempo real por parte del usuario final. |
+
+| How |	How Much |
+| --- | ----- |
+| Falsificadores replican empaques, adulteran principios activos o roban lotes genuinos para revenderlos en mercados paralelos. |	**Salud:** 500,000 muertes anuales por medicamentos falsos (Universidad de Edinburgh). **Económico:** Laboratorios pierden hasta 15% de sus ingresos por falsificación. |
 
 ### 1.2.2. Lean UX Process. 
 #### 1.2.2.1. Lean UX Problem Statements
+La falsificación de medicamentos y la opacidad en la cadena de suministro exponen a pacientes a riesgos graves de salud, generan pérdidas millonarias a laboratorios y dificultan la acción regulatoria. Los sistemas actuales (códigos de barras, bases de datos centralizadas) no ofrecen trazabilidad en tiempo real, autenticación infalsificable ni accesibilidad para el usuario final.
 
 #### 1.2.2.2. Lean UX Assumptions.
+**User Assumptions:** <br>
+•	Pacientes confiarán más en medicamentos con historial verificable. <br>
+•	Farmacias preferirán proveedores que usen VeriMed para evitar riesgos legales. <br>
+**Business Assumptions:** <br>
+•	Laboratorios pagarán por una solución que reduzca falsificaciones y proteja su marca. <br>
+•	Reguladores adoptarán VeriMed si cumple estándares globales (ej.: FDA, EMA). <br>
+**Features:** <br>
+•	Blockchain/NFT es escalable para millones de transacciones de lotes. <br>
+•	Los usuarios (pacientes/farmacias) escanearán QR si la app es intuitiva. <br>
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-
+**Hipótesis 1:** "Si aseguramos la autenticidad de los medicamentos mediante NFTs + QR, reduciremos un 30% los incidentes por falsificaciones reportados por laboratorios en 12 meses." <br>
+**Hipótesis 2:** "Si la aplicación muestra el historial de distribución de un medicamento en menos de 5 segundos, el 70% de los pacientes la usará recurrentemente." <br>
 
 #### 1.2.2.4. Lean UX Canvas
-
+<p>
+    <img src="https://res.cloudinary.com/dydklnicb/image/upload/v1745634894/image_2025-04-25_213451659_k23udp.png" alt="leanux-canvas" width="850"
+</p>
+    
 ## 1.3.  Segmentos objetivo
 
-Los segmentos objetivos son los siguientes:
+Los segmentos objetivos son los siguientes:<br>
+•	Pacientes que consumen medicamentos. <br>
+•	Laboratorios que manufacturan los medicamentos.<br>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
