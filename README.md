@@ -253,8 +253,6 @@ En conclusion...
 
 
 
-
-
 #### 1.2.2.2. Lean UX Assumptions.
 
 
@@ -538,6 +536,7 @@ Los segmentos objetivos son los siguientes:
 
 <strong>Segmento objetivo 1: :</strong>
 
+Los laboratorios farmacéuticos entrevistados destacaron la importancia de contar con sistemas robustos de trazabilidad para garantizar la autenticidad y seguridad de los medicamentos. Actualmente, muchos de ellos enfrentan desafíos relacionados con la falta de visibilidad en la cadena de suministro y el cumplimiento normativo. Aunque algunos ya utilizan tecnologías básicas para el control de lotes, existe interés en adoptar soluciones más avanzadas, como blockchain, siempre que estas sean compatibles con sus sistemas actuales y ofrezcan beneficios claros en términos de eficiencia y transparencia. Además, los entrevistados valoran la posibilidad de integrar herramientas que permitan una validación directa por parte de los consumidores, lo que fortalecería la confianza en sus productos.
 
 <strong>Segmento objetivo 2: :</strong>
 
