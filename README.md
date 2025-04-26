@@ -1,27 +1,27 @@
 # <center>COURSE PROJECT</center>
 
-<div style="text-align: center;">
+<div style="" text-align= center>
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img alt="UPC" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"/><br>
     <strong>Ingeniería de Software - 2025-1</strong><br>
-    <strong>Arquitecrua de Software Emergentes - SW81</strong><br>
-    <strong>Profesor: ----</strong><br>
+    <strong>Arquitecturas de Software Emergentes - SW81</strong><br>
+    <strong>Profesor: Royer Edelwer Rojas Malasquez</strong><br>
     <br>INFORME DE TRABAJO FINAL - TB1
 </div>
 
-<div style="text-align: center;">
+<div style="" text-align= center>
     <strong>Startup:LogiCore</strong><br>
     <strong>Producto:VeriMed</strong>
 </div>
 
-<div style="text-align: center;">
+<div style="" text-align= center>
     <h3>Team Members:</h3>
 </div>
-<div style="display: flex; justify-content: center;">
+<div display = flex text-align=center>
     <table>
         <tr>
-            <th style="text-align:center;">Member</th>
-            <th style="text-align:center;">Code</th>
+            <th style="" text-align= center>Member</th>
+            <th style="" text-align= center>Code</th>
         </tr>
         <tr>
             <td>Luna Morales, Gianfranco</td>
@@ -40,17 +40,17 @@
             <td>U20201c429</td>
         </tr>
         <tr>
-            <td>Frisancho Lévano, Sebastian Mathias Salomón</td>
-            <td>U202224392</td>
+            <td>---------</td>
+            <td>U------</td>
         </tr>
     </table>
 </div>
 <br>
-<div style="text-align: center;">
-    <strong>Abril, 2024</strong>
+<div style="" text-align= center>
+    <strong>Abril, 2025</strong>
 </div>
 
-<h1 style="text-align: center">Registro de versiones del Informe</h1>
+<h1 style="" text-align= center>Registro de versiones del Informe</h1>
 <table>
         <thead>
             <tr>
@@ -63,21 +63,9 @@
         <tbody>
             <tr>
                 <th>1.0</th>
-                <td>04/23/2024</td>
-                <td>Gianfranco Luna</td>
-                <td>Se agregó los puntos 3.1, 3.2, 3.3 y 3.4.</td>
-            </tr>
-            <tr>
-                <th>1.1</th>
-                <td>04/25/2024</td>
-                <td>Nicolás Zagal</td>
-                <td>Se desarrollaron los puntos 4.2 y 4.3</td>
-            </tr>
-            <tr>
-                <th>1.2</th>
-                <td>04/25/2024</td>
-                <td>Sebastian Frisancho</td>
-                <td>Se desarrollaron los puntos 4.1</td>
+                <td>24/04/2025</td>
+                <td>Todos</td>
+                <td>Se actualizó el reporte en GitHub para la entrega del TB1</td>
             </tr>
        </tbody>
 </table>
@@ -163,17 +151,15 @@
   </tr>
   <tr>
     <td>
-      <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </p>
+      <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
     </td>
     <td> 
-      <p><strong>TB1</strong></p>
-      <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó con mi comparñero con respecto a As Is para tener una mejor visión de los beneficios de utilizar la app.</p>
-      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega se mantuvieron comunicaciones constantes con el equipo de trabajo en función de alcanzar los objetivos planteados y retroalimentar los entregables de cada integrante. </p>
-      <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, me enfoqué en comunicar de forma clara y objetiva las decisiones estratégicas del diseño arquitectónico, considerando el perfil técnico y jerárquico de cada público. Esto me permitió asegurar que todos los involucrados entendieran la propuesta, sin importar su nivel de especialización.</p>
+      <b><strong>TB1</strong></b>
+      <b>Luna Morales, Gianfranco</b>
     </td>
     <td>
-      <p><strong>TB1</strong></p> 
-      <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
+      <b><strong>TB1</strong></b> 
+      <b>En conclusión</b>
     </td>
   </tr>
   <tr>
@@ -181,14 +167,12 @@
       <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
     </td>
     <td> 
-      <p><strong>TB1</strong></p>
-      <p><strong>Luna Morales, Gianfranco:</strong> Se comunicó con el grupo los puntos tratados del Capítulo III, para poseer una mejor visión en el desarrollo de los puntos consecuentes, como la elaboración C4.</p>
-      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega presente el event storming y los diagramas C4 de manera clara y estructurada al equipo de trabajo asegurando un claro entendimiento por parte de todos los miembros y fijar una línea de trabajo optima</p>
-        <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, cuidé que la redacción fuese precisa y accesible para públicos con distintos niveles de conocimiento técnico. Esta forma de escribir me permitió transmitir los resultados del proyecto con objetividad y transparencia, facilitando la comprensión del diseño propuesto por parte de los lectores con distintos niveles de conocimiento.</p>
+      <b><strong>TB1</strong></b>
+      <b>Luna Morales, Gianfranco</b>
     </td>
     <td>
-      <p><strong>TB1</strong></p> 
-      <p>En conclusión: Una comunicación con diferentes áreas del equipo permite un mejor entendimiento y desarrollo de los puntos del proyecto.</p>
+      <b><strong>TB1</strong></b> 
+      <b>En conclusión</b>
     </td>
   </tr>
 </table>
@@ -196,6 +180,8 @@
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+Somos ‘LogiCore’, un startup innovador enfocado en crear soluciones de software basadas en arquitecturas y tecnologías de última generación. Nuestro objetivo es garantizar la máxima seguridad en la distribución de medicamentos para hospitales y farmacias, ofreciendo una plataforma tecnológica integral, robusta y fácil de implementar.
+Actualmente, estamos aplicando los conocimientos adquiridos en el curso Arquitecturas de Software Emergentes para optimizar nuestro producto, el cual presentaremos como proyecto final. Esta iniciativa no solo nos permitirá validar nuestra solución, sino también perfeccionar nuestras habilidades en el desarrollo de tecnologías innovadoras.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 <table>
@@ -210,7 +196,7 @@
       <p>Conocimientos y Habilidades: [<br>
       Soy estudiante de la carrera de ingeniería de Software. Me gusta la tecnología y como esta misma ha cambiado significativamente en mi tiempo de vida. Me considero alguien responsable y comprometido con los proyectos; Trato de estar a la par con mis compañeros y compartir con ellos mis conocimientos en ciertos temas específicos.]</p>
     </td>
-    <td><img src=""  alt=" " width="50%"></td>
+    <td><img src="https://res.cloudinary.com/dydklnicb/image/upload/v1745581562/foto_carlos.jpg"  alt="foto-carlos" width="50%"></td>
   </tr>
   <tr>
     <td>
@@ -225,11 +211,11 @@
   <tr>
     <td>
       <h2>[Zagal Vallejo, Nicolás ]</h2>
-      <p>Código: [u20201c429 6]</p>
+      <p>Código: [u20201c4296]</p>
       <p>Conocimientos y Habilidades: [<br>
         Estudiante universitario de la carreta de ingeniería de Software. Soy una persona proactiva que buscará siempre el mejor resultado del projecto, domino diversos lenguajes y frameworks como Vue.js, java, bootstrap, golang y flutter]</p>
     </td>
-<td><img src="static/img/Team%20Members/NicolasZagal.jpg" alt=" " width="1200"></td>
+<td><img src="static/img/Team%20Members/NicolasZagal.jpg" alt="foto-nicolas" width="1200"></td>
   </tr>
  <tr>
     <td>
@@ -239,38 +225,63 @@
     Me gusta observar el comportamiento de las personas para así crear un ambiente cómodo y activo; soy práctico y racional para los percances que puedan surgir. Si bien poseo conocimientos básicos en la programación en el lenguaje C + +, aportaré en lo que pueda para realizar con éxito la idea planteada.]</p>
     </td>
 
-<td><img src="static/img/Chapter 1/Gianfranco.jpg" width="1000" height="300" style="border-radius: 50%;"></img></td>
+<td><img src="static/img/Chapter 1/Gianfranco.jpg"width="1000" height="300" style="border-radius: 50%;"></img></td>
 
   </tr>
  <tr>
     <td>
-      <h2>[Frisancho Lévano, Sebastian]</h2>
-      <p>Código: [u202224392]</p>
-      <p>Conocimientos y Habilidades: [<br>
-          Estudiante de 8vo ciclo de la carrera de ingeniería de software. Soy una persona perseverante con mis metas propuestas, siempre busco la manera de sacar adelante los objetivos propuestos de los proyectos. Me gusta trabajar en entornos didactos y colaborativos, sin temor a expresar mis ideas o preocupaciones a lo largo de los proyectos. Me gusta más lo que son aplicaciones móviles y frontend web.]</p>
+      <h2>[------]</h2>
+      <p>Código: [u------]</p>
+      <p>Conocimientos y Habilidades: [-------]</p>
     </td>
-<td><img src="static/img/Team Members/Alumno.jpg" width="1200" style="border-radius: 50%;"></img></td>
+<td><img src="" alt=" " width="50%"></td>
   </tr>
 </table>
 
 
 ## 1.2.  Solution Profile
-### 1.2.1. Antecedentes y problemática
+VeriMed es una plataforma innovadora que combina blockchain y tecnología NFT para erradicar la falsificación de medicamentos. Cada lote farmacéutico se registra como un token único en la cadena de bloques, vinculado a un QR escaneable que permite a pacientes, farmacias y reguladores verificar en segundos el origen, autenticidad y recorrido completo del medicamento. Frente a sistemas tradicionales opacos y manipulables, VeriMed ofrece trazabilidad inmutable, seguridad descentralizada y una interfaz intuitiva, garantizando que ningún fármaco falsificado llegue a las manos del consumidor.
 
+### 1.2.1. Antecedentes y problemática
+La falsificación de medicamentos es una crisis global que pone en riesgo millones de vidas y representa pérdidas económicas millonarias. Según la OMS, 1 de cada 10 medicamentos en países en desarrollo es falsificado, mientras que sistemas tradicionales de serialización (como códigos de barras) resultan insuficientes ante redes criminales sofisticadas. VeriMed surge como respuesta a este desafío, aprovechando el potencial de blockchain y NFTs para crear una trazabilidad inquebrantable desde el laboratorio hasta el paciente.
+
+| What	| Who	| Where |	When |	Why |
+| ----- | ---- | ------ | ------- | ---- |
+| Medicamentos falsificados o adulterados que ingresan a la cadena de suministro, representando ~$200 mil millones anuales (Interpol).	| Afectados: Pacientes (riesgo de salud), farmacias (reputación), laboratorios (pérdidas económicas), gobiernos (regulación fallida). Responsables: Redes criminales, distribuidores ilegales. |	Países en desarrollo (Asia, África, Latinoamérica) son los más vulnerables, pero el problema existe incluso en mercados regulados (EE. UU./UE). |	Crisis en aumento: La OMS reporta un incremento del 30% en incautaciones de fármacos falsos desde 2020 (post-pandemia).	| Sistemas actuales son centralizados, manipulables y no permiten verificación en tiempo real por parte del usuario final. |
+
+| How |	How Much |
+| --- | ----- |
+| Falsificadores replican empaques, adulteran principios activos o roban lotes genuinos para revenderlos en mercados paralelos. |	**Salud:** 500,000 muertes anuales por medicamentos falsos (Universidad de Edinburgh). **Económico:** Laboratorios pierden hasta 15% de sus ingresos por falsificación. |
 
 ### 1.2.2. Lean UX Process. 
 #### 1.2.2.1. Lean UX Problem Statements
+La falsificación de medicamentos y la opacidad en la cadena de suministro exponen a pacientes a riesgos graves de salud, generan pérdidas millonarias a laboratorios y dificultan la acción regulatoria. Los sistemas actuales (códigos de barras, bases de datos centralizadas) no ofrecen trazabilidad en tiempo real, autenticación infalsificable ni accesibilidad para el usuario final.
 
 #### 1.2.2.2. Lean UX Assumptions.
+**User Assumptions:** <br>
+•	Pacientes confiarán más en medicamentos con historial verificable. <br>
+•	Farmacias preferirán proveedores que usen VeriMed para evitar riesgos legales. <br>
+**Business Assumptions:** <br>
+•	Laboratorios pagarán por una solución que reduzca falsificaciones y proteja su marca. <br>
+•	Reguladores adoptarán VeriMed si cumple estándares globales (ej.: FDA, EMA). <br>
+**Features:** <br>
+•	Blockchain/NFT es escalable para millones de transacciones de lotes. <br>
+•	Los usuarios (pacientes/farmacias) escanearán QR si la app es intuitiva. <br>
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-
+**Hipótesis 1:** "Si aseguramos la autenticidad de los medicamentos mediante NFTs + QR, reduciremos un 30% los incidentes por falsificaciones reportados por laboratorios en 12 meses." <br>
+**Hipótesis 2:** "Si la aplicación muestra el historial de distribución de un medicamento en menos de 5 segundos, el 70% de los pacientes la usará recurrentemente." <br>
 
 #### 1.2.2.4. Lean UX Canvas
-
+<p>
+    <img src="https://res.cloudinary.com/dydklnicb/image/upload/v1745634894/image_2025-04-25_213451659_k23udp.png" alt="leanux-canvas" width="850"
+</p>
+    
 ## 1.3.  Segmentos objetivo
 
-Los segmentos objetivos son los siguientes:
+Los segmentos objetivos son los siguientes:<br>
+•	Pacientes que consumen medicamentos. <br>
+•	Laboratorios que manufacturan los medicamentos.<br>
 
 # Capítulo II: Requirements Elicitation & Analysis 
 
