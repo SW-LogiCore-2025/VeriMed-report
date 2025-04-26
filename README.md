@@ -68,25 +68,25 @@
                 <td>Se agregó los puntos del capitulo I.</td>
             </tr>
             <tr>
-                <th>1.0</th>
+                <th>1.1</th>
                 <td>04/23/2024</td>
                 <td>Jeferson Cabrera</td>
                 <td>Se agregó todos los puntos del capitulo II del informe.</td>
             </tr>
             <tr>
-                <th>1.0</th>
+                <th>1.2</th>
                 <td>04/23/2024</td>
                 <td>Gianfranco Luna</td>
                 <td>Se agregó los puntos 3.1, 3.2, 3.3 y 3.4.</td>
             </tr>
             <tr>
-                <th>1.1</th>
+                <th>1.3</th>
                 <td>04/25/2024</td>
                 <td>Nicolás Zagal</td>
                 <td>Se desarrollaron los puntos 4.2 y 4.3</td>
             </tr>
             <tr>
-                <th>1.2</th>
+                <th>1.4</th>
                 <td>04/25/2024</td>
                 <td>Sebastian Frisancho</td>
                 <td>Se desarrollaron los puntos 4.1</td>
