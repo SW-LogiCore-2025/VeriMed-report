@@ -1048,11 +1048,322 @@ Identificación de funcionalidades clave: Identificamos las funcionalidades bás
 ### 4.3.3. Software Architecture Container Level Diagrams.
 <img src="static/img/Chapter%204/ContainerDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
-### 4.3.4. Software Architecture Component Level Diagrams.
+### 4.3.4. Software Architecture Deployment Diagrams
+<img src="static/img/Chapter%204/DeploymentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+
+# Capítulo V: Tactical-Level Software Design
+## 5.1. Bounded Context: Factory Management
+### 5.1.1. Domain Layer.
+### 5.1.2. Interface Layer.
+### 5.1.3. Application Layer.
+### 5.1.4. Infrastructure Layer.
+### 5.1.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.1.7.1. Bounded Context Domain Layer Class Diagrams.
+#### 5.1.7.2. Bounded Context Database Design Diagram.
+
+
+
+## 5.2. Bounded Context: Business Transaction Management
+
+### Descripción del Bounded Context
+
+Este bounded context está enfocado en la gestión de transacciones comerciales que ocurren durante el ciclo de vida de un medicamento, desde su fabricación hasta la llegada al consumidor final. En este sistema, cada medicamento es representado por un NFT único, lo que permite su trazabilidad a través de una red blockchain pública o privada, garantizando la inmutabilidad y transparencia de los datos. Este contexto encapsula las reglas de negocio relacionadas con la verificación de autenticidad, registro de eventos de transferencia, participación de actores validados y la consultabilidad de la cadena de suministro a través de interfaces confiables como aplicaciones móviles, escaneo QR y dashboards administrativos.
+
+
+
+### 5.2.1. Domain Layer
+
+#### Entities
+
+**Medicamento**
+
+* **Descripción**: Representa un fármaco dentro del sistema de trazabilidad. Cada medicamento está vinculado a un NFT que certifica su autenticidad y permite rastrear su origen y cadena de distribución. La entidad almacena información crítica como fechas de fabricación y vencimiento, así como su fabricante.
+* **Atributos**:
+
+  * `id`: Identificador único del medicamento.
+  * `nombre`: Nombre comercial.
+  * `lote`: Código del lote de producción.
+  * `fechaFabricacion`: Fecha de producción del fármaco.
+  * `fechaVencimiento`: Fecha límite de consumo.
+  * `tokenId`: Identificador del NFT que representa el medicamento en blockchain.
+  * `fabricante`: Nombre del laboratorio o empresa productora.
+
+**Transaccion**
+
+* **Descripción**: Representa un evento dentro de la cadena de suministro del medicamento, como puede ser la transferencia entre un distribuidor y una farmacia. Cada transacción queda registrada en la blockchain para asegurar su veracidad.
+* **Atributos**:
+
+  * `id`: Identificador único de la transacción.
+  * `medicamentoId`: Relación con el medicamento asociado.
+  * `origen`: Actor que envía el medicamento.
+  * `destino`: Actor que lo recibe.
+  * `fecha`: Fecha en que se registró el evento.
+  * `hashBlockchain`: Hash del bloque que contiene la transacción.
+
+**Participante**
+
+* **Descripción**: Representa a los actores dentro del ecosistema de trazabilidad (fabricantes, distribuidores, farmacias, consumidores). Cada uno debe estar validado previamente para poder registrar o recibir medicamentos.
+* **Atributos**:
+
+  * `id`: Identificador único.
+  * `nombre`: Nombre del participante o entidad.
+  * `rol`: Rol en la cadena (fabricante, distribuidor, etc.).
+  * `clavePublica`: Dirección blockchain asociada para firmar transacciones.
+
+
+
+#### Value Objects
+
+**EstadoTransaccion**
+
+* **Descripción**: Representa el estado actual de una transacción (pendiente, confirmada, rechazada). Asegura que solo se usen valores válidos según las reglas del sistema.
+* **Atributos**:
+
+  * `estado`: Valor textual validado por reglas del dominio.
+
+**Ubicacion**
+
+* **Descripción**: Representa la ubicación geográfica asociada a un participante en el momento de una transacción.
+* **Atributos**:
+
+  * `ciudad`, `pais`, `coordenadas`.
+
+
+
+#### Domain Services
+
+**TrazabilidadDomainService**
+
+* **Descripción**: Encapsula la lógica de negocio necesaria para validar las condiciones de la cadena de suministro y gestionar la emisión y vinculación de NFTs a los medicamentos. También controla la creación de registros blockchain asociados a los eventos.
+* **Métodos**:
+
+  * `registrarTransaccion(medicamentoId, origen, destino)`
+  * `generarNFT(Medicamento medicamento)`
+  * `validarParticipante(Participante participante)`
+
+
+
+#### Aggregates y Aggregate Root
+
+**MedicamentoAggregateRoot**
+
+* **Justificación**: Controla toda la lógica de negocio relacionada con la trazabilidad de un medicamento, incluyendo la gestión de su NFT, sus transacciones y la validación de la cadena de distribución. Centraliza la coherencia de las operaciones para evitar inconsistencias en el dominio.
+
+
+### Repositories (Interfaces)
+
+**MedicamentoRepository**
+
+* **Descripción**: Interfaz responsable de las operaciones de persistencia y recuperación de medicamentos. Permite almacenar nuevos medicamentos, actualizar su información y consultarlos mediante su identificador único.
+* **Métodos**:
+
+  * `findById(String id)`: Busca un medicamento por su ID único.
+  * `save(Medicamento medicamento)`: Guarda un nuevo medicamento o actualiza uno existente.
+  * `delete(String id)`: Elimina un medicamento del sistema usando su ID.
+
+
+
+**TransaccionRepository**
+
+* **Descripción**: Interfaz que maneja el acceso a las transacciones registradas en la cadena de suministro. Permite almacenar eventos de transferencia, buscarlos por identificador o por medicamento.
+* **Métodos**:
+
+  * `findById(String id)`: Recupera una transacción específica por su identificador único.
+  * `save(Transaccion transaccion)`: Guarda una nueva transacción o actualiza una existente.
+  * `findByMedicamento(String medicamentoId)`: Lista todas las transacciones relacionadas con un medicamento específico.
+
+
+
+**ParticipanteRepository**
+
+* **Descripción**: Interfaz que gestiona la persistencia de los actores involucrados en el sistema (fabricantes, distribuidores, farmacias, etc.). Facilita su registro, validación y consulta.
+* **Métodos**:
+
+  * `findById(String id)`: Busca un participante por su identificador único.
+  * `save(Participante participante)`: Guarda un nuevo participante o actualiza su información.
+  * `findByRol(String rol)`: Lista todos los participantes que desempeñan un rol específico en la cadena de suministro.
+
+
+
+### 5.2.2. Interface Layer
+
+#### Controllers
+
+**MedicamentoController**
+
+* **Descripción**: Expone endpoints para registrar y consultar medicamentos. Genera automáticamente el NFT correspondiente al ser creado el medicamento.
+* **Métodos**:
+
+  * `registrarMedicamento(Medicamento medicamento)`
+  * `obtenerMedicamento(String id)`
+  * `listarMedicamentosPorFabricante(String fabricante)`
+
+**TransaccionController**
+
+* **Descripción**: Controlador que permite registrar transferencias del medicamento entre participantes y consultar la trazabilidad histórica de cada token/NFT.
+* **Métodos**:
+
+  * `registrarTransaccion(Transaccion transaccion)`
+  * `obtenerTransaccionesPorMedicamento(String medicamentoId)`
+  * `consultarTrazabilidadPorToken(String tokenId)`
+
+**ParticipanteController**
+
+* **Descripción**: Controlador para registrar nuevos actores en la red, validarlos y listar participantes activos según su rol.
+* **Métodos**:
+
+  * `registrarParticipante(Participante participante)`
+  * `listarParticipantes()`
+  * `validarParticipante(String id)`
+
+
+
+### 5.2.3. Application Layer
+
+### Command Handlers
+
+**RegistrarMedicamentoHandler**
+
+* **Descripción**: Maneja el comando para registrar un nuevo medicamento, incluyendo la emisión de su NFT y el almacenamiento en el sistema.
+* **Métodos**:
+
+  * `handle(RegistrarMedicamentoCommand command)`: Valida los datos del medicamento, genera el NFT correspondiente y lo guarda en el repositorio.
+
+**RegistrarTransaccionHandler**
+
+* **Descripción**: Maneja el comando para registrar una nueva transacción de transferencia del medicamento, verificando que los actores estén autorizados y registrando el evento en la blockchain.
+* **Métodos**:
+
+  * `handle(RegistrarTransaccionCommand command)`: Valida el flujo logístico, actualiza el historial y registra el hash en blockchain.
+
+**RegistrarParticipanteHandler**
+
+* **Descripción**: Maneja el comando para registrar un nuevo participante en la red de trazabilidad.
+* **Métodos**:
+
+  * `handle(RegistrarParticipanteCommand command)`: Verifica los datos del participante, su rol, y lo añade al repositorio de actores autorizados.
+
+
+
+### Event Handlers
+
+**MedicamentoRegistradoEventHandler**
+
+* **Descripción**: Maneja los eventos que se disparan cuando un nuevo medicamento ha sido registrado exitosamente.
+* **Métodos**:
+
+  * `handle(MedicamentoRegistradoEvent event)`: Ejecuta acciones como notificar al fabricante o iniciar un proceso de auditoría.
+
+**TransaccionRegistradaEventHandler**
+
+* **Descripción**: Maneja el evento de una transacción registrada exitosamente, como actualizar la trazabilidad visible por los usuarios.
+* **Métodos**:
+
+  * `handle(TransaccionRegistradaEvent event)`: Propaga la información para mantener la sincronización entre los nodos del sistema.
+
+
+
+### Query Handlers
+
+**ObtenerTrazabilidadHandler**
+
+* **Descripción**: Maneja las consultas para recuperar el historial completo de transacciones de un medicamento.
+* **Métodos**:
+
+  * `handle(ObtenerTrazabilidadQuery query)`: Devuelve la secuencia de transferencias y estados desde la creación del medicamento hasta su situación actual.
+
+**ObtenerParticipanteHandler**
+
+* **Descripción**: Maneja la consulta para obtener los detalles de un participante según su rol o identificador.
+* **Métodos**:
+
+  * `handle(ObtenerParticipanteQuery query)`: Devuelve los datos del participante y su estado en la red.
+
+**ObtenerMedicamentoHandler**
+
+* **Descripción**: Maneja la consulta para obtener los datos de un medicamento por su ID o token.
+* **Métodos**:
+
+  * `handle(ObtenerMedicamentoQuery query)`: Devuelve los datos básicos del medicamento y su información de autenticidad.
+
+
+
+### 5.2.4. Infrastructure Layer
+
+#### Repositories (Implementaciones)
+
+**MedicamentoRepositoryImpl**
+
+* **Descripción**: Implementación concreta de `MedicamentoRepository`, encargada de almacenar y recuperar medicamentos desde la base de datos del sistema.
+* **Métodos**:
+
+  * `findById(String id)`: Recupera un medicamento por su ID.
+  * `save(Medicamento medicamento)`: Guarda o actualiza un medicamento en la base de datos.
+  * `delete(String id)`: Elimina un medicamento del sistema.
+
+
+**TransaccionRepositoryImpl**
+
+* **Descripción**: Implementación de `TransaccionRepository`, define cómo se almacenan y consultan las transacciones comerciales en la base de datos.
+* **Métodos**:
+
+  * `findById(String id)`: Recupera una transacción por su ID.
+  * `save(Transaccion transaccion)`: Registra o actualiza una transacción.
+  * `findByMedicamento(String medicamentoId)`: Lista todas las transacciones relacionadas a un medicamento específico.
+
+
+
+**ParticipanteRepositoryImpl**
+
+* **Descripción**: Implementación de `ParticipanteRepository`, define cómo se persisten y consultan los actores que forman parte de la cadena de distribución.
+* **Métodos**:
+
+  * `findById(String id)`: Recupera un participante por su identificador.
+  * `save(Participante participante)`: Registra o actualiza un participante en la base de datos.
+  * `findByRol(String rol)`: Devuelve una lista de participantes según su rol (ej. “farmacia”).
+
+
+
+**BlockchainAdapter**
+
+* **Descripción**: Adaptador que interactúa directamente con la blockchain para registrar NFTs y transacciones.
+* **Métodos**:
+
+  * `emitirToken(Medicamento medicamento)`: Llama al contrato inteligente para emitir un nuevo NFT.
+  * `registrarEvento(String hash, Transaccion transaccion)`: Envía la información de la transacción a la cadena.
+  * `verificarToken(String tokenId)`: Consulta la validez y autenticidad del NFT en la blockchain.
+
+
+### 5.2.6. Bounded Context Software Architecture Component Level Diagrams.
 <img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
-### 4.3.5. Software Architecture Deployment Diagrams
-<img src="static/img/Chapter%204/DeploymentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
+<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
+
+#### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
+#### 5.2.7.2. Bounded Context Database Design Diagram.
+
+
+## 5.3. Bounded Context: Traceability Verification
+### 5.3.1. Domain Layer.
+### 5.3.2. Interface Layer.
+### 5.3.3. Application Layer.
+### 5.3.4. Infrastructure Layer.
+### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.3.7.1. Bounded Context Domain Layer Class Diagrams.
+#### 5.3.7.2. Bounded Context Database Design Diagram.
+
+## 5.4. Bounded Context: Product Report & Audit
+### 5.4.1. Domain Layer.
+### 5.4.2. Interface Layer.
+### 5.4.3. Application Layer.
+### 5.4.4. Infrastructure Layer.
+### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.4.7.1. Bounded Context Domain Layer Class Diagrams.
+#### 5.4.7.2. Bounded Context Database Design Diagram.
 
 ## Capítulo VI: Solution UX Design
 
