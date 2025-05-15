@@ -1028,10 +1028,7 @@ Identificación de funcionalidades clave: Identificamos las funcionalidades bás
 ### 4.3.3. Software Architecture Container Level Diagrams.
 <img src="static/img/Chapter%204/ContainerDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
-### 4.3.4. Software Architecture Component Level Diagrams.
-<img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
-
-### 4.3.5. Software Architecture Deployment Diagrams
+### 4.3.4. Software Architecture Deployment Diagrams
 <img src="static/img/Chapter%204/DeploymentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
 # Capítulo V: Tactical-Level Software Design
@@ -1051,6 +1048,8 @@ Identificación de funcionalidades clave: Identificamos las funcionalidades bás
 ### 5.2.3. Application Layer.
 ### 5.2.4. Infrastructure Layer.
 ### 5.2.6. Bounded Context Software Architecture Component Level Diagrams.
+<img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
+
 ### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
 #### 5.2.7.2. Bounded Context Database Design Diagram.
