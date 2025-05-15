@@ -200,6 +200,8 @@
       <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, me enfoqué en comunicar de forma clara y objetiva las decisiones estratégicas del diseño arquitectónico, considerando el perfil técnico y jerárquico de cada público. Esto me permitió asegurar que todos los involucrados entendieran la propuesta, sin importar su nivel de especialización.</p>
         <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo del Capítulo 1 del informe, me comuniqué con mis compañeros de equipo para asentar la idea principal del proyecto y tener una visión clara de lo que tenemos que hace para llevar nuestra idea a los usuarios.</p>
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del As-Is Scenario Mapping, comuniqué de manera clara los procesos actuales y sus posibles mejoras, adaptándome a los niveles técnicos del equipo. También presenté perfiles de usuarios estructurados mediante las User Personas, alineando al equipo con la visión del usuario final.</p>
+      <p><strong>TP</strong></p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Al trabajar en los lineamientos de estilo y la arquitectura de información, cuidé que el diseño de la interfaz y la estructura de contenidos respondieran a criterios de claridad visual y usabilidad. Esto facilitó la comprensión tanto para usuarios técnicos como no técnicos, reflejando una comunicación efectiva a distintos niveles de especialización.</p>
     </td>
     <td>
       <p><strong>TB1</strong></p> 
@@ -217,6 +219,8 @@
       <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, cuidé que la redacción fuese precisa y accesible para públicos con distintos niveles de conocimiento técnico. Esta forma de escribir me permitió transmitir los resultados del proyecto con objetividad y transparencia, facilitando la comprensión del diseño propuesto por parte de los lectores con distintos niveles de conocimiento.</p>
         <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo de la primera parte del proyecto, comuniqué mis ideas a mis compañeros y también rercibí las suyas para definir bien nuestro alcance y poder dimensionar nuestro proyecto a las fechas límite ya establecidas.</p>
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del proyecto, comuniqué de manera clara y objetiva las ideas y resultados obtenidos, adaptándome a los diferentes niveles de especialización y jerarquía del público. Esto incluyó la presentación de análisis, propuestas y decisiones clave, asegurando la comprensión y alineación de todos los involucrados en el marco del desarrollo del proyecto.</p>
+        <p><strong>TP</strong></p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo 6.4, al diseñar y documentar los wireframes y wireflows de la aplicación, me aseguré de representar visualmente cada paso del flujo del usuario de forma intuitiva. Esta representación gráfica no solo mejora la comunicación con diseñadores y desarrolladores, sino que también permite a stakeholders sin perfil técnico comprender fácilmente la funcionalidad y experiencia esperada.</p>
     </td>
     <td>
       <p><strong>TB1</strong></p> 
