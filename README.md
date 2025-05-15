@@ -1319,6 +1319,8 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
 <img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
 ### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
+<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
+
 #### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
 #### 5.2.7.2. Bounded Context Database Design Diagram.
 
