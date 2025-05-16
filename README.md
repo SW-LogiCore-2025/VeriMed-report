@@ -200,10 +200,10 @@
       <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, me enfoqué en comunicar de forma clara y objetiva las decisiones estratégicas del diseño arquitectónico, considerando el perfil técnico y jerárquico de cada público. Esto me permitió asegurar que todos los involucrados entendieran la propuesta, sin importar su nivel de especialización.</p>
         <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo del Capítulo 1 del informe, me comuniqué con mis compañeros de equipo para asentar la idea principal del proyecto y tener una visión clara de lo que tenemos que hace para llevar nuestra idea a los usuarios.</p>
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del As-Is Scenario Mapping, comuniqué de manera clara los procesos actuales y sus posibles mejoras, adaptándome a los niveles técnicos del equipo. También presenté perfiles de usuarios estructurados mediante las User Personas, alineando al equipo con la visión del usuario final.</p>
+ <p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
     </td>
     <td>
-      <p><strong>TP</strong></p> 
-     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
       <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
     </td>
   </tr>
