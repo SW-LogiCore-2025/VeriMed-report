@@ -63,33 +63,39 @@
         <tbody>
             <tr>
                 <th>1.0</th>
-                <td>04/23/2024</td>
+                <td>04/23/2025</td>
                 <td>Carlos Pingus</td>
                 <td>Se agregó los puntos del capitulo I.</td>
             </tr>
             <tr>
                 <th>1.1</th>
-                <td>04/23/2024</td>
+                <td>04/23/2025</td>
                 <td>Jeferson Cabrera</td>
                 <td>Se agregó todos los puntos del capitulo II del informe.</td>
             </tr>
             <tr>
                 <th>1.2</th>
-                <td>04/23/2024</td>
+                <td>04/23/2025</td>
                 <td>Gianfranco Luna</td>
                 <td>Se agregó los puntos 3.1, 3.2, 3.3 y 3.4.</td>
             </tr>
             <tr>
                 <th>1.3</th>
-                <td>04/25/2024</td>
+                <td>04/25/2025</td>
                 <td>Nicolás Zagal</td>
                 <td>Se desarrollaron los puntos 4.2 y 4.3</td>
             </tr>
             <tr>
                 <th>1.4</th>
-                <td>04/25/2024</td>
+                <td>04/25/2025</td>
                 <td>Sebastian Frisancho</td>
                 <td>Se desarrollaron los puntos 4.1</td>
+            </tr>
+             <tr>
+                <th>1.5</th>
+                <td>16/04/2025</td>
+                <td>Sebastian Frisancho</td>
+                <td>Se desarrollaron los puntos 5 y 6, actualización de unidades anteriores</td>
             </tr>
        </tbody>
 </table>
