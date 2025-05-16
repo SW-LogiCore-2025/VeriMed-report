@@ -204,7 +204,6 @@
  <p><strong>TP</strong></p> 
      <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
         <p><strong>Frisancho Lévano, Sebastian:</strong> Al trabajar en los lineamientos de estilo y la arquitectura de información, cuidé que el diseño de la interfaz y la estructura de contenidos respondieran a criterios de claridad visual y usabilidad. Esto facilitó la comprensión tanto para usuarios técnicos como no técnicos, reflejando una comunicación efectiva a distintos niveles de especialización.</p>
-
     </td>
     <td>
       <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
