@@ -95,8 +95,9 @@
 </table>
 
 <h1 style="text-align: center">Registro de versiones del Informe</h1>
-<img src="static/img/Chapter1/Commits.png" alt="Commits">
-<img src="static/img/Chapter1/Commits_2.png" alt="Commits2">
+
+<img src="static/img/Chapter 1/Commits.png" alt="Commits">
+<img src="static/img/Chapter 1/Commits_2.png" alt="Commits2">
 
 <br><br>
             
