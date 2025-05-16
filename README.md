@@ -1115,8 +1115,35 @@ La navegación dentro de la aplicación se diseñó para ser intuitiva y centrad
 Este enfoque asegura que los usuarios puedan completar sus tareas con una cantidad mínima de pasos y sin confusión, incluso si es su primer uso de la app.
 
 ## 6.3. Landing Page UI Design
+
+<img src="static/Chapter 6/Applications/UI_Design.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Tipografia_1.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Tipografia_2.png" width="1200" style="border-radius: 16px;">
+
+
+
 ### 6.3.1. Landing Page Wireframe
+
+Se presenta la hoja de wireframes de Landing Page.
+Se opto por el uso de una escala de grises en representación de los colores faltantes, pero aun haciendo distinción sobre lo que se realizara en un futuro.
+
+<img src="static/Chapter 6/Applications/Wireframe_1.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Wireframe_2.png" width="1200" style="border-radius: 16px;">
+
 ### 6.3.2. Landing Page Mock-up
+
+Se presenta la hoja de mockups del Landing Page.
+Se garantizo el uso de la guía de estilos previamente planteada y se siguió la maquetación desenada en los wireframes.
+
+<img src="static/Chapter 6/Applications/Mockup_1.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Mockup_2.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Mockup_3.png" width="1200" style="border-radius: 16px;">
+
 ## 6.4. Applications UX/UI Design
 
 ### 6.4.1. Applications Wireframes
