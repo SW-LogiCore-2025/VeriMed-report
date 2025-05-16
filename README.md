@@ -1,4 +1,4 @@
-# <center>COURSE PROJECT</center>
+![image](https://github.com/user-attachments/assets/a1adb254-8d35-4b80-b69c-85616aea3681)# <center>COURSE PROJECT</center>
 
 <div style="text-align: center;">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -1143,6 +1143,8 @@ Se garantizo el uso de la guía de estilos previamente planteada y se siguió la
 <img src="static/Chapter 6/Applications/Mockup_2.png" width="1200" style="border-radius: 16px;">
 
 <img src="static/Chapter 6/Applications/Mockup_3.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Mockup_4.png" width="1200" style="border-radius: 16px;">
 
 ## 6.4. Applications UX/UI Design
 
