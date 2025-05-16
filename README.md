@@ -1177,7 +1177,9 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 <img src="static/Chapter 6/Applications/AppWireflow.png" width="1200" style="border-radius: 16px;">
 
 ### 6.4.3. Applications Mock-ups
-## 6.5. Applications Prototyping
+
+<img src="static/Chapter 6/Applications/Application_Mock_up.png" width="1200" style="border-radius: 16px;">
+
 
 # Conclusiones
 # Bibliografía
