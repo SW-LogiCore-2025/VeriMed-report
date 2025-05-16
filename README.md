@@ -94,7 +94,9 @@
        </tbody>
 </table>
 
-<h1 style="text-align: center">Registro de versiones del Informe</h1>
+<h1 style="text-align: center">Project Report Collaboration Insights</h1>
+
+Se desarrollaron las secciones respectivas, elavoraciones principales: Event Storming, Landing page, Web Applications, Users Acceptances.
 
 <img src="static/img/Chapter 1/Commits.png" alt="Commits">
 <img src="static/img/Chapter 1/Commits_2.png" alt="Commits2">
