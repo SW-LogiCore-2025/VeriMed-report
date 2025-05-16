@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a1adb254-8d35-4b80-b69c-85616aea3681)# <center>COURSE PROJECT</center>
+# <center>COURSE PROJECT</center>
 
 <div style="text-align: center;">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
