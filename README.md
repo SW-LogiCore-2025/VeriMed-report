@@ -202,7 +202,8 @@
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del As-Is Scenario Mapping, comuniqué de manera clara los procesos actuales y sus posibles mejoras, adaptándome a los niveles técnicos del equipo. También presenté perfiles de usuarios estructurados mediante las User Personas, alineando al equipo con la visión del usuario final.</p>
     </td>
     <td>
-      <p><strong>TB1</strong></p> 
+      <p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
       <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
     </td>
   </tr>
@@ -217,6 +218,8 @@
       <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, cuidé que la redacción fuese precisa y accesible para públicos con distintos niveles de conocimiento técnico. Esta forma de escribir me permitió transmitir los resultados del proyecto con objetividad y transparencia, facilitando la comprensión del diseño propuesto por parte de los lectores con distintos niveles de conocimiento.</p>
         <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo de la primera parte del proyecto, comuniqué mis ideas a mis compañeros y también rercibí las suyas para definir bien nuestro alcance y poder dimensionar nuestro proyecto a las fechas límite ya establecidas.</p>
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del proyecto, comuniqué de manera clara y objetiva las ideas y resultados obtenidos, adaptándome a los diferentes niveles de especialización y jerarquía del público. Esto incluyó la presentación de análisis, propuestas y decisiones clave, asegurando la comprensión y alineación de todos los involucrados en el marco del desarrollo del proyecto.</p>
+<p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
     </td>
     <td>
       <p><strong>TB1</strong></p> 
