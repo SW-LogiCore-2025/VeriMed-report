@@ -1275,8 +1275,6 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
   * `listarParticipantes()`
   * `validarParticipante(String id)`
 
-
-
 ### 5.2.3. Application Layer
 
 ### Command Handlers
@@ -1405,24 +1403,206 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
 
 
 ## 5.3. Bounded Context: Traceability Verification
-### 5.3.1. Domain Layer.
-### 5.3.2. Interface Layer.
-### 5.3.3. Application Layer.
-### 5.3.4. Infrastructure Layer.
+
+Este contexto se especializa en **validar la autenticidad y el historial completo de un medicamento** a lo largo de la cadena de suministro, utilizando blockchain y NFTs. Su objetivo es proporcionar:  
+- **Verificación en tiempo real**: Mediante escaneo de QR o consulta manual.  
+- **Alertas tempranas**: Detección de lotes falsificados o desviaciones en la distribución.  
+- **Interfaces accesibles**: Para pacientes (app móvil), reguladores (dashboard) y farmacias (API).  
+
+---
+
+### 5.3.1 Domain Layer  
+#### **Entities**  
+**1. Verificacion (Aggregate Root)**  
+- **Descripción**: Agrega todas las operaciones de validación de un medicamento. Centraliza la coherencia entre el NFT, las transacciones y los participantes.  
+- **Atributos**:  
+  - `id`: Identificador único de la verificación.  
+  - `medicamentoId`: Relación con el medicamento verificado.  
+  - `resultado`: Auténtico/Falsificado/EnInvestigación.  
+  - `fechaVerificacion`: Fecha y hora de la consulta.  
+
+**2. Alerta**  
+- **Descripción**: Notifica sobre irregularidades (ej.: NFT duplicado, transacción no autorizada).  
+- **Atributos**:  
+  - `tipo`: Robo, Falsificación, Desvío.  
+  - `severidad`: Baja/Media/Alta.  
+  - `participanteNotificado`: Actor que recibió la alerta (ej.: farmacia).  
+
+**3. Auditoria**  
+- **Descripción**: Registro histórico de verificaciones para análisis forense.  
+- **Atributos**:  
+  - `auditorId`: Identificador del regulador o sistema automático.  
+  - `hallazgos`: Resumen de anomalías detectadas.  
+
+---
+
+#### **Value Objects**  
+- **ResultadoVerificacion**: Estructura con detalles de la validación (ej.: `{ autenticidad: true, motivo: "NFT válido" }`).  
+- **CredencialesVerificador**: Permisos del usuario que realiza la consulta (ej.: paciente, inspector sanitario).  
+
+---
+
+#### **Domain Services**  
+**1. VerificacionService**  
+- **Métodos**:  
+  - `verificarMedicamento(tokenId)`: Consulta blockchain y repositorios para validar autenticidad.  
+  - `generarAlerta(medicamentoId, motivo)`: Crea alertas si el NFT está comprometido.  
+
+**2. AuditoriaService**  
+- **Métodos**:  
+  - `generarReporte(auditoriaId)`: Consolida datos para autoridades regulatorias.  
+
+---
+
+### **Repositories (Interfaces)**  
+- **VerificacionRepository**:  
+  - `save(Verificacion verificacion)`, `findByMedicamento(medicamentoId)`.  
+- **AlertaRepository**:  
+  - `save(Alerta alerta)`, `findByTipo(tipoAlerta)`.  
+
+---
+
+### **Interface Layer**  
+#### **Controllers**  
+- **VerificacionController**:  
+  - `verificarPorQR(tokenId)`, `obtenerHistorial(medicamentoId)`.  
+- **AlertaController**:  
+  - `notificarAlerta(alerta)`, `listarAlertasPorSeveridad()`.  
+
+---
+
+### 5.3.2 Application Layer  
+#### **Command Handlers**  
+- **VerificarMedicamentoHandler**:  
+  - Valida el NFT y actualiza el estado de verificación.  
+- **GenerarAlertaHandler**:  
+  - Ejecuta acciones ante fraudes (ej.: invalidar NFT, notificar reguladores).  
+
+#### **Event Handlers**  
+- **AlertaGeneradaEventHandler**:  
+  - Dispara notificaciones a usuarios afectados.  
+
+#### **Query Handlers**  
+- **ObtenerHistorialHandler**:  
+  - Devuelve la trazabilidad completa de un medicamento.  
+
+---
+
+### 5.3.4 Infrastructure Layer 
+- **BlockchainVerificationAdapter**:  
+  - `validarToken(tokenId)`: Consulta el contrato inteligente.  
+- **APINotificaciones**:  
+  - Envía SMS/emails para alertas críticas.  
+
+---
 ### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
+
 ### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.3.7.1. Bounded Context Domain Layer Class Diagrams.
+
 #### 5.3.7.2. Bounded Context Database Design Diagram.
 
+
 ## 5.4. Bounded Context: Product Report & Audit
-### 5.4.1. Domain Layer.
-### 5.4.2. Interface Layer.
-### 5.4.3. Application Layer.
-### 5.4.4. Infrastructure Layer.
+Este contexto se especializa en **generar reportes analíticos y auditorías forenses** sobre los medicamentos rastreados en el sistema. Su objetivo es:  
+- **Automatizar reportes regulatorios**: Para cumplir con normativas sanitarias (FDA, EMA).  
+- **Detectar patrones de fraude**: Mediante análisis de anomalías en la cadena de suministro.  
+- **Facilitar auditorías**: Con acceso histórico a todas las transacciones y verificaciones.  
+---
+
+### 5.4.1 Domain Layer  
+#### **Entities**  
+**1. Reporte (Aggregate Root)**  
+- **Descripción**: Agregado que centraliza la generación y distribución de reportes.  
+- **Atributos**:  
+  - `reporteId`: Identificador único.  
+  - `tipo`: Regulatorio, Análisis de Fraude, Auditoría Interna.  
+  - `periodo`: Rango de fechas cubierto.  
+  - `estado`: Pendiente/Generado/Enviado.  
+
+**2. Auditoria**  
+- **Descripción**: Registro detallado de investigaciones sobre irregularidades.  
+- **Atributos**:  
+  - `auditoriaId`: Identificador único.  
+  - `medicamentoId`: Lote auditado.  
+  - `resultado`: Concluyente/Inconcluso.  
+  - `evidencia`: Lista de transacciones sospechosas.  
+
+**3. Hallazgo**  
+- **Descripción**: Anomalía detectada durante una auditoría (ej.: NFT duplicado).  
+- **Atributos**:  
+  - `tipo`: Falsificación, Desvío, Datos Inconsistentes.  
+  - `severidad`: Crítica/Media/Leve.  
+
+---
+
+#### **Value Objects**  
+- **FiltroReporte**: Define parámetros de búsqueda (ej.: `{ fechaInicio: "2023-01-01", tipoMedicamento: "Antibiótico" }`).  
+- **EstadisticasFraude**: Métricas calculadas (ej.: `{ falsificaciones: 12%, promedioDetectadoEn: "48h" }`).  
+
+---
+
+#### **Domain Services**  
+**1. ReporteService**  
+- **Métodos**:  
+  - `generarReporteRegulatorio(filtro)`: Consolida datos para autoridades.  
+  - `exportarFormato(reporteId, formato)`: PDF, CSV o JSON.  
+
+**2. AuditoriaService**  
+- **Métodos**:  
+  - `iniciarAuditoria(medicamentoId)`: Busca inconsistencias en NFTs y transacciones.  
+  - `priorizarHallazgos(auditoriaId)`: Clasifica hallazgos por riesgo.  
+
+---
+
+### **Repositories (Interfaces)**  
+- **ReporteRepository**:  
+  - `save(Reporte reporte)`, `findByTipo(tipoReporte)`.  
+- **AuditoriaRepository**:  
+  - `save(Auditoria auditoria)`, `findByMedicamento(medicamentoId)`.  
+
+---
+
+### 5.4.2 Interface Layer  
+#### **Controllers**  
+- **ReporteController**:  
+  - `solicitarReporte(filtro)`, `descargarReporte(reporteId, formato)`.  
+- **AuditoriaController**:  
+  - `iniciarAuditoria(medicamentoId)`, `obtenerResultados(auditoriaId)`.  
+
+---
+
+### 5.4.3 Application Layer  
+#### **Command Handlers**  
+- **GenerarReporteHandler**:  
+  - Procesa filtros y dispara la generación de reportes.  
+- **AuditoriaHandler**:  
+  - Ejecuta análisis forenses sobre lotes específicos.  
+
+#### **Event Handlers**  
+- **ReporteGeneradoEventHandler**:  
+  - Notifica a reguladores vía email/API cuando un reporte está listo.  
+
+#### **Query Handlers**  
+- **ObtenerEstadisticasHandler**:  
+  - Devuelve métricas agregadas (ej.: "15% de falsificaciones en antibioticos").  
+
+---
+
+### 5.4.4 Infrastructure Layer  
+- **PDFExporter**: Convierte datos a PDF con gráficos.  
+- **BlockchainForensicAdapter**:  
+  - `rastrearTransaccionesSospechosas(tokenId)`: Consulta la blockchain con algoritmos de detección de fraudes.  
+
+---
+
 ### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
+
 ### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.4.7.1. Bounded Context Domain Layer Class Diagrams.
+
 #### 5.4.7.2. Bounded Context Database Design Diagram.
+
 
 # Conclusiones
 # Bibliografía
