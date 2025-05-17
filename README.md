@@ -1838,8 +1838,27 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 
 
 # Conclusiones
+
+* El sistema VeriMed tiene un impacto significativo en la industria farmacéutica y en la vida de los pacientes al garantizar la autenticidad y trazabilidad de los medicamentos mediante el uso de blockchain y NFTs. Al permitir la verificación en tiempo real de los productos a través de códigos QR, se reduce el riesgo de consumo de medicamentos falsificados, protegiendo la salud de los usuarios y fortaleciendo la confianza en la cadena de suministro.
+* 
+* Este proyecto tiene un impacto social positivo al ofrecer una solución tecnológica que mejora la seguridad de los pacientes y fomenta la transparencia en la distribución de medicamentos. Además, contribuye a la prevención de fraudes y a la detección temprana de irregularidades en la cadena de suministro, beneficiando tanto a los consumidores como a los laboratorios y distribuidores. La implementación de VeriMed no solo refuerza la confianza en el mercado farmacéutico, sino que también promueve la innovación y el cumplimiento de normativas internacionales.
+
 # Bibliografía
+
+1. Organización Mundial de la Salud (OMS). "Falsificación de medicamentos: impacto global". Disponible en: [https://www.who.int](https://www.who.int)
+2. Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Disponible en: [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
+3. Hyperledger Foundation. "Documentación oficial de Hyperledger Fabric". Disponible en: [https://hyperledger-fabric.readthedocs.io](https://hyperledger-fabric.readthedocs.io)
+4. Ethereum Foundation. "Introducción a los contratos inteligentes". Disponible en: [https://ethereum.org](https://ethereum.org)
+5. W3C. "Documentación sobre códigos QR". Disponible en: [https://www.w3.org](https://www.w3.org)
+
 # Anexos
+
+### Enlace al repositorio de GitHub
+
+| **Repositorio del proyecto** | [VeriMed GitHub](https://github.com/SW-LogiCore-2025) |
+|------------------------------|-----------------------------------------------------------|
+
+
 
 
 
