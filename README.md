@@ -1070,10 +1070,88 @@ Identificación de funcionalidades clave: Identificamos las funcionalidades bás
 
 # Capítulo V: Tactical-Level Software Design
 ## 5.1. Bounded Context: Factory Management
-### 5.1.1. Domain Layer.
-### 5.1.2. Interface Layer.
-### 5.1.3. Application Layer.
-### 5.1.4. Infrastructure Layer.
+
+Este contexto se enfoca en **gestionar la producción y control de calidad de medicamentos** dentro de los laboratorios fabricantes. Centraliza las operaciones relacionadas con:  
+- **Registro de fármacos**: Incluyendo composición, lote y estándares de calidad.  
+- **Automatización de NFT**: Vinculación automática de tokens únicos a cada lote producido.  
+- **Integración con trazabilidad**: Envía datos al contexto *Business Transaction Management* para rastreo en blockchain.  
+
+---
+
+### **Domain Layer**  
+#### **Entities**  
+**1. Laboratorio (Aggregate Root)**  
+- **Descripción**: Representa al fabricante de medicamentos. Gestiona la coherencia de todos los procesos internos (producción, control de calidad, emisión de NFTs).  
+- **Atributos**:  
+  - `id`: Identificador único.  
+  - `nombre`: Razón social del laboratorio.  
+  - `certificaciones`: Normas de calidad cumplidas (ej.: ISO 9001).  
+  - `clavePublica`: Dirección blockchain para firmar transacciones.  
+
+**2. LoteMedicamento**  
+- **Descripción**: Unidad de producción con atributos críticos para trazabilidad.  
+- **Atributos**:  
+  - `loteId`: Código único.  
+  - `medicamentoId`: Relación con el tipo de fármaco.  
+  - `fechaProduccion`, `fechaVencimiento`.  
+  - `tokenId`: NFT asociado (generado al registrar el lote).  
+
+**3. ControlCalidad**  
+- **Descripción**: Pruebas de calidad aplicadas a un lote antes de su distribución.  
+- **Atributos**:  
+  - `resultado`: Aprobado/Rechazado.  
+  - `fechaPrueba`, `responsable`.  
+
+---
+
+#### **Value Objects**  
+- **ComposicionQuimica**: Estructura inmutable con principios activos y concentraciones.  
+- **NormativaCalidad**: Estándares regulatorios aplicables (ej.: FDA, EMA).  
+
+---
+
+#### **Domain Services**  
+**1. LoteManagementService**  
+- **Métodos**:  
+  - `registrarLote(LoteMedicamento lote)`: Valida datos, genera NFT y lo almacena.  
+  - `aprobarControlCalidad(loteId)`: Cambia el estado del lote a "Listo para distribución".  
+
+**2. NFTGeneratorService**  
+- **Métodos**:  
+  - `vincularNFT(LoteMedicamento lote)`: Llama al *BlockchainAdapter* para emitir el token.  
+
+---
+
+### **Repositories (Interfaces)**  
+- **LaboratorioRepository**: CRUD de laboratorios.  
+- **LoteMedicamentoRepository**: Búsqueda por loteId, medicamentoId o estado.  
+- **ControlCalidadRepository**: Registro de pruebas de calidad.  
+
+---
+
+### 5.1.2 Interface Layer
+#### **Controllers**  
+- **LaboratorioController**:  
+  - `registrarLaboratorio()`, `listarLotesPorLaboratorio()`.  
+- **LoteController**:  
+  - `registrarLote()`, `aprobarLote()`.  
+
+---
+
+### 5.1.3 Application Layer  
+#### **Command Handlers**  
+- **RegistrarLoteHandler**: Valida y registra lotes + NFT.  
+- **AprobarControlCalidadHandler**: Actualiza el estado del lote y notifica al contexto de trazabilidad.  
+
+#### **Event Handlers**  
+- **LoteAprobadoEventHandler**: Dispara eventos para integrar el lote en la cadena de suministro.  
+
+---
+
+### 5.1.4 Infrastructure Layer  
+- **BlockchainAdapter**: Igual que en el ejemplo adjunto, pero con métodos específicos para lotes
+- **LaboratorioRepositoryImpl**: Conexión con BD de laboratorios.  
+---
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams.
 ### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.7.1. Bounded Context Domain Layer Class Diagrams.
@@ -1234,8 +1312,6 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
   * `listarParticipantes()`
   * `validarParticipante(String id)`
 
-
-
 ### 5.2.3. Application Layer
 
 ### Command Handlers
@@ -1356,161 +1432,213 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
 <img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
 ### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
-<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
 
 #### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
+<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
+
 #### 5.2.7.2. Bounded Context Database Design Diagram.
 
 
 ## 5.3. Bounded Context: Traceability Verification
-### 5.3.1. Domain Layer.
-### 5.3.2. Interface Layer.
-### 5.3.3. Application Layer.
-### 5.3.4. Infrastructure Layer.
-### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
-### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
-#### 5.3.7.1. Bounded Context Domain Layer Class Diagrams.
-#### 5.3.7.2. Bounded Context Database Design Diagram.
 
-## 5.4. Bounded Context: Product Report & Audit
-### 5.4.1. Domain Layer.
-### 5.4.2. Interface Layer.
-### 5.4.3. Application Layer.
-### 5.4.4. Infrastructure Layer.
-### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
-### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
-#### 5.4.7.1. Bounded Context Domain Layer Class Diagrams.
-#### 5.4.7.2. Bounded Context Database Design Diagram.
-
-## Capítulo VI: Solution UX Design
-
-### 6.1 Style Guidelines
-
-Se definió una interfaz limpia, intuitiva y centrada en el usuario. El diseño prioriza la claridad en la información, con textos legibles, íconos representativos y botones de fácil interacción. Se optó por un estilo minimalista, eliminando elementos innecesarios para mantener el enfoque del usuario en las acciones clave: escanear, visualizar y registrar datos.
-
-#### 6.1.1 General Style Guidelines
-
-- **Tipografía**: Se utiliza una fuente sans-serif para garantizar legibilidad en distintos tamaños de pantalla.  
-- **Colores**: Uso de colores neutros para los fondos y colores contrastantes para acciones primarias (ej. botón "Registrar entrega").  
-- **Iconografía**: Íconos simples para representar el escaneo, ubicación y acciones de navegación.  
-- **Espaciado**: Se mantuvo un espaciado generoso entre componentes para evitar la sobrecarga visual y facilitar la navegación táctil.
-
-#### 6.1.2 Web, Mobile & Devices Style Guidelines
-
-Dado que la solución está orientada exclusivamente a dispositivos móviles:
-
-- **Responsive Design**: Aunque no se desarrollará una web, se aplican principios responsivos para garantizar que la app se adapte a distintas resoluciones de móviles.  
-- **Touch-Friendly**: Todos los botones y campos cumplen con las guías de accesibilidad móvil (mínimo 48x48 px de área táctil).  
-- **Compatibilidad**: La interfaz está pensada para operar correctamente tanto en Android como en iOS.
+Este contexto se especializa en **validar la autenticidad y el historial completo de un medicamento** a lo largo de la cadena de suministro, utilizando blockchain y NFTs. Su objetivo es proporcionar:  
+- **Verificación en tiempo real**: Mediante escaneo de QR o consulta manual.  
+- **Alertas tempranas**: Detección de lotes falsificados o desviaciones en la distribución.  
+- **Interfaces accesibles**: Para pacientes (app móvil), reguladores (dashboard) y farmacias (API).  
 
 ---
 
-### 6.2 Information Architecture
+### 5.3.1 Domain Layer  
+#### **Entities**  
+**1. Verificacion (Aggregate Root)**  
+- **Descripción**: Agrega todas las operaciones de validación de un medicamento. Centraliza la coherencia entre el NFT, las transacciones y los participantes.  
+- **Atributos**:  
+  - `id`: Identificador único de la verificación.  
+  - `medicamentoId`: Relación con el medicamento verificado.  
+  - `resultado`: Auténtico/Falsificado/EnInvestigación.  
+  - `fechaVerificacion`: Fecha y hora de la consulta.  
 
-La arquitectura de la información se estructuró en tres vistas principales:
+**2. Alerta**  
+- **Descripción**: Notifica sobre irregularidades (ej.: NFT duplicado, transacción no autorizada).  
+- **Atributos**:  
+  - `tipo`: Robo, Falsificación, Desvío.  
+  - `severidad`: Baja/Media/Alta.  
+  - `participanteNotificado`: Actor que recibió la alerta (ej.: farmacia).  
 
-1. **Escaneo de QR**: Punto de inicio que permite leer el código del medicamento.  
-2. **Visualización de información**: Muestra datos del medicamento (nombre, imagen, fechas, y trazabilidad).  
-3. **Registro del vendedor**: Permite ingresar la empresa, RUC y vendedor, junto con la ubicación GPS y fecha/hora automática.
+**3. Auditoria**  
+- **Descripción**: Registro histórico de verificaciones para análisis forense.  
+- **Atributos**:  
+  - `auditorId`: Identificador del regulador o sistema automático.  
+  - `hallazgos`: Resumen de anomalías detectadas.  
 
-Este flujo asegura que la información esté organizada de forma secuencial y fácil de seguir para los distintos actores (usuarios y vendedores).
+---
 
-#### 6.2.1 Labeling Systems
+#### **Value Objects**  
+- **ResultadoVerificacion**: Estructura con detalles de la validación (ej.: `{ autenticidad: true, motivo: "NFT válido" }`).  
+- **CredencialesVerificador**: Permisos del usuario que realiza la consulta (ej.: paciente, inspector sanitario).  
 
-Se emplearon etiquetas claras y directas:
+---
 
-- "Escanea el código QR del producto"  
-- "Nombre del medicamento"  
-- "Fecha de creación del lote"  
-- "Registrar entrega"  
+#### **Domain Services**  
+**1. VerificacionService**  
+- **Métodos**:  
+  - `verificarMedicamento(tokenId)`: Consulta blockchain y repositorios para validar autenticidad.  
+  - `generarAlerta(medicamentoId, motivo)`: Crea alertas si el NFT está comprometido.  
 
-Esto minimiza la curva de aprendizaje del usuario y evita ambigüedades.
+**2. AuditoriaService**  
+- **Métodos**:  
+  - `generarReporte(auditoriaId)`: Consolida datos para autoridades regulatorias.  
 
-#### 6.2.2 Searching Systems
+---
 
-No se implementa un sistema de búsqueda textual en esta versión de la app. El acceso a la información se realiza exclusivamente a través del escaneo del código QR.
+### **Repositories (Interfaces)**  
+- **VerificacionRepository**:  
+  - `save(Verificacion verificacion)`, `findByMedicamento(medicamentoId)`.  
+- **AlertaRepository**:  
+  - `save(Alerta alerta)`, `findByTipo(tipoAlerta)`.  
 
-#### 6.2.3 SEO Tags and Meta Tags
+---
 
-No aplica directamente, ya que el sistema está enfocado en una aplicación móvil nativa sin una versión web pública indexada por motores de búsqueda. No obstante, se podría considerar en una futura API o dashboard web para administración y reportes.
+### **Interface Layer**  
+#### **Controllers**  
+- **VerificacionController**:  
+  - `verificarPorQR(tokenId)`, `obtenerHistorial(medicamentoId)`.  
+- **AlertaController**:  
+  - `notificarAlerta(alerta)`, `listarAlertasPorSeveridad()`.  
 
-#### 6.2.4 Navigation Systems
+---
 
-La navegación dentro de la aplicación se diseñó para ser intuitiva y centrada en tareas. Se aplicaron los siguientes principios:
+### 5.3.2 Application Layer  
+#### **Command Handlers**  
+- **VerificarMedicamentoHandler**:  
+  - Valida el NFT y actualiza el estado de verificación.  
+- **GenerarAlertaHandler**:  
+  - Ejecuta acciones ante fraudes (ej.: invalidar NFT, notificar reguladores).  
 
-- **Jerarquía clara**: La estructura de navegación sigue el flujo natural de uso: escanear → visualizar → registrar.
-- **Menú minimalista**: Se evitó el uso de menús complejos. En su lugar, se utilizan botones de navegación directos en pantalla.
-- **Navegación por pantallas**: Cada pantalla tiene un propósito único, lo cual reduce la carga cognitiva del usuario.
-- **Botones de retroceso visibles**: Se incluyeron iconos de regreso en la parte superior izquierda para mantener la consistencia con patrones de navegación móviles.
-- **Confirmaciones contextuales**: Al registrar una entrega, se muestra un mensaje de éxito con opción de volver al inicio o revisar datos registrados.
+#### **Event Handlers**  
+- **AlertaGeneradaEventHandler**:  
+  - Dispara notificaciones a usuarios afectados.  
 
-Este enfoque asegura que los usuarios puedan completar sus tareas con una cantidad mínima de pasos y sin confusión, incluso si es su primer uso de la app.
+#### **Query Handlers**  
+- **ObtenerHistorialHandler**:  
+  - Devuelve la trazabilidad completa de un medicamento.  
 
-## 6.3. Landing Page UI Design
+---
 
-<img src="static/Chapter 6/Applications/UI_Design.png" width="1200" style="border-radius: 16px;">
+### 5.3.4 Infrastructure Layer 
+- **BlockchainVerificationAdapter**:  
+  - `validarToken(tokenId)`: Consulta el contrato inteligente.  
+- **APINotificaciones**:  
+  - Envía SMS/emails para alertas críticas.  
 
-<img src="static/Chapter 6/Applications/Tipografia_1.png" width="1200" style="border-radius: 16px;">
+---
+### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
 
-<img src="static/Chapter 6/Applications/Tipografia_2.png" width="1200" style="border-radius: 16px;">
+### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.3.7.1. Bounded Context Domain Layer Class Diagrams.
 
-
-
-### 6.3.1. Landing Page Wireframe
-
-Se presenta la hoja de wireframes de Landing Page.
-Se opto por el uso de una escala de grises en representación de los colores faltantes, pero aun haciendo distinción sobre lo que se realizara en un futuro.
-
-<img src="static/Chapter 6/Applications/Wireframe_1.png" width="1200" style="border-radius: 16px;">
-
-<img src="static/Chapter 6/Applications/Wireframe_2.png" width="1200" style="border-radius: 16px;">
-
-### 6.3.2. Landing Page Mock-up
-
-Se presenta la hoja de mockups del Landing Page.
-Se garantizo el uso de la guía de estilos previamente planteada y se siguió la maquetación desenada en los wireframes.
-
-<img src="static/Chapter 6/Applications/Mockup_1.png" width="1200" style="border-radius: 16px;">
-
-<img src="static/Chapter 6/Applications/Mockup_2.png" width="1200" style="border-radius: 16px;">
-
-<img src="static/Chapter 6/Applications/Mockup_3.png" width="1200" style="border-radius: 16px;">
-
-<img src="static/Chapter 6/Applications/Mockup_4.png" width="1200" style="border-radius: 16px;">
+#### 5.3.7.2. Bounded Context Database Design Diagram.
 
 
+## 5.4. Bounded Context: Product Report & Audit
+Este contexto se especializa en **generar reportes analíticos y auditorías forenses** sobre los medicamentos rastreados en el sistema. Su objetivo es:  
+- **Automatizar reportes regulatorios**: Para cumplir con normativas sanitarias (FDA, EMA).  
+- **Detectar patrones de fraude**: Mediante análisis de anomalías en la cadena de suministro.  
+- **Facilitar auditorías**: Con acceso histórico a todas las transacciones y verificaciones.  
+---
 
-## 6.4. Applications UX/UI Design
+### 5.4.1 Domain Layer  
+#### **Entities**  
+**1. Reporte (Aggregate Root)**  
+- **Descripción**: Agregado que centraliza la generación y distribución de reportes.  
+- **Atributos**:  
+  - `reporteId`: Identificador único.  
+  - `tipo`: Regulatorio, Análisis de Fraude, Auditoría Interna.  
+  - `periodo`: Rango de fechas cubierto.  
+  - `estado`: Pendiente/Generado/Enviado.  
 
-### 6.4.1. Applications Wireframes
+**2. Auditoria**  
+- **Descripción**: Registro detallado de investigaciones sobre irregularidades.  
+- **Atributos**:  
+  - `auditoriaId`: Identificador único.  
+  - `medicamentoId`: Lote auditado.  
+  - `resultado`: Concluyente/Inconcluso.  
+  - `evidencia`: Lista de transacciones sospechosas.  
 
-Los wireframes de la aplicación fueron diseñados para mostrar la estructura básica y la disposición de los elementos en pantalla, sin distracciones visuales complejas. Se priorizó una interfaz clara que facilite la navegación y el acceso rápido a las funciones principales:
+**3. Hallazgo**  
+- **Descripción**: Anomalía detectada durante una auditoría (ej.: NFT duplicado).  
+- **Atributos**:  
+  - `tipo`: Falsificación, Desvío, Datos Inconsistentes.  
+  - `severidad`: Crítica/Media/Leve.  
 
-- Pantalla de escaneo de código QR con un área central destacada para la cámara.
-- Vista de detalles del medicamento, mostrando información esencial como nombre, imagen, fecha de creación y trazabilidad.
-- Formulario simple para el registro de la entrega, con campos obligatorios resaltados y botones accesibles.
-- Uso de elementos estándar de interfaz móvil para garantizar familiaridad, como barras de navegación, botones flotantes y notificaciones modales.
+---
 
-Los wireframes fueron validados con usuarios potenciales para asegurar que el flujo fuese natural y eficiente.
+#### **Value Objects**  
+- **FiltroReporte**: Define parámetros de búsqueda (ej.: `{ fechaInicio: "2023-01-01", tipoMedicamento: "Antibiótico" }`).  
+- **EstadisticasFraude**: Métricas calculadas (ej.: `{ falsificaciones: 12%, promedioDetectadoEn: "48h" }`).  
 
-<img src="static/Chapter 6/Applications/AppWireframe.png" width="1200" style="border-radius: 16px;">
+---
 
-### 6.4.2. Applications Wireflow Diagrams
+#### **Domain Services**  
+**1. ReporteService**  
+- **Métodos**:  
+  - `generarReporteRegulatorio(filtro)`: Consolida datos para autoridades.  
+  - `exportarFormato(reporteId, formato)`: PDF, CSV o JSON.  
 
-Los diagramas de wireflow combinan los wireframes con el flujo de interacción entre pantallas, permitiendo visualizar el recorrido completo del usuario dentro de la app:
+**2. AuditoriaService**  
+- **Métodos**:  
+  - `iniciarAuditoria(medicamentoId)`: Busca inconsistencias en NFTs y transacciones.  
+  - `priorizarHallazgos(auditoriaId)`: Clasifica hallazgos por riesgo.  
 
-- Inicio en la pantalla de escaneo, con acceso a la cámara para capturar el QR.
-- Transición directa a la vista de información del medicamento tras la captura exitosa.
-- Opción para registrar la entrega desde la pantalla de detalles, desplegando el formulario correspondiente.
-- Confirmación visual del registro exitoso con opciones para regresar al inicio o revisar entregas previas.
+---
 
-Estos diagramas ayudan a identificar puntos críticos en la navegación, optimizar la experiencia de usuario y facilitar la comunicación entre diseñadores y desarrolladores.
+### **Repositories (Interfaces)**  
+- **ReporteRepository**:  
+  - `save(Reporte reporte)`, `findByTipo(tipoReporte)`.  
+- **AuditoriaRepository**:  
+  - `save(Auditoria auditoria)`, `findByMedicamento(medicamentoId)`.  
 
-<img src="static/Chapter 6/Applications/AppWireflow.png" width="1200" style="border-radius: 16px;">
+---
 
-### 6.4.3. Applications Mock-ups
+### 5.4.2 Interface Layer  
+#### **Controllers**  
+- **ReporteController**:  
+  - `solicitarReporte(filtro)`, `descargarReporte(reporteId, formato)`.  
+- **AuditoriaController**:  
+  - `iniciarAuditoria(medicamentoId)`, `obtenerResultados(auditoriaId)`.  
 
-<img src="static/Chapter 6/Applications/Application_Mock_up.png" width="1200" style="border-radius: 16px;">
+---
+
+### 5.4.3 Application Layer  
+#### **Command Handlers**  
+- **GenerarReporteHandler**:  
+  - Procesa filtros y dispara la generación de reportes.  
+- **AuditoriaHandler**:  
+  - Ejecuta análisis forenses sobre lotes específicos.  
+
+#### **Event Handlers**  
+- **ReporteGeneradoEventHandler**:  
+  - Notifica a reguladores vía email/API cuando un reporte está listo.  
+
+#### **Query Handlers**  
+- **ObtenerEstadisticasHandler**:  
+  - Devuelve métricas agregadas (ej.: "15% de falsificaciones en antibioticos").  
+
+---
+
+### 5.4.4 Infrastructure Layer  
+- **PDFExporter**: Convierte datos a PDF con gráficos.  
+- **BlockchainForensicAdapter**:  
+  - `rastrearTransaccionesSospechosas(tokenId)`: Consulta la blockchain con algoritmos de detección de fraudes.  
+
+---
+
+### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
+
+### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.4.7.1. Bounded Context Domain Layer Class Diagrams.
+
+#### 5.4.7.2. Bounded Context Database Design Diagram.
 
 
 # Conclusiones
