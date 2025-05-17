@@ -198,6 +198,84 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 
 # Student Outcome
 
+<table> <tr> <td><b>Criterio específico</b></td> <td><b>Acciones realizadas</b></td> <td><b>Conclusiones</b></td> </tr> <tr> <td> <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.</p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó de forma proactiva con su compañero para comprender mejor el As-Is, logrando un entendimiento profundo de los beneficios de utilizar la aplicación y facilitando la coordinación del equipo.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Mantuvo una comunicación constante con todo el equipo para asegurar el cumplimiento de los objetivos, además de ofrecer retroalimentación constructiva sobre los entregables, lo que contribuyó a mejorar la calidad del trabajo colaborativo.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Explicó claramente las decisiones estratégicas del diseño arquitectónico en el capítulo IV, adaptando su lenguaje a diferentes niveles de especialización, lo que permitió una comprensión efectiva por parte de todos los involucrados.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Comunico de manera clara los procesos actuales y las posibles mejoras durante el As-Is Scenario Mapping, ajustando su discurso según el nivel técnico del interlocutor y alineando al equipo con la visión centrada en el usuario final.</p>
+  <p><strong>TP</strong></p>
+  <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo 6.4, al diseñar y documentar los wireframes y wireflows de la aplicación, me aseguré de representar visualmente cada paso del flujo del usuario de forma intuitiva. Esta representación gráfica no solo mejora la comunicación con diseñadores y desarrolladores, sino que también permite a stakeholders sin perfil técnico comprender fácilmente la funcionalidad y experiencia esperada, facilitando la toma de decisiones informadas.</p>
+  <p><strong>Luna Morales, Gianfranco:</strong> En la creación de la landing page, trabajé en la composición visual y textual para transmitir claramente la propuesta de valor de la aplicación, utilizando elementos gráficos y lenguaje accesible para captar la atención de diversos públicos, incluyendo clientes potenciales y usuarios finales.</p>
+  <p><strong>Cabrera Camizan, Jeferson Smith:</strong> En la documentación del Domain Layer, me enfoqué en detallar las entidades, atributos y relaciones clave de manera estructurada y clara, para asegurar que tanto desarrolladores como analistas pudieran entender la arquitectura conceptual y técnica del sistema sin ambigüedades.</p>
+  <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Contribuí en la definición y formalización del Domain Layer, aportando en la organización y presentación de la información para que el equipo pudiera mantener una visión común y facilitar la implementación coherente del modelo de dominio.</p>
+  <p><strong>Zagal Vallejo, Nicolás:</strong> Al elaborar el diagrama C4 del bounded context, me aseguré de representar con precisión los componentes, sus interacciones y dependencias, lo que permitió al equipo técnico y a los stakeholders tener una visión clara y compartida de la arquitectura del sistema, facilitando la planificación y ejecución del proyecto.</p>
+</td>
+<td>
+  <p><strong>TB1</strong></p>
+  <p>En conclusión: La comunicación efectiva y constante entre los miembros favoreció la coordinación y el avance armónico del proyecto.</p>
+  <p><strong>TP</strong></p>
+  <p>En conclusión: La integración de roles mediante documentación clara, diseño visual y diagramas permitió al equipo compartir una visión común, lo que fortaleció la colaboración y el desarrollo integral del proyecto, mejorando la calidad y cohesión del trabajo final.</p>
+</td>
+</tr> <tr> <td> <p><b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Presentó al equipo los puntos clave del Capítulo III para facilitar el desarrollo progresivo del proyecto y la elaboración del diagrama C4.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Expuso de forma clara y estructurada el event storming y los diagramas C4, garantizando que todos los miembros comprendieran la línea de trabajo establecida.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Redactó con precisión y claridad el capítulo IV, adaptando el lenguaje a públicos con distintos niveles técnicos, lo que permitió una comunicación transparente y objetiva del diseño.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso las ideas y resultados obtenidos de forma clara, asegurando la comprensión y alineación del equipo, tomando en cuenta las distintas especializaciones y niveles jerárquicos.</p>
+  <p><strong>TP</strong></p>
+  <p><strong>Frisancho Lévano, Sebastian:</strong> Diseñó y documentó wireframes y wireflows detallados en el capítulo 6.4, buscando representar de manera gráfica cada interacción y paso del usuario para asegurar la comprensión y alineación entre diseñadores, desarrolladores y stakeholders, incluso aquellos sin formación técnica.</p>
+  <p><strong>Luna Morales, Gianfranco:</strong> En la landing page, desarrollé una presentación visual que destaca las funcionalidades y beneficios del producto, enfocándome en que el mensaje sea claro y atractivo para un público diverso, contribuyendo a una comunicación efectiva.</p>
+  <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Elaboró con detalle la documentación del Domain Layer, asegurando que la estructura y relaciones estuvieran bien definidas para facilitar la comprensión técnica y conceptual del proyecto.</p>
+  <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Participó activamente en la documentación del Domain Layer, aportando claridad en la organización y presentación del modelo, lo que permitió una mejor alineación del equipo y una implementación más coherente.</p>
+  <p><strong>Zagal Vallejo, Nicolás:</strong> Representó el diagrama C4 con precisión, destacando los componentes y su interacción, lo que ayudó a todos los miembros del equipo a entender la arquitectura y coordinar las actividades de desarrollo.</p>
+</td>
+<td>
+  <p><strong>TB1</strong></p>
+  <p>En conclusión: La comunicación interdisciplinaria permitió un mejor desarrollo y entendimiento del proyecto en todas sus fases.</p>
+  <p><strong>TP</strong></p>
+  <p>En conclusión: La elaboración detallada de wireframes y wireflows, junto con una documentación clara y estructurada, permitió comunicar de manera efectiva las ideas y resultados a públicos diversos, incluyendo técnicos y no técnicos. Esta comunicación visual y técnica facilitó la comprensión compartida, promovió la alineación del equipo y fortaleció la toma de decisiones colaborativa a lo largo del desarrollo del proyecto.</p>
+</td>
+</tr> </table>
+=======
+<table>
+  <tr>
+    <td><b>Criterio específico</b></td>
+    <td><b>Acciones realizadas</b></td>
+    <td><b>Conclusiones</b></td>
+  </tr>
+  <tr>
+    <td>
+      <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </p>
+    </td>
+    <td> 
+      <p><strong>TB1</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó con mi comparñero con respecto a As Is para tener una mejor visión de los beneficios de utilizar la app.</p>
+      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega se mantuvieron comunicaciones constantes con el equipo de trabajo en función de alcanzar los objetivos planteados y retroalimentar los entregables de cada integrante. </p>
+      <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, me enfoqué en comunicar de forma clara y objetiva las decisiones estratégicas del diseño arquitectónico, considerando el perfil técnico y jerárquico de cada público. Esto me permitió asegurar que todos los involucrados entendieran la propuesta, sin importar su nivel de especialización.</p>
+        <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo del Capítulo 1 del informe, me comuniqué con mis compañeros de equipo para asentar la idea principal del proyecto y tener una visión clara de lo que tenemos que hace para llevar nuestra idea a los usuarios.</p>
+      <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del As-Is Scenario Mapping, comuniqué de manera clara los procesos actuales y sus posibles mejoras, adaptándome a los niveles técnicos del equipo. También presenté perfiles de usuarios estructurados mediante las User Personas, alineando al equipo con la visión del usuario final.</p>
+
+ <p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Al trabajar en los lineamientos de estilo y la arquitectura de información, cuidé que el diseño de la interfaz y la estructura de contenidos respondieran a criterios de claridad visual y usabilidad. Esto facilitó la comprensión tanto para usuarios técnicos como no técnicos, reflejando una comunicación efectiva a distintos niveles de especialización.</p>
+    </td>
+    <td>
+      <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería. </b>
+    </td>
+    <td> 
+      <p><strong>TB1</strong></p>
+      <p><strong>Luna Morales, Gianfranco:</strong> Se comunicó con el grupo los puntos tratados del Capítulo III, para poseer una mejor visión en el desarrollo de los puntos consecuentes, como la elaboración C4.</p>
+      <p><strong>Zagal Vallejo, Nicolás:</strong> Durante el desarrollo de esta entrega presente el event storming y los diagramas C4 de manera clara y estructurada al equipo de trabajo asegurando un claro entendimiento por parte de todos los miembros y fijar una línea de trabajo optima</p>
+      <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, cuidé que la redacción fuese precisa y accesible para públicos con distintos niveles de conocimiento técnico. Esta forma de escribir me permitió transmitir los resultados del proyecto con objetividad y transparencia, facilitando la comprensión del diseño propuesto por parte de los lectores con distintos niveles de conocimiento.</p>
+        <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo de la primera parte del proyecto, comuniqué mis ideas a mis compañeros y también rercibí las suyas para definir bien nuestro alcance y poder dimensionar nuestro proyecto a las fechas límite ya establecidas.</p>
+      <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del proyecto, comuniqué de manera clara y objetiva las ideas y resultados obtenidos, adaptándome a los diferentes niveles de especialización y jerarquía del público. Esto incluyó la presentación de análisis, propuestas y decisiones clave, asegurando la comprensión y alineación de todos los involucrados en el marco del desarrollo del proyecto.</p>
+
+<p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo 6.4, al diseñar y documentar los wireframes y wireflows de la aplicación, me aseguré de representar visualmente cada paso del flujo del usuario de forma intuitiva. Esta representación gráfica no solo mejora la comunicación con diseñadores y desarrolladores, sino que también permite a stakeholders sin perfil técnico comprender fácilmente la funcionalidad y experiencia esperada.</p>
+    </td>
+    <td>
+      <p><strong>TB1</strong></p> 
+      <p>En conclusión: Una comunicación con diferentes áreas del equipo permite un mejor entendimiento y desarrollo de los puntos del proyecto.</p>
+    </td>
+  </tr>
+</table>
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
