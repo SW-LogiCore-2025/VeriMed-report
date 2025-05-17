@@ -1152,20 +1152,18 @@ Este contexto se enfoca en **gestionar la producción y control de calidad de me
 - **BlockchainAdapter**: Igual que en el ejemplo adjunto, pero con métodos específicos para lotes
 - **LaboratorioRepositoryImpl**: Conexión con BD de laboratorios.  
 ---
-### 5.1.6. Bounded Context Software Architecture Component Level Diagrams.
-### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
-#### 5.1.7.1. Bounded Context Domain Layer Class Diagrams.
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams.
+### 5.1.6. Bounded Context Software Architecture Code Level Diagrams.
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams.
 
 <img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747445466/imagen_2025-05-16_203105377_cs0xk2.png" alt="Bounded Context Domain Layer Class Diagrams">
 
 Este diagrama de clases representa el Domain Layer del contexto Factory Management, mostrando cómo se modelan las entidades Laboratorio, LoteMedicamento y ControlCalidad con sus atributos y métodos principales. También incluye los value objects que definen composición química y normativas de calidad, y los servicios de dominio responsables de la gestión de lotes, control de calidad y emisión de NFTs. Las relaciones indican la producción de lotes por parte del laboratorio y la asociación de controles de calidad a cada lote, reflejando la estructura y lógica clave para gestionar la producción y trazabilidad de medicamentos.
 
+#### 5.1.6.2. Bounded Context Database Design Diagram.
+<img src="https://res.cloudinary.com/dydklnicb/image/upload/v1747448555/factory_management-verimed.png" alt="Factory Management Database Diagram">
 
-
-
-#### 5.1.7.2. Bounded Context Database Design Diagram.
-
-
+El diagrama detalla el proceso de producción farmacéutica en VeriMed, desde la fabricación hasta el control de calidad. Se estructura en cuatro módulos interconectados: registro de lotes (con generación automática de NFTs), control de calidad (pruebas y aprobación), integración blockchain (vinculación de tokens) y seguimiento de inventario. Destacan los campos tokenId (identificador único por lote) y resultadoPruebas (aprobado/rechazado), con flujos automatizados que garantizan trazabilidad desde el laboratorio hasta el almacén. El sistema previene errores mediante validaciones cruzadas entre módulos.
 
 ## 5.2. Bounded Context: Business Transaction Management
 
@@ -1436,17 +1434,20 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
   * `verificarToken(String tokenId)`: Consulta la validez y autenticidad del NFT en la blockchain.
 
 
-### 5.2.6. Bounded Context Software Architecture Component Level Diagrams.
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams.
 <img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
-### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
+### 5.2.6. Bounded Context Software Architecture Code Level Diagrams.
 
-#### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
+#### 5.2.6.1. Bounded Context Domain Layer Class Diagrams.
 <img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
 
 El Domain Layer muestra la arquitectura interna de un sistema de trazabilidad, donde cada contenedor se divide en componentes especializados. El Auth Module gestiona la autenticación y control de acceso; el Production Module maneja el registro de producción, generación de hashes y emisión de certificados; el Distribution Module se encarga del registro de recepción y validación de certificados; el Tracking Module registra eventos y permite la consulta de historiales; el Report Module genera reportes y notificaciones; el Business Module Gateway coordina la integración entre módulos de negocio, y el Blockchain Connector registra transacciones en Ethereum para asegurar la inmutabilidad de datos, mientras que la Database almacena toda la información sobre trazabilidad, productos y actores.
-#### 5.2.7.2. Bounded Context Database Design Diagram.
 
+#### 5.2.6.2. Bounded Context Database Design Diagram.
+<img src="https://res.cloudinary.com/dydklnicb/image/upload/v1747448280/business_transaction_management-verimed.png" alt="Business Transaction Management Database Diagram">
+
+El diagrama muestra el núcleo del sistema de trazabilidad de VeriMed, centrado en la gestión de transacciones farmacéuticas. La estructura se organiza en tres capas principales: interfaz de usuario (para registro/consulta), lógica de negocio (gestión de NFTs y validaciones) y blockchain (registro inmutable). Destacan los componentes de registro de transacciones (origen-destino), generación de NFTs (vinculación a lotes) y validación de participantes, con flujos bidireccionales que aseguran trazabilidad completa. Campos como hashBlockchain y clavePública garantizan seguridad e integridad en toda la cadena de suministro.
 
 ## 5.3. Bounded Context: Traceability Verification
 
@@ -1554,6 +1555,9 @@ Este Domain Layer modela las entidades centrales: Verification, que gestiona la 
 
 #### 5.3.7.2. Bounded Context Database Design Diagram.
 
+<img src="https://res.cloudinary.com/dydklnicb/image/upload/v1747448986/traceability_verification-verimed.png" alt="Traceability Verification Database Diagram">
+
+El diagrama ilustra el flujo de verificación de autenticidad en VeriMed, donde los usuarios escanean códigos QR para validar medicamentos. Muestra tres componentes clave: el dispositivo móvil (interfaz de escaneo), el servidor de verificación (que consulta NFTs en blockchain) y la base de datos de trazabilidad (registro histórico). Las flechas destacan el proceso: desde el escaneo hasta la respuesta (válido/inválido), pasando por la validación en blockchain. Campos como tokenId y hashTransacción aseguran inmutabilidad, mientras que las alertas automáticas detectan anomalías en tiempo real.
 
 ## 5.4. Bounded Context: Product Report & Audit
 Este contexto se especializa en **generar reportes analíticos y auditorías forenses** sobre los medicamentos rastreados en el sistema. Su objetivo es:  
@@ -1660,6 +1664,9 @@ El diagrama representa el Domain Layer encargado de generar y gestionar reportes
 
 #### 5.4.7.2. Bounded Context Database Design Diagram.
 
+<img src="https://res.cloudinary.com/dydklnicb/image/upload/v1747449266/product_report_audit-verimed.png" alt="Product Report & Audit Database Diagram">
+
+El diagrama presenta la estructura de datos del módulo Product Report & Audit de VeriMed, diseñado para garantizar trazabilidad farmacéutica mediante tablas interrelacionadas. La tabla REPORTE (con campos tipo, periodo y estado) clasifica los reportes generados, mientras que AUDITORIA (con resultado y medicamentoId) registra hallazgos específicos por lote. La tabla EVIDENCIA vincula transacciones sospechosas a auditorías mediante transaccionId y descripción. Campos como tipoMedicamento en FILTRO permiten análisis segmentados, y las relaciones entre tablas (representadas por líneas) aseguran la trazabilidad completa desde detección hasta origen. La estructura prioriza integridad de datos y capacidad forense para auditorías farmacéuticas.
 
 ## Capítulo VI: Solution UX Design
 
