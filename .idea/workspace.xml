@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="feat: update">
+    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Update with new diagrams and descriptions for Bounded Contexts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -73,8 +73,17 @@
       <workItem from="1745595028632" duration="41000" />
       <workItem from="1745595112195" duration="1202000" />
       <workItem from="1747319848850" duration="2013000" />
-      <workItem from="1747444100956" duration="2535000" />
+      <workItem from="1747444100956" duration="6306000" />
     </task>
+    <task id="LOCAL-00001" summary="docs: Update with new diagrams and descriptions for Bounded Contexts">
+      <option name="closed" value="true" />
+      <created>1747447202603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747447202603</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: update" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update" />
+    <MESSAGE value="docs: Update with new diagrams and descriptions for Bounded Contexts" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Update with new diagrams and descriptions for Bounded Contexts" />
   </component>
 </project>

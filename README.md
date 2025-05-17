@@ -1153,6 +1153,9 @@ Este contexto se enfoca en **gestionar la producción y control de calidad de me
 - **LaboratorioRepositoryImpl**: Conexión con BD de laboratorios.  
 ---
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams.
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747451430/structurizr-102480-FactoryManagementComponents_fnnst4.png" alt="Bounded Context Software Architecture Component Level Diagrams"> 
+
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.6.1. Bounded Context Domain Layer Class Diagrams.
 
