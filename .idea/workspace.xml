@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Update with new diagrams and descriptions for Bounded Contexts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Add Bounded Context Software Architecture Component Level Diagram">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
       <workItem from="1745595028632" duration="41000" />
       <workItem from="1745595112195" duration="1202000" />
       <workItem from="1747319848850" duration="2013000" />
-      <workItem from="1747444100956" duration="6306000" />
+      <workItem from="1747444100956" duration="6918000" />
     </task>
     <task id="LOCAL-00001" summary="docs: Update with new diagrams and descriptions for Bounded Contexts">
       <option name="closed" value="true" />
@@ -83,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747447202603</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="docs: Add Bounded Context Software Architecture Component Level Diagram">
+      <option name="closed" value="true" />
+      <created>1747451559085</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747451559085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: update" />
     <MESSAGE value="docs: Update with new diagrams and descriptions for Bounded Contexts" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: Update with new diagrams and descriptions for Bounded Contexts" />
+    <MESSAGE value="docs: Add Bounded Context Software Architecture Component Level Diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Add Bounded Context Software Architecture Component Level Diagram" />
   </component>
 </project>

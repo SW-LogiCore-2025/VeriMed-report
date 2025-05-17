@@ -1657,6 +1657,8 @@ Este contexto se especializa en **generar reportes analíticos y auditorías for
 
 ### 5.4.6. Bounded Context Software Architecture Component Level Diagrams.
 
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747452073/structurizr-82872-ProductReportAuditComponents_wqd6sg.png" alt="Bounded Context Software Architecture Component Level Diagrams">
+
 ### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.4.7.1. Bounded Context Domain Layer Class Diagrams.
 
