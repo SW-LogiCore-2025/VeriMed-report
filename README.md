@@ -63,36 +63,50 @@
         <tbody>
             <tr>
                 <th>1.0</th>
-                <td>04/23/2024</td>
+                <td>04/23/2025</td>
                 <td>Carlos Pingus</td>
                 <td>Se agregó los puntos del capitulo I.</td>
             </tr>
             <tr>
                 <th>1.1</th>
-                <td>04/23/2024</td>
+                <td>04/23/2025</td>
                 <td>Jeferson Cabrera</td>
                 <td>Se agregó todos los puntos del capitulo II del informe.</td>
             </tr>
             <tr>
                 <th>1.2</th>
-                <td>04/23/2024</td>
+                <td>04/23/2025</td>
                 <td>Gianfranco Luna</td>
                 <td>Se agregó los puntos 3.1, 3.2, 3.3 y 3.4.</td>
             </tr>
             <tr>
                 <th>1.3</th>
-                <td>04/25/2024</td>
+                <td>04/25/2025</td>
                 <td>Nicolás Zagal</td>
                 <td>Se desarrollaron los puntos 4.2 y 4.3</td>
             </tr>
             <tr>
                 <th>1.4</th>
-                <td>04/25/2024</td>
+                <td>04/25/2025</td>
                 <td>Sebastian Frisancho</td>
                 <td>Se desarrollaron los puntos 4.1</td>
             </tr>
+             <tr>
+                <th>1.5</th>
+                <td>16/04/2025</td>
+                <td>Sebastian Frisancho</td>
+                <td>Se desarrollaron los puntos 5 y 6, actualización de unidades anteriores</td>
+            </tr>
        </tbody>
 </table>
+
+<h1 style="text-align: center">Project Report Collaboration Insights</h1>
+
+Se desarrollaron las secciones respectivas, elavoraciones principales: Event Storming, Landing page, Web Applications, Users Acceptances.
+
+<img src="static/img/Chapter 1/Commits.png" alt="Commits">
+<img src="static/img/Chapter 1/Commits_2.png" alt="Commits2">
+
 <br><br>
             
 
@@ -161,10 +175,26 @@
     - [4.3.3. Software Architecture Container Level Diagram](#433-software-architecture-container-level-diagrams)
     - [4.3.4. Software Architecture Component Level Diagram](#434-software-architecture-component-level-diagrams)
     - [4.3.5. Software Architecture Deployment Diagram](#435-software-architecture-deployment-diagrams)
+## [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+- [6.1. Style Guidelines](#61-style-guidelines)
+  - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
+  - [6.1.2. Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+- [6.2. Information Architecture](#62-information-architecture)
+  - [6.2.1. Labeling Systems](#621-labeling-systems)
+  - [6.2.2. Searching Systems](#622-searching-systems)
+  - [6.2.3. SEO Tags and Meta Tags](#623-seo-tags-and-meta-tags)
+  - [6.2.4. Navigation Systems](#624-navigation-systems)
+- [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+  - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+  - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
+- [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+  - [6.4.1. Applications Wireframes](#641-applications-wireframes)
+  - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+  - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+- [6.5. Applications Prototyping](#65-applications-prototyping)
 ## [Conclusiones](#conclusiones)
 ## [Bibliografía](#bibliografía)
 ## [Anexos](#anexos)
-
 
 # Student Outcome
 <table>
@@ -184,9 +214,12 @@
       <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, me enfoqué en comunicar de forma clara y objetiva las decisiones estratégicas del diseño arquitectónico, considerando el perfil técnico y jerárquico de cada público. Esto me permitió asegurar que todos los involucrados entendieran la propuesta, sin importar su nivel de especialización.</p>
         <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo del Capítulo 1 del informe, me comuniqué con mis compañeros de equipo para asentar la idea principal del proyecto y tener una visión clara de lo que tenemos que hace para llevar nuestra idea a los usuarios.</p>
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del As-Is Scenario Mapping, comuniqué de manera clara los procesos actuales y sus posibles mejoras, adaptándome a los niveles técnicos del equipo. También presenté perfiles de usuarios estructurados mediante las User Personas, alineando al equipo con la visión del usuario final.</p>
+
+ <p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Al trabajar en los lineamientos de estilo y la arquitectura de información, cuidé que el diseño de la interfaz y la estructura de contenidos respondieran a criterios de claridad visual y usabilidad. Esto facilitó la comprensión tanto para usuarios técnicos como no técnicos, reflejando una comunicación efectiva a distintos niveles de especialización.</p>
     </td>
     <td>
-      <p><strong>TB1</strong></p> 
       <p>En conclusión: El mantener una buena comunicación aporta a un buen desarrollo del proyecto.</p>
     </td>
   </tr>
@@ -201,6 +234,10 @@
       <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo IV, cuidé que la redacción fuese precisa y accesible para públicos con distintos niveles de conocimiento técnico. Esta forma de escribir me permitió transmitir los resultados del proyecto con objetividad y transparencia, facilitando la comprensión del diseño propuesto por parte de los lectores con distintos niveles de conocimiento.</p>
         <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Para el desarrollo de la primera parte del proyecto, comuniqué mis ideas a mis compañeros y también rercibí las suyas para definir bien nuestro alcance y poder dimensionar nuestro proyecto a las fechas límite ya establecidas.</p>
       <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Durante el desarrollo del proyecto, comuniqué de manera clara y objetiva las ideas y resultados obtenidos, adaptándome a los diferentes niveles de especialización y jerarquía del público. Esto incluyó la presentación de análisis, propuestas y decisiones clave, asegurando la comprensión y alineación de todos los involucrados en el marco del desarrollo del proyecto.</p>
+
+<p><strong>TP</strong></p> 
+     <p><strong>Luna Morales, Gianfranco:</strong>Se mostró las versiones de los mockups del landing page, se explicó la elección de colores y tipo de letra.</p>
+        <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo 6.4, al diseñar y documentar los wireframes y wireflows de la aplicación, me aseguré de representar visualmente cada paso del flujo del usuario de forma intuitiva. Esta representación gráfica no solo mejora la comunicación con diseñadores y desarrolladores, sino que también permite a stakeholders sin perfil técnico comprender fácilmente la funcionalidad y experiencia esperada.</p>
     </td>
     <td>
       <p><strong>TB1</strong></p> 
@@ -1607,3 +1644,4 @@ Este contexto se especializa en **generar reportes analíticos y auditorías for
 # Conclusiones
 # Bibliografía
 # Anexos
+
