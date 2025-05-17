@@ -1547,6 +1547,8 @@ Este contexto se especializa en **validar la autenticidad y el historial complet
 ---
 ### 5.3.6. Bounded Context Software Architecture Component Level Diagrams.
 
+<img src="https://res.cloudinary.com/dydklnicb/image/upload/v1747452650/structurizr-102008-TraceabilityComponents_pfgftk.png" alt="Traceability Verification Component Diagram">
+
 ### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.3.7.1. Bounded Context Domain Layer Class Diagrams.
 
