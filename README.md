@@ -1641,6 +1641,137 @@ Este contexto se especializa en **generar reportes analíticos y auditorías for
 #### 5.4.7.2. Bounded Context Database Design Diagram.
 
 
+## Capítulo VI: Solution UX Design
+
+### 6.1 Style Guidelines
+
+Se definió una interfaz limpia, intuitiva y centrada en el usuario. El diseño prioriza la claridad en la información, con textos legibles, íconos representativos y botones de fácil interacción. Se optó por un estilo minimalista, eliminando elementos innecesarios para mantener el enfoque del usuario en las acciones clave: escanear, visualizar y registrar datos.
+
+#### 6.1.1 General Style Guidelines
+
+- **Tipografía**: Se utiliza una fuente sans-serif para garantizar legibilidad en distintos tamaños de pantalla.  
+- **Colores**: Uso de colores neutros para los fondos y colores contrastantes para acciones primarias (ej. botón "Registrar entrega").  
+- **Iconografía**: Íconos simples para representar el escaneo, ubicación y acciones de navegación.  
+- **Espaciado**: Se mantuvo un espaciado generoso entre componentes para evitar la sobrecarga visual y facilitar la navegación táctil.
+
+#### 6.1.2 Web, Mobile & Devices Style Guidelines
+
+Dado que la solución está orientada exclusivamente a dispositivos móviles:
+
+- **Responsive Design**: Aunque no se desarrollará una web, se aplican principios responsivos para garantizar que la app se adapte a distintas resoluciones de móviles.  
+- **Touch-Friendly**: Todos los botones y campos cumplen con las guías de accesibilidad móvil (mínimo 48x48 px de área táctil).  
+- **Compatibilidad**: La interfaz está pensada para operar correctamente tanto en Android como en iOS.
+
+---
+
+### 6.2 Information Architecture
+
+La arquitectura de la información se estructuró en tres vistas principales:
+
+1. **Escaneo de QR**: Punto de inicio que permite leer el código del medicamento.  
+2. **Visualización de información**: Muestra datos del medicamento (nombre, imagen, fechas, y trazabilidad).  
+3. **Registro del vendedor**: Permite ingresar la empresa, RUC y vendedor, junto con la ubicación GPS y fecha/hora automática.
+
+Este flujo asegura que la información esté organizada de forma secuencial y fácil de seguir para los distintos actores (usuarios y vendedores).
+
+#### 6.2.1 Labeling Systems
+
+Se emplearon etiquetas claras y directas:
+
+- "Escanea el código QR del producto"  
+- "Nombre del medicamento"  
+- "Fecha de creación del lote"  
+- "Registrar entrega"  
+
+Esto minimiza la curva de aprendizaje del usuario y evita ambigüedades.
+
+#### 6.2.2 Searching Systems
+
+No se implementa un sistema de búsqueda textual en esta versión de la app. El acceso a la información se realiza exclusivamente a través del escaneo del código QR.
+
+#### 6.2.3 SEO Tags and Meta Tags
+
+No aplica directamente, ya que el sistema está enfocado en una aplicación móvil nativa sin una versión web pública indexada por motores de búsqueda. No obstante, se podría considerar en una futura API o dashboard web para administración y reportes.
+
+#### 6.2.4 Navigation Systems
+
+La navegación dentro de la aplicación se diseñó para ser intuitiva y centrada en tareas. Se aplicaron los siguientes principios:
+
+- **Jerarquía clara**: La estructura de navegación sigue el flujo natural de uso: escanear → visualizar → registrar.
+- **Menú minimalista**: Se evitó el uso de menús complejos. En su lugar, se utilizan botones de navegación directos en pantalla.
+- **Navegación por pantallas**: Cada pantalla tiene un propósito único, lo cual reduce la carga cognitiva del usuario.
+- **Botones de retroceso visibles**: Se incluyeron iconos de regreso en la parte superior izquierda para mantener la consistencia con patrones de navegación móviles.
+- **Confirmaciones contextuales**: Al registrar una entrega, se muestra un mensaje de éxito con opción de volver al inicio o revisar datos registrados.
+
+Este enfoque asegura que los usuarios puedan completar sus tareas con una cantidad mínima de pasos y sin confusión, incluso si es su primer uso de la app.
+
+## 6.3. Landing Page UI Design
+
+<img src="static/Chapter 6/Applications/UI_Design.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Tipografia_1.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Tipografia_2.png" width="1200" style="border-radius: 16px;">
+
+
+
+### 6.3.1. Landing Page Wireframe
+
+Se presenta la hoja de wireframes de Landing Page.
+Se opto por el uso de una escala de grises en representación de los colores faltantes, pero aun haciendo distinción sobre lo que se realizara en un futuro.
+
+<img src="static/Chapter 6/Applications/Wireframe_1.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Wireframe_2.png" width="1200" style="border-radius: 16px;">
+
+### 6.3.2. Landing Page Mock-up
+
+Se presenta la hoja de mockups del Landing Page.
+Se garantizo el uso de la guía de estilos previamente planteada y se siguió la maquetación desenada en los wireframes.
+
+<img src="static/Chapter 6/Applications/Mockup_1.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Mockup_2.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Mockup_3.png" width="1200" style="border-radius: 16px;">
+
+<img src="static/Chapter 6/Applications/Mockup_4.png" width="1200" style="border-radius: 16px;">
+
+
+
+## 6.4. Applications UX/UI Design
+
+### 6.4.1. Applications Wireframes
+
+Los wireframes de la aplicación fueron diseñados para mostrar la estructura básica y la disposición de los elementos en pantalla, sin distracciones visuales complejas. Se priorizó una interfaz clara que facilite la navegación y el acceso rápido a las funciones principales:
+
+- Pantalla de escaneo de código QR con un área central destacada para la cámara.
+- Vista de detalles del medicamento, mostrando información esencial como nombre, imagen, fecha de creación y trazabilidad.
+- Formulario simple para el registro de la entrega, con campos obligatorios resaltados y botones accesibles.
+- Uso de elementos estándar de interfaz móvil para garantizar familiaridad, como barras de navegación, botones flotantes y notificaciones modales.
+
+Los wireframes fueron validados con usuarios potenciales para asegurar que el flujo fuese natural y eficiente.
+
+<img src="static/Chapter 6/Applications/AppWireframe.png" width="1200" style="border-radius: 16px;">
+
+### 6.4.2. Applications Wireflow Diagrams
+
+Los diagramas de wireflow combinan los wireframes con el flujo de interacción entre pantallas, permitiendo visualizar el recorrido completo del usuario dentro de la app:
+
+- Inicio en la pantalla de escaneo, con acceso a la cámara para capturar el QR.
+- Transición directa a la vista de información del medicamento tras la captura exitosa.
+- Opción para registrar la entrega desde la pantalla de detalles, desplegando el formulario correspondiente.
+- Confirmación visual del registro exitoso con opciones para regresar al inicio o revisar entregas previas.
+
+Estos diagramas ayudan a identificar puntos críticos en la navegación, optimizar la experiencia de usuario y facilitar la comunicación entre diseñadores y desarrolladores.
+
+<img src="static/Chapter 6/Applications/AppWireflow.png" width="1200" style="border-radius: 16px;">
+
+### 6.4.3. Applications Mock-ups
+
+<img src="static/Chapter 6/Applications/Application_Mock_up.png" width="1200" style="border-radius: 16px;">
+
+
 # Conclusiones
 # Bibliografía
 # Anexos
