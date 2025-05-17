@@ -1443,7 +1443,7 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams.
 
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams.
-<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747452572/imagen_2025-05-16_222930637_j1xuco.png" alt="Software Architecture System Landscape Diagram">
 
 El Domain Layer muestra la arquitectura interna de un sistema de trazabilidad, donde cada contenedor se divide en componentes especializados. El Auth Module gestiona la autenticación y control de acceso; el Production Module maneja el registro de producción, generación de hashes y emisión de certificados; el Distribution Module se encarga del registro de recepción y validación de certificados; el Tracking Module registra eventos y permite la consulta de historiales; el Report Module genera reportes y notificaciones; el Business Module Gateway coordina la integración entre módulos de negocio, y el Blockchain Connector registra transacciones en Ethereum para asegurar la inmutabilidad de datos, mientras que la Database almacena toda la información sobre trazabilidad, productos y actores.
 
