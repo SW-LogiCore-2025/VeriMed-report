@@ -1155,6 +1155,14 @@ Este contexto se enfoca en **gestionar la producción y control de calidad de me
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams.
 ### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.7.1. Bounded Context Domain Layer Class Diagrams.
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747445466/imagen_2025-05-16_203105377_cs0xk2.png" alt="Bounded Context Domain Layer Class Diagrams">
+
+Este diagrama de clases representa el Domain Layer del contexto Factory Management, mostrando cómo se modelan las entidades Laboratorio, LoteMedicamento y ControlCalidad con sus atributos y métodos principales. También incluye los value objects que definen composición química y normativas de calidad, y los servicios de dominio responsables de la gestión de lotes, control de calidad y emisión de NFTs. Las relaciones indican la producción de lotes por parte del laboratorio y la asociación de controles de calidad a cada lote, reflejando la estructura y lógica clave para gestionar la producción y trazabilidad de medicamentos.
+
+
+
+
 #### 5.1.7.2. Bounded Context Database Design Diagram.
 
 
@@ -1436,6 +1444,7 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
 #### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
 <img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
 
+El Domain Layer muestra la arquitectura interna de un sistema de trazabilidad, donde cada contenedor se divide en componentes especializados. El Auth Module gestiona la autenticación y control de acceso; el Production Module maneja el registro de producción, generación de hashes y emisión de certificados; el Distribution Module se encarga del registro de recepción y validación de certificados; el Tracking Module registra eventos y permite la consulta de historiales; el Report Module genera reportes y notificaciones; el Business Module Gateway coordina la integración entre módulos de negocio, y el Blockchain Connector registra transacciones en Ethereum para asegurar la inmutabilidad de datos, mientras que la Database almacena toda la información sobre trazabilidad, productos y actores.
 #### 5.2.7.2. Bounded Context Database Design Diagram.
 
 
@@ -1537,6 +1546,12 @@ Este contexto se especializa en **validar la autenticidad y el historial complet
 ### 5.3.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.3.7.1. Bounded Context Domain Layer Class Diagrams.
 
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747445290/imagen_2025-05-16_202809175_oyr65q.png" alt="Bounded Context Domain Layer Class Diagrams">
+
+Este Domain Layer modela las entidades centrales: Verification, que gestiona la validación de autenticidad de medicamentos; Alert, que notifica irregularidades; y Audit, que registra el historial para análisis. Incluye value objects para resultados de verificación y credenciales de usuarios. Los servicios de dominio se encargan de la lógica para verificar medicamentos, generar alertas y reportes, garantizando la trazabilidad y seguridad en la cadena de suministro.
+
+
+
 #### 5.3.7.2. Bounded Context Database Design Diagram.
 
 
@@ -1637,6 +1652,11 @@ Este contexto se especializa en **generar reportes analíticos y auditorías for
 
 ### 5.4.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.4.7.1. Bounded Context Domain Layer Class Diagrams.
+
+<img src="https://res.cloudinary.com/drkelnilg/image/upload/v1747446840/imagen_2025-05-16_205359582_ixr8zz.png" alt="Bounded Context Domain Layer Class Diagrams">
+
+
+El diagrama representa el Domain Layer encargado de generar y gestionar reportes y auditorías sobre medicamentos. Report centraliza la creación y estado de reportes regulatorios, de fraude y auditorías internas. Audit registra investigaciones con resultados y evidencias, mientras que Finding identifica anomalías clasificadas por tipo y severidad. Los value objects ReportFilter y FraudStatistics apoyan la generación y análisis de reportes. Los servicios ReportService y AuditService manejan la lógica para generar reportes, realizar auditorías y calcular estadísticas, asegurando el cumplimiento normativo y la detección de fraudes.
 
 #### 5.4.7.2. Bounded Context Database Design Diagram.
 
@@ -1775,4 +1795,6 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 # Conclusiones
 # Bibliografía
 # Anexos
+
+
 
