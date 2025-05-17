@@ -1033,10 +1033,88 @@ Identificación de funcionalidades clave: Identificamos las funcionalidades bás
 
 # Capítulo V: Tactical-Level Software Design
 ## 5.1. Bounded Context: Factory Management
-### 5.1.1. Domain Layer.
-### 5.1.2. Interface Layer.
-### 5.1.3. Application Layer.
-### 5.1.4. Infrastructure Layer.
+
+Este contexto se enfoca en **gestionar la producción y control de calidad de medicamentos** dentro de los laboratorios fabricantes. Centraliza las operaciones relacionadas con:  
+- **Registro de fármacos**: Incluyendo composición, lote y estándares de calidad.  
+- **Automatización de NFT**: Vinculación automática de tokens únicos a cada lote producido.  
+- **Integración con trazabilidad**: Envía datos al contexto *Business Transaction Management* para rastreo en blockchain.  
+
+---
+
+### **Domain Layer**  
+#### **Entities**  
+**1. Laboratorio (Aggregate Root)**  
+- **Descripción**: Representa al fabricante de medicamentos. Gestiona la coherencia de todos los procesos internos (producción, control de calidad, emisión de NFTs).  
+- **Atributos**:  
+  - `id`: Identificador único.  
+  - `nombre`: Razón social del laboratorio.  
+  - `certificaciones`: Normas de calidad cumplidas (ej.: ISO 9001).  
+  - `clavePublica`: Dirección blockchain para firmar transacciones.  
+
+**2. LoteMedicamento**  
+- **Descripción**: Unidad de producción con atributos críticos para trazabilidad.  
+- **Atributos**:  
+  - `loteId`: Código único.  
+  - `medicamentoId`: Relación con el tipo de fármaco.  
+  - `fechaProduccion`, `fechaVencimiento`.  
+  - `tokenId`: NFT asociado (generado al registrar el lote).  
+
+**3. ControlCalidad**  
+- **Descripción**: Pruebas de calidad aplicadas a un lote antes de su distribución.  
+- **Atributos**:  
+  - `resultado`: Aprobado/Rechazado.  
+  - `fechaPrueba`, `responsable`.  
+
+---
+
+#### **Value Objects**  
+- **ComposicionQuimica**: Estructura inmutable con principios activos y concentraciones.  
+- **NormativaCalidad**: Estándares regulatorios aplicables (ej.: FDA, EMA).  
+
+---
+
+#### **Domain Services**  
+**1. LoteManagementService**  
+- **Métodos**:  
+  - `registrarLote(LoteMedicamento lote)`: Valida datos, genera NFT y lo almacena.  
+  - `aprobarControlCalidad(loteId)`: Cambia el estado del lote a "Listo para distribución".  
+
+**2. NFTGeneratorService**  
+- **Métodos**:  
+  - `vincularNFT(LoteMedicamento lote)`: Llama al *BlockchainAdapter* para emitir el token.  
+
+---
+
+### **Repositories (Interfaces)**  
+- **LaboratorioRepository**: CRUD de laboratorios.  
+- **LoteMedicamentoRepository**: Búsqueda por loteId, medicamentoId o estado.  
+- **ControlCalidadRepository**: Registro de pruebas de calidad.  
+
+---
+
+### 5.1.2 Interface Layer
+#### **Controllers**  
+- **LaboratorioController**:  
+  - `registrarLaboratorio()`, `listarLotesPorLaboratorio()`.  
+- **LoteController**:  
+  - `registrarLote()`, `aprobarLote()`.  
+
+---
+
+### 5.1.3 Application Layer  
+#### **Command Handlers**  
+- **RegistrarLoteHandler**: Valida y registra lotes + NFT.  
+- **AprobarControlCalidadHandler**: Actualiza el estado del lote y notifica al contexto de trazabilidad.  
+
+#### **Event Handlers**  
+- **LoteAprobadoEventHandler**: Dispara eventos para integrar el lote en la cadena de suministro.  
+
+---
+
+### 5.1.4 Infrastructure Layer  
+- **BlockchainAdapter**: Igual que en el ejemplo adjunto, pero con métodos específicos para lotes
+- **LaboratorioRepositoryImpl**: Conexión con BD de laboratorios.  
+---
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams.
 ### 5.1.7. Bounded Context Software Architecture Code Level Diagrams.
 #### 5.1.7.1. Bounded Context Domain Layer Class Diagrams.
@@ -1319,9 +1397,10 @@ Este bounded context está enfocado en la gestión de transacciones comerciales 
 <img src="static/img/Chapter%204/ComponentDiagram.jpg" alt="Software Architecture System Landscape Diagram">
 
 ### 5.2.7. Bounded Context Software Architecture Code Level Diagrams.
-<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
 
 #### 5.2.7.1. Bounded Context Domain Layer Class Diagrams.
+<img src="static/img/Chapter%205/CodeLevelDiagram.png" alt="Software Architecture System Landscape Diagram">
+
 #### 5.2.7.2. Bounded Context Database Design Diagram.
 
 
