@@ -640,7 +640,7 @@ Los segmentos objetivos son los siguientes:<br>
   </tr>
   <tr>
     <td colspan="2">
-      <b>Enlace:</b> <a href="https://drive.google.com/file/d/1B2qt4G9smmQRBUSthqxa-DEpk66WVELi/view" rel="nofollow">https://goo.su/Ao2Pm</a>
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
       <br>
       <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
     </td>
@@ -1840,7 +1840,9 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 # Conclusiones
 
 * El sistema VeriMed tiene un impacto significativo en la industria farmacéutica y en la vida de los pacientes al garantizar la autenticidad y trazabilidad de los medicamentos mediante el uso de blockchain y NFTs. Al permitir la verificación en tiempo real de los productos a través de códigos QR, se reduce el riesgo de consumo de medicamentos falsificados, protegiendo la salud de los usuarios y fortaleciendo la confianza en la cadena de suministro.
-* 
+
+* La implementación de un sistema de trazabilidad robusto y transparente no solo beneficia a los pacientes, sino que también proporciona a los laboratorios y distribuidores una herramienta eficaz para monitorear la distribución de sus productos, detectar irregularidades y prevenir fraudes. Esto se traduce en una mejora en la eficiencia operativa y en la reducción de costos asociados a la gestión de productos falsificados.
+
 * Este proyecto tiene un impacto social positivo al ofrecer una solución tecnológica que mejora la seguridad de los pacientes y fomenta la transparencia en la distribución de medicamentos. Además, contribuye a la prevención de fraudes y a la detección temprana de irregularidades en la cadena de suministro, beneficiando tanto a los consumidores como a los laboratorios y distribuidores. La implementación de VeriMed no solo refuerza la confianza en el mercado farmacéutico, sino que también promueve la innovación y el cumplimiento de normativas internacionales.
 
 # Bibliografía
@@ -1850,13 +1852,13 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 3. Hyperledger Foundation. "Documentación oficial de Hyperledger Fabric". Disponible en: [https://hyperledger-fabric.readthedocs.io](https://hyperledger-fabric.readthedocs.io)
 4. Ethereum Foundation. "Introducción a los contratos inteligentes". Disponible en: [https://ethereum.org](https://ethereum.org)
 5. W3C. "Documentación sobre códigos QR". Disponible en: [https://www.w3.org](https://www.w3.org)
-
 # Anexos
 
 ### Enlace al repositorio de GitHub
 
 | **Repositorio del proyecto** | [VeriMed GitHub](https://github.com/SW-LogiCore-2025) |
 |------------------------------|-----------------------------------------------------------|
+
 
 
 

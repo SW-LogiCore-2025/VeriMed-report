@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="Refactor: Student Outcome section in README.md for clarity and conciseness">
+    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Enhance conclusions and bibliography sections in README.md for clarity and additional resources">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/conclusiones",
+    "git-widget-placeholder": "release",
     "last_opened_file_path": "/Volumes/HDD/UPC - Ciclo 2025-1/Emergentes/VeriMed-report",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,6 +73,8 @@
       <workItem from="1745595112195" duration="1202000" />
       <workItem from="1747319848850" duration="2013000" />
       <workItem from="1747444100956" duration="7274000" />
+      <workItem from="1747592728776" duration="1780000" />
+      <workItem from="1748047798990" duration="501000" />
     </task>
     <task id="LOCAL-00001" summary="docs: Update with new diagrams and descriptions for Bounded Contexts">
       <option name="closed" value="true" />
@@ -99,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747452309163</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="docs: Enhance conclusions and bibliography sections in README.md for clarity and additional resources">
+      <option name="closed" value="true" />
+      <created>1747455468888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747455468888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
