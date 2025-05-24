@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Enhance conclusions and bibliography sections in README.md for clarity and additional resources">
+    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Update link and enhance conclusions in README.md for clarity and detail">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
       <workItem from="1747319848850" duration="2013000" />
       <workItem from="1747444100956" duration="7274000" />
       <workItem from="1747592728776" duration="1780000" />
-      <workItem from="1748047798990" duration="501000" />
+      <workItem from="1748047798990" duration="2139000" />
     </task>
     <task id="LOCAL-00001" summary="docs: Update with new diagrams and descriptions for Bounded Contexts">
       <option name="closed" value="true" />
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747455468888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="docs: Update link and enhance conclusions in README.md for clarity and detail">
+      <option name="closed" value="true" />
+      <created>1748048615760</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748048615760</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +128,7 @@
     <MESSAGE value="docs: Add Bounded Context Software Architecture Component Level Diagram" />
     <MESSAGE value="docs: Add diagram C4 Bounded Context Product Report &amp; Audit" />
     <MESSAGE value="Refactor: Student Outcome section in README.md for clarity and conciseness" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor: Student Outcome section in README.md for clarity and conciseness" />
+    <MESSAGE value="docs: Update link and enhance conclusions in README.md for clarity and detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: Update link and enhance conclusions in README.md for clarity and detail" />
   </component>
 </project>
