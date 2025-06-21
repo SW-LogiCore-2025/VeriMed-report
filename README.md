@@ -1787,6 +1787,64 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 
 <img src="static/Chapter 6/Applications/Application_Mock_up.png" width="1200" style="border-radius: 16px;">
 
+## Chapter VII: Product Implementation, Validation & Deployment
+## 7.1. Software Configuration Management
+### 7.1.1 Software Development Environment Configuration
+### 7.1.2 Source Code Management
+### 7.1.3 Source Code Style Guide & Conventions
+### 7.1.4 Software Deployment Configuration
+## 7.2 Solution Implementation
+### 7.2.1 Sprint 1
+#### 7.2.1.1 Sprint Planning 1
+#### 7.2.1.2 Sprint Backlog 1
+#### 7.2.1.3 Development Evidence for Sprint Review
+#### 7.2.1.4 Testing Suite Evidence for Sprint Review
+#### 7.2.1.5 Execution Evidence for Sprint Review
+En el Sprint 1, se logró desarrollar la aplicación web y el backend que usará nuestra aplicación. Asi mismo, se desarrolló la conexión con blockchain donde se registrarán los NFTs de los lotes de medicamentos.
+![img.png](static/img/Chapter%207/frontend-home.png)
+![img.png](static/img/Chapter%207/frontend-search.png)
+![backend.png](static/img/Chapter%207/backend.png)
+![swagger1.png](static/img/Chapter%207/swagger1.png)
+![swagger2.png](static/img/Chapter%207/swagger2.png)
+#### 7.2.1.6 Services Documentation Evidence for Sprint Review
+| **Endpoint**                     | Método | Controlador                | Descripción                                          |
+|----------------------------------|--------|----------------------------|------------------------------------------------------|
+| `/api/v1/authentication/sign-up` | `POST` | `AuthenticationController` | Registra un nuevo perfil                             |
+| `/api/v1/authentication/sign-in` | `POST` | `AuthenticationController` | Inicia sesión del usuario                            |
+| `/ap/v1/roles`                   | `GET`  | `RoleController`           | Obtiene los roles de los perfiles                    |
+| `/api/v1/users`                  | `GET`  | `UserController`           | Lista todos los usuarios registrados                 |
+| `/api/v1/users/{id}`             | `GET`  | `UserController`           | Obtiene un usuario por ID                            |
+| `/api/verimed/product/batch`     | `POST` | `ProductController`        | Agrega un producto a un lote creado                  |
+| `/api/verimed/product`           | `GET`  | `ProductController`        | Muestra todos los productos del lote                 |
+| `/api/verimed/product-type`      | `POST` | `ProductTypeController`    | Crea un nuevo tipo de producto                       |
+| `/api/verimed/product-type`      | `GET`  | `ProductTypeController`    | Lista todos los tipos de productos                   |
+| `/api/verimed/batch`             | `GET`  | `BatchController`          | Lista todos los lotes                                |
+| `/api/verimed/batch`             | `POST` | `BatchController`          | Crea un nuevo lote                                   |
+| `/blockchain/contract-name`      | `GET`  | `BlockchainController`     | Obtiene todos los contratos creados en la blockchain |
+
+#### 7.2.1.7 Software Deployment Evidence for Sprint Review
+Para este primer Srint, no se consideró necesario desplegar la aplicación en un servidor, ya que se enfocó en el desarrollo del backend y la conexión con blockchain. Sin embargo, se preparó un entorno de desarrollo local para facilitar la ejecución y pruebas del sistema.
+#### 7.2.1.8 Team Collaboration Insights during Sprint
+Durante el Sprint 1, el equipo utilizó GitHub para la gestión del código. Se realizaron reuniones diarias para revisar el progreso y resolver bloqueos. La comunicación fue fluida, permitiendo ajustes rápidos en las prioridades y enfoques de desarrollo. El uso de pull requests facilitó la revisión del código y la integración continua, asegurando que todos los miembros estuvieran alineados con los objetivos del sprint.
+Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de trabajo, uno enfocado en el desarrollo del frontend y otro en el backend. Esta división permitió una mayor especialización y eficiencia en las tareas, ya que cada equipo pudo concentrarse en su área de expertise. El equipo de frontend se encargó de diseñar y desarrollar la interfaz de usuario, mientras que el equipo de backend se enfocó en la lógica del servidor, la conexión con blockchain y la gestión de datos.
+
+#### **Backend**
+**Integrantes:** Jeferson Cabrera, Carlos Pingu y Nicolás Zagal
+![img.png](static/img/Chapter%207/backend-evidences.png)
+
+#### **Frontend**
+**Integrantes:** Sebastián Frisancho, Gian Franco Luna y Nicolás Zagal
+![frontend-evidence.png](static/img/Chapter%207/frontend-evidence.png)
+
+### **Blockchain Contracts**
+**Integrantes:** Jeferson Cabrera
+![img.png](static/img/Chapter%207/blockchain-evidence.png)
+
+## 7.3 Validation Interviews
+### 7.3.1 Diseño de entrevistas
+### 7.3.2 Registro de entrevistas
+### 7.3.3 Evaluación según heurísticas
+## 7.4 Video About-the-Product
 
 # Conclusiones
 
