@@ -1793,11 +1793,60 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 ### 7.1.2 Source Code Management
 ### 7.1.3 Source Code Style Guide & Conventions
 ### 7.1.4 Software Deployment Configuration
-## 7.2 Solution Implementation
-### 7.2.1 Sprint 1
-#### 7.2.1.1 Sprint Planning 1
-#### 7.2.1.2 Sprint Backlog 1
-#### 7.2.1.3 Development Evidence for Sprint Review
+## 7.2. Solution Implementation
+
+La implementación de Verimed se llevó a cabo mediante una metodología ágil, dividida en Sprints iterativos. Cada Sprint se centró en la entrega de incrementos de funcionalidad valiosos y probables.
+
+### 7.2.1. Sprint 1
+
+El Sprint 1 fue fundamental para establecer las bases del proyecto Verimed y validar las primeras funcionalidades clave.
+
+#### 7.2.1.1. Sprint Planning 1
+
+| **Sprint #**                | Sprint 1                                                                 |
+|----------------------------|--------------------------------------------------------------------------|
+| **Date**                   | 2025-05-06                                                               |
+| **Time**                   | 07:00 PM                                                                 |
+| **Location**               | Reunión virtual (Discord)                                                |
+| **Prepared By**            | Frisancho Lévano, Sebastian Mathias Salomon                             |
+| **Attendees**              | Nicolás Zagal Vallejo, Gianfranco Luna Morales, Jeferson Smith Cabrera Camizam, Carlos Daniel Pingus Rodríguez |
+| **Sprint 0 Review Summary**| Se establecieron los fundamentos técnicos del proyecto. Se definió el stack tecnológico, la arquitectura y se preparó el backlog inicial. |
+| **Sprint 0 Retrospective Summary** | Buena coordinación inicial. Se propuso mejorar la estimación de tareas y definir responsables de manera explícita. |
+| **Sprint 1 Goal**          | Construir y desplegar de manera local una primera versión funcional del ecosistema VeriMed con conexión blockchain y emisión de NFT de trazabilidad. |
+| **Sprint 1 Velocity**      | 31 Story Points                                                          |
+| **Sum of Story Points**    | 31 Story Points                                                          |
+
+---
+
+### 7.2.1.2. Sprint Backlog 1
+
+| Sprint #  | User Story | Task ID | Título del Task                      | Descripción                                                        | Estimación | Responsable                               | Estado       |
+|-----------|-------------|---------|-------------------------------------|--------------------------------------------------------------------|------------|-------------------------------------------|--------------|
+| Sprint 1  | US-01       | T06     | Mostrar historial de producción     | Componente frontend para mostrar lotes con fecha y estado         | 3          | Sebastián Frisancho, Nicolás Zagal  y Gianfranco Luna      | To Review    |
+| Sprint 1  | US-02       | T11     | Generar reporte PDF de trazabilidad| Backend genera archivo PDF con historial completo                 | 3          | Carlos Pingus y Gianfranco Luna                            | To Do        |
+| Sprint 1  | US-03       | T09     | Configurar alertas por anomalías   | Lógica base para generar alertas por desviaciones                 | 3          | Jeferson Cabrera                          | To Do        |
+| Sprint 1  | US-04       | T07     | Visualizar detalles del medicamento| Mostrar en frontend información del NFT escaneado                 | 3          | Sebastián Frisancho y Nicolás Zagal       | In Process   |
+| Sprint 1  | US-05       | T08     | Acceso sin registro a escáner      | Permitir escaneo sin login en la app                              | 2          | Sebastián Frisancho y Nicolás Zagal                       | To Do        |
+| Sprint 1  | US-09       | T01     | Diseñar contrato inteligente        | Crear contrato para registrar lotes como NFT | 4       | Jerferson Cabrera                            | Done         |
+| Sprint 1  | US-09       | T02     | Desplegar contrato en Sepolia      | Usar Hardhat para deploy en red de prueba                         | 2          | Jeferson Cabrera                          | Done         |
+| Sprint 1  | US-09       | T03     | Cargar metadata en Pinata          | Crear metadata en JSON e integrarla a IPFS vía Pinata             | 2          | Jeferson Cabrera                          | Done         |
+| Sprint 1  | US-10       | T04     | Generar código QR desde NFT        | Lógica para generar QR al crear NFT de lote                       | 2          | Carlos Pingus                             | In Process   |
+| Sprint 1  | US-11       | T05     | Visualizar trazabilidad del lote   | Endpoint que devuelve historial del lote desde blockchain         | 4          | Jeferson Cabrera                          | In Process   |
+| Sprint 1  | US-14       | T10     | Validación de integridad del lote  | Comparar datos de lote contra hash blockchain                     | 3          | Carlos Pingus y Gianfranco Luna           | To Review    |
+
+---
+
+### 7.2.1.3. Development Evidence for Sprint Review
+
+| Repository       | Branch         | Commit Id | Commit Message                                                                 | Commit Message Body | Committed on (Date) |
+|------------------|----------------|-----------|----------------------------------------------------------------------------------|----------------------|----------------------|
+| VeriMedBackend   | feat/batch     | b83425d   | feat: Batch & Product Services Interfaces                                       | -                    | 10/06/2025           |
+| VeriMedBackend   | feat/iam       | 571fb7a   | feat: Added IAM security                                                        | -                    | 16/06/2025           |
+| VeriMedBackend   | feat/blockchain| 09dc74e   | feat: implement blockchain controller and service for NFT management            | -                    | 17/06/2025           |
+| VeriMedBackend   | feat/blockchain| f9faa94   | feat: update database connection properties and enhance blockchain services for NFT minting | -         | 17/06/2025           |
+| VeriMedFrontend  | main           | 0b8b183   | feat: initialize project Verimed                                                | -                    | 16/06/2025           |
+| VeriMedFrontend  | main           | f125853   | feat: Log in and register                                                       | -                    | 21/06/2025           |
+
 #### 7.2.1.4 Testing Suite Evidence for Sprint Review
 #### 7.2.1.5 Execution Evidence for Sprint Review
 En el Sprint 1, se logró desarrollar la aplicación web y el backend que usará nuestra aplicación. Asi mismo, se desarrolló la conexión con blockchain donde se registrarán los NFTs de los lotes de medicamentos.
