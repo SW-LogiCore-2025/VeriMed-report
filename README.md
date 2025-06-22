@@ -2210,27 +2210,6 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
 <table border="1">
   <tbody><tr>
     <td>
-      <b>Nombres y apellidos:</b> Yoleny Cordova<br>
-      <b>Edad:</b> 18 años <br>
-      <b>Distrito:</b> San Borja <br>
-      <b>Duración:</b>  minutos
-    </td>
-    <td align="center">
-      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="" alt="img" width="80%" style="max-width: 100%;"></a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
-      <br>
-      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
-    </td>
-  </tr>
-</tbody></table>
-
-<table border="1">
-  <tbody><tr>
-    <td>
       <b>Nombres y apellidos:</b> Brucce Ciprano<br>
       <b>Edad:</b> 21 años <br>
       <b>Distrito:</b> San Juan de Lurigancho <br>
@@ -2266,6 +2245,27 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
       <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224392_upc_edu_pe/EQ04wZU1UtxFpo9DaLMiB-sBXF9_qJUhED670QuxhetVZg?e=MwuugG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" rel="nofollow">http://bit.ly/4kUVjox</a>
       <br>
       <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a una joven de San Isidro que mostró interés en la autenticidad de los medicamentos que consume. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. La entrevistada valoró la propuesta, especialmente por la posibilidad de garantizar la seguridad de los productos farmacéuticos. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos.
+    </td>
+  </tr>
+</tbody></table>
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Luis Moreno<br>
+      <b>Edad:</b> 28 años <br>
+      <b>Distrito:</b> Carabayllo <br>
+      <b>Duración:</b>  06:47 minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1750565589/imagen_2025-06-21_231308235_wc0ubh.png" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113280_upc_edu_pe/EbvwtC15qoBIvFFI-U7RJdsBplmnWbO1qHxwjIpoO5Gazg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MdTyNK" rel="nofollow">http://bit.ly/4kWNHlm</a>
+      <br>
+      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a Luis Moreno, un trabajador de un laboratorio farmacéutico en Carabayllo. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite registrar y verificar cada etapa del ciclo de vida de los medicamentos mediante el escaneo de un código QR. Luis valoró positivamente la propuesta, especialmente por la posibilidad de garantizar la autenticidad y trazabilidad de los medicamentos producidos en su laboratorio. Consideró útil la funcionalidad de tokenizar los lotes mediante NFTs, ya que esto podría reducir la circulación de productos falsificados y mejorar la confianza del consumidor.
     </td>
   </tr>
 </tbody></table>
