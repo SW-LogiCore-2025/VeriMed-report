@@ -219,11 +219,10 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>Zagal Vallejo, Nicolás:</strong> Se estructuró un plan de desarollo para la implementación del backend asegurando una arquitectura DDD escalable para el proyecto. Para ello se llevaron tuvieron diversas reuniones en las que se consolidó el plan.</p>
   <p><strong>Frisancho Lévano, Sebastian:</strong> Coordiné la reunión de planificación del Sprint 1, comunicando con claridad los objetivos y tareas asignadas. Durante las sesiones del equipo, expliqué de forma accesible la integración entre frontend y blockchain, adaptando el lenguaje según el perfil técnico de los participantes y resolviendo dudas sobre la funcionalidad del escaneo de NFTs.</p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Participó activamente en la reunión de planificación del Sprint 1, explicando de manera clara la lógica y funciones del contrato inteligente, lo que permitió al equipo entender su integración con el sistema y facilitar el desarrollo conjunto entre backend y frontend.</p>
-<p><strong>Luna Morales, Gianfranco:</strong> Propuso mejoras en la experiencia de usuario desde el diseño de interfaz, comunicando sugerencias de forma accesible para todo el equipo, ayudando a alinear las decisiones de desarrollo con una visión centrada en el usuario final.</p>
+<p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
 <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso al equipo los pasos necesarios para la conexión con la blockchain usando Alchemy y Pinata, aclarando el flujo de datos desde el backend. Su explicación permitió comprender cómo se gestiona la emisión y lectura de NFTs.</p>
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Explicó la estructura de los servicios backend para generar reportes y validar integridad de datos. Su comunicación permitió que los desarrolladores frontend comprendieran mejor los endpoints disponibles y su funcionalidad.</p>
 
-    
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -242,11 +241,9 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>Zagal Vallejo, Nicolás:</strong> Desarrolló los endpoints de Batch, Product y ProductType siguiendo una arquitectura DDD y CQRS aplicando de manera adecuada los principios de escalabilidad y convenciones definidas durante las reuniones</p>
     <p><strong>Frisancho Lévano, Sebastian:</strong> Documenté el Sprint 1 en el capítulo VII, incluyendo planificación, backlog y evidencia técnica. Redacté el resumen en formato markdown para GitHub, asegurando claridad en los entregables y trazabilidad del desarrollo para facilitar su comprensión por parte de miembros técnicos y no técnicos.</p>
     <p><strong>Zagal Vallejo, Nicolás:</strong> Documentó las funciones del contrato inteligente VeriMedTraceability.sol con claridad, incluyendo convenciones de codificación y comentarios explicativos, facilitando la comprensión y uso por parte del equipo de backend.</p>
-<p><strong>Luna Morales, Gianfranco:</strong> Contribuyó en el diseño visual y estructuración de componentes frontend, asegurando que la documentación fuera comprensible tanto para diseñadores como desarrolladores, y alineada a los flujos definidos en las historias de usuario.</p>
+<p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
 <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Redactó código backend bien comentado, especialmente en los servicios relacionados a la interacción con la blockchain. Sus commits y mensajes fueron claros, lo que ayudó a mantener la trazabilidad del proyecto.</p>
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Documentó los servicios de generación de reportes y códigos QR, asegurando que sus funcionalidades y uso estuvieran descritos de manera clara para el resto del equipo y stakeholders técnicos.</p>
-
-    
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -2035,11 +2032,61 @@ DataDog: Monitoreo de performance y métricas
 VPC: Aislamiento de red para componentes backend
 
 Esta configuración asegura alta disponibilidad, escalabilidad automática y deployment continuo para la solución VeriMed.
-## 7.2 Solution Implementation
-### 7.2.1 Sprint 1
-#### 7.2.1.1 Sprint Planning 1
-#### 7.2.1.2 Sprint Backlog 1
-#### 7.2.1.3 Development Evidence for Sprint Review
+
+## 7.2. Solution Implementation
+
+La implementación de Verimed se llevó a cabo mediante una metodología ágil, dividida en Sprints iterativos. Cada Sprint se centró en la entrega de incrementos de funcionalidad valiosos y probables.
+
+### 7.2.1. Sprint 1
+
+El Sprint 1 fue fundamental para establecer las bases del proyecto Verimed y validar las primeras funcionalidades clave.
+
+#### 7.2.1.1. Sprint Planning 1
+
+| **Sprint #**                | Sprint 1                                                                 |
+|----------------------------|--------------------------------------------------------------------------|
+| **Date**                   | 2025-05-06                                                               |
+| **Time**                   | 07:00 PM                                                                 |
+| **Location**               | Reunión virtual (Discord)                                                |
+| **Prepared By**            | Frisancho Lévano, Sebastian Mathias Salomon                             |
+| **Attendees**              | Nicolás Zagal Vallejo, Gianfranco Luna Morales, Jeferson Smith Cabrera Camizam, Carlos Daniel Pingus Rodríguez |
+| **Sprint 0 Review Summary**| Se establecieron los fundamentos técnicos del proyecto. Se definió el stack tecnológico, la arquitectura y se preparó el backlog inicial. |
+| **Sprint 0 Retrospective Summary** | Buena coordinación inicial. Se propuso mejorar la estimación de tareas y definir responsables de manera explícita. |
+| **Sprint 1 Goal**          | Construir y desplegar de manera local una primera versión funcional del ecosistema VeriMed con conexión blockchain y emisión de NFT de trazabilidad. |
+| **Sprint 1 Velocity**      | 31 Story Points                                                          |
+| **Sum of Story Points**    | 31 Story Points                                                          |
+
+---
+
+### 7.2.1.2. Sprint Backlog 1
+
+| Sprint #  | User Story | Task ID | Título del Task                      | Descripción                                                        | Estimación | Responsable                               | Estado       |
+|-----------|-------------|---------|-------------------------------------|--------------------------------------------------------------------|------------|-------------------------------------------|--------------|
+| Sprint 1  | US-01       | T06     | Mostrar historial de producción     | Componente frontend para mostrar lotes con fecha y estado         | 3          | Sebastián Frisancho, Nicolás Zagal  y Gianfranco Luna      | To Review    |
+| Sprint 1  | US-02       | T11     | Generar reporte PDF de trazabilidad| Backend genera archivo PDF con historial completo                 | 3          | Carlos Pingus y Gianfranco Luna                            | To Do        |
+| Sprint 1  | US-03       | T09     | Configurar alertas por anomalías   | Lógica base para generar alertas por desviaciones                 | 3          | Jeferson Cabrera                          | To Do        |
+| Sprint 1  | US-04       | T07     | Visualizar detalles del medicamento| Mostrar en frontend información del NFT escaneado                 | 3          | Sebastián Frisancho y Nicolás Zagal       | In Process   |
+| Sprint 1  | US-05       | T08     | Acceso sin registro a escáner      | Permitir escaneo sin login en la app                              | 2          | Sebastián Frisancho y Nicolás Zagal                       | To Do        |
+| Sprint 1  | US-09       | T01     | Diseñar contrato inteligente        | Crear contrato para registrar lotes como NFT | 4       | Jerferson Cabrera                            | Done         |
+| Sprint 1  | US-09       | T02     | Desplegar contrato en Sepolia      | Usar Hardhat para deploy en red de prueba                         | 2          | Jeferson Cabrera                          | Done         |
+| Sprint 1  | US-09       | T03     | Cargar metadata en Pinata          | Crear metadata en JSON e integrarla a IPFS vía Pinata             | 2          | Jeferson Cabrera                          | Done         |
+| Sprint 1  | US-10       | T04     | Generar código QR desde NFT        | Lógica para generar QR al crear NFT de lote                       | 2          | Carlos Pingus                             | In Process   |
+| Sprint 1  | US-11       | T05     | Visualizar trazabilidad del lote   | Endpoint que devuelve historial del lote desde blockchain         | 4          | Jeferson Cabrera                          | In Process   |
+| Sprint 1  | US-14       | T10     | Validación de integridad del lote  | Comparar datos de lote contra hash blockchain                     | 3          | Carlos Pingus y Gianfranco Luna           | To Review    |
+
+---
+
+### 7.2.1.3. Development Evidence for Sprint Review
+
+| Repository       | Branch         | Commit Id | Commit Message                                                                 | Commit Message Body | Committed on (Date) |
+|------------------|----------------|-----------|----------------------------------------------------------------------------------|----------------------|----------------------|
+| VeriMedBackend   | feat/batch     | b83425d   | feat: Batch & Product Services Interfaces                                       | -                    | 10/06/2025           |
+| VeriMedBackend   | feat/iam       | 571fb7a   | feat: Added IAM security                                                        | -                    | 16/06/2025           |
+| VeriMedBackend   | feat/blockchain| 09dc74e   | feat: implement blockchain controller and service for NFT management            | -                    | 17/06/2025           |
+| VeriMedBackend   | feat/blockchain| f9faa94   | feat: update database connection properties and enhance blockchain services for NFT minting | -         | 17/06/2025           |
+| VeriMedFrontend  | main           | 0b8b183   | feat: initialize project Verimed                                                | -                    | 16/06/2025           |
+| VeriMedFrontend  | main           | f125853   | feat: Log in and register                                                       | -                    | 21/06/2025           |
+
 #### 7.2.1.4 Testing Suite Evidence for Sprint Review
 #### 7.2.1.5 Execution Evidence for Sprint Review
 En el Sprint 1, se logró desarrollar la aplicación web y el backend que usará nuestra aplicación. Asi mismo, se desarrolló la conexión con blockchain donde se registrarán los NFTs de los lotes de medicamentos.
@@ -2083,10 +2130,223 @@ Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de tr
 ![img.png](static/img/Chapter%207/blockchain-evidence.png)
 
 ## 7.3 Validation Interviews
-### 7.3.1 Diseño de entrevistas
+A continuación, se muestran las Validation Interviews, una etapa clave para nuestro equipo, ya que nos permitirán validar directamente con los usuarios reales, como laboratorios, distribuidores, farmacias y pacientes, si el sistema VeriMed responde adecuadamente a sus necesidades. A través de estas entrevistas, podremos recoger comentarios valiosos sobre la utilidad, usabilidad y relevancia de las funcionalidades implementadas. Esta retroalimentación nos servirá para realizar ajustes oportunos, reforzar aspectos positivos y garantizar que la solución tenga un verdadero impacto en la mejora de la trazabilidad y autenticidad de medicamentos en la cadena de suministro.
+
+## 6.3.1. Diseño de Entrevistas
+
+### 👥 Usuarios Finales (Pacientes o Consumidores)
+
+#### 🔍 Contexto de uso y conocimiento
+- ¿Cómo suele verificar actualmente que un medicamento es auténtico?
+- ¿Ha escuchado antes sobre medicamentos falsificados o adulterados?
+- ¿Conoce qué es la tecnología blockchain o los tokens NFT? ¿La ha usado antes?
+
+#### 💊 Preocupaciones y necesidades
+- ¿Qué tan importante es para usted saber el origen y recorrido de un medicamento?
+- ¿Ha tenido alguna vez dudas sobre la autenticidad de un medicamento que ha comprado?
+- ¿Le gustaría tener una herramienta que le muestre la trazabilidad completa de un medicamento antes de consumirlo?
+
+#### 📱 Validación del sistema propuesto
+- ¿Qué le parecería escanear un código QR en el empaque de un medicamento y ver todos los pasos por los que ha pasado hasta llegar a sus manos?
+- ¿Se sentiría más seguro al consumir un medicamento que esté respaldado por un sistema en blockchain?
+- ¿Qué tan fácil cree que sería usar una app o página web para verificar esta información?
+
+#### 🛠️ Implementación y soporte
+- ¿Qué barreras cree que tendría al usar esta tecnología (por ejemplo: acceso, comprensión, confianza)?
+- ¿Qué necesitaría para confiar en que esta información es verídica y útil?
+- ¿Estaría dispuesto a recomendar este tipo de sistema a otros usuarios?
+
+---
+
+### 🧪 Laboratorios y Fabricantes de Medicamentos
+
+#### 🏭 Procesos actuales y tecnologías
+- ¿Qué mecanismos utilizan actualmente para garantizar la trazabilidad de sus productos?
+- ¿Qué tan frecuente es la falsificación o adulteración de sus medicamentos en el mercado?
+- ¿Qué tecnologías digitales utilizan en su cadena de producción y distribución?
+
+#### 📦 Necesidades y motivaciones
+- ¿Qué tan importante considera que es ofrecer trazabilidad transparente a sus consumidores?
+- ¿Cuál cree que es el impacto reputacional o económico de los medicamentos falsificados en su marca?
+- ¿Estaría interesado en mejorar la confianza del consumidor mediante herramientas tecnológicas?
+
+#### 🔐 Validación del sistema basado en blockchain
+- ¿Qué le parecería usar tecnología blockchain para registrar cada etapa del ciclo de vida del medicamento?
+- ¿Le interesaría tokenizar sus productos mediante NFTs que garanticen unicidad y trazabilidad?
+- ¿Cree que esto podría reducir la circulación de productos falsificados o no autorizados?
+
+#### 🤝 Implementación y colaboración
+- ¿Qué requerimientos técnicos, regulatorios o logísticos cree que deberían cumplirse para implementar este sistema?
+- ¿Estaría dispuesto a colaborar en una prueba piloto o integración con su sistema actual?
+- ¿Qué beneficios espera obtener si se integra un sistema de trazabilidad NFT en su cadena de producción?
+
 ### 7.3.2 Registro de entrevistas
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Yoleny Cordova<br>
+      <b>Edad:</b> 18 años <br>
+      <b>Distrito:</b> San Borja <br>
+      <b>Duración:</b>  minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
+      <br>
+      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
+    </td>
+  </tr>
+</tbody></table>
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Brucce Ciprano<br>
+      <b>Edad:</b> 21 años <br>
+      <b>Distrito:</b> San Juan de Lurigancho <br>
+      <b>Duración:</b>  06:04 minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1750557805/imagen_2025-06-21_210324634_fnvp1r.png" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/Ednsae2-24hHu84ZLjDXA7sBaDSxx_i050Y2eC3AjDwnKw?e=PBmRxc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" rel="nofollow">http://bit.ly/4k2iPyz</a>
+      <br>
+      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a un estudiante de la UPC que compra medicamentos con frecuencia. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. El entrevistado mostró interés en la propuesta, especialmente en la posibilidad de garantizar la autenticidad de los medicamentos que consume regularmente. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos. Aunque no ha tenido problemas con medicamentos falsificados, valoró la idea de contar con una herramienta que respalde la seguridad de los productos farmacéuticos..
+    </td>
+  </tr>
+</tbody></table>
+
+
 ### 7.3.3 Evaluación según heurísticas
+<p align="center">
+  <strong>## UX Heuristics & Principles Evaluation</strong><br>
+  <em>Usability – Inclusive Design – Information Architecture</em>
+</p>
+
+**CARRERA**: Ingeniería de Software  
+**CURSO**: Arquitecturas De Software Emergentes 
+**SECCIÓN**: 4281  
+**PROFESORES**: Royer Edelwer Rojas Malasquez
+**AUDITOR**: LogiTech  
+**CLIENTE(S)**: Pacientes individuales, farmacias y laboratorioas farmacéuticos
+
+**SITE o APP A EVALUAR**: VeriMed – Plataforma de trazabilidad de medicamentos (Web, Mobile y Blockchain)
+
+## TAREAS A EVALUAR:
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas en el sistema VeriMed:
+
+1. Escaneo de un código QR para verificar la autenticidad de un medicamento (Mobile).
+2. Registro de un lote de medicamentos en la blockchain (Web).
+3. Visualización de la trazabilidad completa de un medicamento desde su fabricación hasta el consumidor final (Web y Mobile).
+4. Generación de alertas por escaneos sospechosos de medicamentos (Web).
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Reporte de medicamentos sospechosos a las autoridades.
+2. Configuración avanzada de permisos para usuarios del sistema.
+3. Integración con sistemas externos de análisis logístico.
+
+## ESCALA DE SEVERIDAD:
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a menos que haya tiempo disponible. |
+| **2** | Problema menor: ocurre con algo más de frecuencia o es un poco más difícil de resolver para el usuario. Debería corregirse con baja prioridad en la siguiente versión. |
+| **3** | Problema mayor: ocurre con frecuencia o el usuario no puede resolverlo. Es importante corregirlo con alta prioridad. |
+| **4** | Problema muy grave: impide al usuario continuar usando la herramienta. Debe corregirse antes del despliegue. |
+
+## TABLA RESUMEN DE PROBLEMAS DETECTADOS
+
+| #  | Problema                                                                                   | Escala de Severidad | Heurística / Principio Violado                                     |
+|----|--------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------|
+| 1  | Escaneo de un código QR no responde en dispositivos con cámaras de baja calidad           | 3                   | Usability: Flexibilidad y eficiencia de uso                        |
+| 2  | Registro de un lote en la blockchain no muestra mensajes claros de error en caso de fallos | 2                   | Usability: Ayuda y documentación                                   |
+| 3  | La visualización de trazabilidad no es intuitiva para usuarios sin experiencia técnica     | 3                   | Usability: Consistencia y estándares                               |
+| 4  | Las alertas generadas por escaneos sospechosos no notifican en tiempo real                | 4                   | Usability: Visibilidad del estado del sistema                      |
+
+### PROBLEMA #1: Escaneo de un código QR no responde en dispositivos con cámaras de baja calidad
+
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Flexibilidad y eficiencia de uso
+
+**Problema:**  
+En dispositivos móviles con cámaras de baja calidad, el escaneo de códigos QR no funciona correctamente, lo que impide a los usuarios verificar la autenticidad de los medicamentos. Esto afecta principalmente a usuarios con dispositivos más antiguos o de gama baja, limitando la accesibilidad y la experiencia de uso.
+
+**Recomendación:**  
+Implementar un sistema de mejora de imagen o permitir la introducción manual del código QR como alternativa. Esto garantizará que todos los usuarios puedan acceder a la funcionalidad independientemente de las limitaciones de su dispositivo.
+
+### PROBLEMA #2: Registro de un lote en la blockchain no muestra mensajes claros de error en caso de fallos
+
+**Severidad:** 2  
+**Heurística violada:** Usabilidad – Ayuda y documentación
+
+**Problema:**  
+Cuando ocurre un error durante el registro de un lote en la blockchain, el sistema no proporciona mensajes claros que expliquen la causa del fallo. Esto dificulta que los usuarios identifiquen y solucionen el problema, generando confusión y retrasos en el proceso.
+
+**Recomendación:**  
+Agregar mensajes de error descriptivos que incluyan información sobre la causa del fallo y posibles soluciones. Además, proporcionar un enlace a la documentación o soporte técnico para casos más complejos.
+
+**Evidencia visual:**  
+![Captura del problema](https://res.cloudinary.com/drkelnilg/image/upload/v1750554966/imagen_2025-06-21_201605989_ixas5l.png)
+
+### PROBLEMA #3: La visualización de trazabilidad no es intuitiva para usuarios sin experiencia técnica
+
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Consistencia y estándares
+
+**Problema:**  
+La interfaz de visualización de trazabilidad presenta información técnica compleja que no es fácilmente comprensible para usuarios sin experiencia técnica. Esto dificulta la interpretación de los datos y reduce la efectividad de la funcionalidad.
+
+**Recomendación:**  
+Simplificar la presentación de la información utilizando gráficos, diagramas y descripciones claras. Incluir una guía interactiva o tutorial para ayudar a los usuarios a entender los datos mostrados.
+
+**Evidencia visual:**  
+![Captura del problema](https://res.cloudinary.com/drkelnilg/image/upload/v1750555014/imagen_2025-06-21_201653403_vi7tzy.png)
+
+### PROBLEMA #4: Las alertas generadas por escaneos sospechosos no notifican en tiempo real
+
+**Severidad:** 4  
+**Heurística violada:** Usabilidad – Visibilidad del estado del sistema
+
+**Problema:**  
+El sistema no notifica en tiempo real cuando se detectan escaneos sospechosos de medicamentos, lo que retrasa la respuesta ante posibles problemas de seguridad. Esto puede comprometer la confianza de los usuarios y la efectividad del sistema.
+
+**Recomendación:**  
+Implementar un sistema de notificaciones en tiempo real que alerte inmediatamente a los usuarios y administradores sobre escaneos sospechosos. Esto puede incluir notificaciones push, correos electrónicos o alertas en la interfaz.
+
 ## 7.4 Video About-the-Product
+
+Como parte de la estrategia de difusión del sistema **VeriMed**, el equipo desarrolló un video explicativo orientado a dos públicos clave:
+
+- 🏥 **Pacientes y Consumidores**: usuarios interesados en conocer cómo el sistema garantiza la autenticidad y trazabilidad de los medicamentos, mostrando sus beneficios y el impacto positivo en la seguridad del consumidor.
+- 🧪 **Laboratorios y Farmacias**: actores clave que desean entender cómo utilizar las funcionalidades principales del sistema para registrar lotes, verificar medicamentos y generar alertas en tiempo real.
+
+El video adopta un tono profesional, claro y accesible, alineado con la identidad visual de VeriMed. Se presenta una visión general del sistema, incluyendo su modelo de negocio, arquitectura modular (web, móvil, backend y blockchain), así como ejemplos prácticos de uso.
+
+📺 **Captura del video**  
+![Screenshot del Video](https://res.cloudinary.com/drkelnilg/image/upload/v1750556422/imagen_2025-06-21_204021226_wokqwa.png)
+
+🔗 **Enlaces del video**
+- Versión publicada en **Microsoft Stream**:  
+  👉 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ)
+
+
+⏱️ **Duración del video**: 3 minutos y 8 segundos
+
+---
+
+
 
 # Conclusiones
 
