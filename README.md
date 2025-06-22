@@ -198,6 +198,27 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
   - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
 - [6.5. Applications Prototyping](#65-applications-prototyping)
+## [Capítulo VII: Product Implementation, Validation & Deployment](#capítulo-vii-product-implementation-validation--deployment)
+- [7.1. Software Configuration Management](#71-software-configuration-management)
+  - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+  - [7.1.2. Source Code Management](#712-source-code-management)
+  - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+  - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+- [7.2. Solution Implementation](#72-solution-implementation)
+  - [7.2.1. Sprint 1](#721-sprint-1)
+    - [7.2.1.1. Sprint Planning 1](#7211-sprint-planning-1)
+    - [7.2.1.2. Sprint Backlog 1](#7212-sprint-backlog-1)
+    - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+    - [7.2.1.4. Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+    - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+    - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+    - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+    - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+- [7.3. Validation Interviews](#73-validation-interviews)
+  - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)
+  - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
+  - [7.3.3. Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
+- [7.4. Video About-the-Product](#74-video-about-the-product)
 ## [Conclusiones](#conclusiones)
 ## [Bibliografía](#bibliografía)
 ## [Anexos](#anexos)
@@ -2136,7 +2157,7 @@ Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de tr
 ## 7.3 Validation Interviews
 A continuación, se muestran las Validation Interviews, una etapa clave para nuestro equipo, ya que nos permitirán validar directamente con los usuarios reales, como laboratorios, distribuidores, farmacias y pacientes, si el sistema VeriMed responde adecuadamente a sus necesidades. A través de estas entrevistas, podremos recoger comentarios valiosos sobre la utilidad, usabilidad y relevancia de las funcionalidades implementadas. Esta retroalimentación nos servirá para realizar ajustes oportunos, reforzar aspectos positivos y garantizar que la solución tenga un verdadero impacto en la mejora de la trazabilidad y autenticidad de medicamentos en la cadena de suministro.
 
-## 6.3.1. Diseño de Entrevistas
+## 7.3.1. Diseño de Entrevistas
 
 ### 👥 Usuarios Finales (Pacientes o Consumidores)
 
