@@ -229,6 +229,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p>En conclusión: La comunicación efectiva y constante entre los miembros favoreció la coordinación y el avance armónico del proyecto.</p>
   <p><strong>TP</strong></p>
   <p>En conclusión: La integración de roles mediante documentación clara, diseño visual y diagramas permitió al equipo compartir una visión común, lo que fortaleció la colaboración y el desarrollo integral del proyecto, mejorando la calidad y cohesión del trabajo final.</p>
+    <p><strong>TB2</strong></p>
+    <p>En conclusión: Durante la TB2, el equipo demostró una comunicación oral efectiva y adaptada a distintos niveles de especialización. Cada integrante supo expresar claramente su aporte técnico, facilitando la coordinación entre frontend, backend y blockchain. Las reuniones virtuales permitieron resolver dudas, alinear expectativas y garantizar que todos los miembros comprendieran tanto la lógica funcional como técnica del sistema.</p>
 </td>
 </tr> <tr> <td> <p><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Presentó al equipo los puntos clave del Capítulo III para facilitar el desarrollo progresivo del proyecto y la elaboración del diagrama C4.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Expuso de forma clara y estructurada el event storming y los diagramas C4, garantizando que todos los miembros comprendieran la línea de trabajo establecida.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Redactó con precisión y claridad el capítulo IV, adaptando el lenguaje a públicos con distintos niveles técnicos, lo que permitió una comunicación transparente y objetiva del diseño.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso las ideas y resultados obtenidos de forma clara, asegurando la comprensión y alineación del equipo, tomando en cuenta las distintas especializaciones y niveles jerárquicos.</p>
   <p><strong>TP</strong></p>
@@ -250,6 +252,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p>En conclusión: La comunicación interdisciplinaria permitió un mejor desarrollo y entendimiento del proyecto en todas sus fases.</p>
   <p><strong>TP</strong></p>
   <p>En conclusión: La elaboración detallada de wireframes y wireflows, junto con una documentación clara y estructurada, permitió comunicar de manera efectiva las ideas y resultados a públicos diversos, incluyendo técnicos y no técnicos. Esta comunicación visual y técnica facilitó la comprensión compartida, promovió la alineación del equipo y fortaleció la toma de decisiones colaborativa a lo largo del desarrollo del proyecto.</p>
+    <p><strong>TB2</strong></p>
+    <p>En conclusión: La documentación elaborada en la TB2 mostró claridad, estructura y adecuación al público objetivo. Los miembros del equipo generaron entregables escritos comprensibles para distintos perfiles técnicos, desde comentarios en el código hasta redacción de secciones del informe. Esto permitió una trazabilidad efectiva del desarrollo, fortaleciendo la colaboración y facilitando la validación del avance del proyecto por parte de los stakeholders.</p>
 </td>
 </tr> </table>
 
