@@ -2142,17 +2142,17 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
       <b>Nombres y apellidos:</b> Brucce Ciprano<br>
       <b>Edad:</b> 21 años <br>
       <b>Distrito:</b> San Juan de Lurigancho <br>
-      <b>Duración:</b>  minutos
+      <b>Duración:</b>  06:04 minutos
     </td>
     <td align="center">
-      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="" alt="img" width="80%" style="max-width: 100%;"></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1750557805/imagen_2025-06-21_210324634_fnvp1r.png" alt="img" width="80%" style="max-width: 100%;"></a>
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/Ednsae2-24hHu84ZLjDXA7sBaDSxx_i050Y2eC3AjDwnKw?e=PBmRxc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" rel="nofollow">http://bit.ly/4k2iPyz</a>
       <br>
-      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
+      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a un estudiante de la UPC que compra medicamentos con frecuencia. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. El entrevistado mostró interés en la propuesta, especialmente en la posibilidad de garantizar la autenticidad de los medicamentos que consume regularmente. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos. Aunque no ha tenido problemas con medicamentos falsificados, valoró la idea de contar con una herramienta que respalde la seguridad de los productos farmacéuticos..
     </td>
   </tr>
 </tbody></table>
