@@ -1790,9 +1790,223 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 ## Chapter VII: Product Implementation, Validation & Deployment
 ## 7.1. Software Configuration Management
 ### 7.1.1 Software Development Environment Configuration
+En esta sección se especifican los productos de software, herramientas y servicios que deben utilizar los miembros del equipo para colaborar efectivamente en todas las actividades del ciclo de vida de VeriMed, incluyendo Project Management, Requirements Management, Product Design, Software Development, Software Testing, Software Deployment y Software Documentation.
+
+Herramientas de Desarrollo
+Project Management
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **GitHub Projects** | Gestión de tareas, sprints y seguimiento del progreso del proyecto | SaaS | https://github.com/features/project-management |
+| **GitHub Issues** | Tracking de bugs, features y tareas | SaaS | Integrado en repositorio GitHub |
+
+Requirements Management
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **GitHub Wiki** | Documentación de requerimientos y especificaciones | SaaS | Integrado en repositorio GitHub |
+| **Markdown** | Formato estándar para documentación | Lenguaje | https://daringfireball.net/projects/markdown/ |
+
+Product Design
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **Figma** | Diseño de interfaces UI/UX y prototipado | SaaS | https://www.figma.com/ |
+| **Lucidchart** | Diagramas de arquitectura y flujos de usuario | SaaS | https://www.lucidchart.com/ |
+
+Software Development
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **Visual Studio Code** | IDE principal para desarrollo frontend | Desktop | https://code.visualstudio.com/ |
+| **Node.js** | Runtime de JavaScript para desarrollo | Desktop | https://nodejs.org/ (LTS v18.x) |
+| **npm** | Gestor de paquetes para JavaScript | Desktop | Incluido con Node.js |
+| **Vue.js 3** | Framework frontend principal | Package | https://vuejs.org/ |
+| **Vite** | Build tool y dev server | Package | https://vitejs.dev/ |
+| **Git** | Sistema de control de versiones | Desktop | https://git-scm.com/ |
+
+Extensions de Visual Studio Code Requeridas
+
+| Extensión | Propósito | ID de Extensión |
+|-----------|-----------|----------------|
+| **Vue - Official** | Soporte completo para Vue 3 | Vue.volar |
+| **ESLint** | Linting de código JavaScript/TypeScript | dbaeumer.vscode-eslint |
+| **Prettier** | Formateo automático de código | esbenp.prettier-vscode |
+| **Tailwind CSS IntelliSense** | Autocompletado para Tailwind CSS | bradlc.vscode-tailwindcss |
+| **GitLens** | Funcionalidades avanzadas de Git | eamodio.gitlens |
+
+Software Testing
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **Vitest** | Framework de testing unitario para Vue | Package | https://vitest.dev/ |
+| **Vue Test Utils** | Utilidades para testing de componentes Vue | Package | https://test-utils.vuejs.org/ |
+| **Cypress** | Testing end-to-end | Package | https://www.cypress.io/ |
+
+Software Deployment
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **GitHub Actions** | CI/CD pipeline automatizado | SaaS | Integrado en GitHub |
+| **Netlify** | Hosting y deployment de aplicación frontend | SaaS | https://www.netlify.com/ |
+| **Vercel** | Plataforma alternativa de deployment | SaaS | https://vercel.com/ |
+
+Software Documentation
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **VuePress** | Generación de documentación técnica | Package | https://vuepress.vuejs.org/ |
+| **JSDoc** | Documentación de código JavaScript | Package | https://jsdoc.app/ |
+
+Configuración del Entorno de Desarrollo
+
+Requisitos del Sistema
+
+bash# Versiones mínimas requeridas
+
+Node.js: v18.17.0 LTS
+
+npm: v9.6.7
+
+Git: v2.40.0
+
+Chrome/Firefox: Última versión estable
+
+Proceso de Configuración
+
+1. Verificar instalaciones
+
+node --version && npm --version && git --version
+
+2. Configurar Git globalmente
+
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu-email@ejemplo.com"
+
+3. Clonar repositorio y configurar proyecto
+
+git clone https://github.com/VeriMed-Team/verimed-frontend.git
+cd verimed-frontend
+npm install
+
+4. Configurar variables de entorno
+cp .env.example .env.local
+
 ### 7.1.2 Source Code Management
+Plataforma de Control de Versiones
+El equipo utilizará GitHub como plataforma principal para el sistema de control de versiones, aprovechando sus capacidades de colaboración, integración continua y gestión de proyectos.
+Repositorios del Proyecto
+Repositorio Frontend
+
+URL: https://github.com/VeriMed-Team/verimed-frontend
+Descripción: Aplicación web Vue.js para la interfaz de usuario
+Tecnologías: Vue 3, Vite, JavaScript, CSS3, HTML5
+
+Repositorio Backend (API)
+
+URL: https://github.com/VeriMed-Team/verimed-backend
+Descripción: API RESTful para servicios de verificación de medicamentos
+Tecnologías: Java Spring Boot, PostgreSQL, Docker
+
+Repositorio de Testing
+
+URL: https://github.com/VeriMed-Team/verimed-testing
+Descripción: Suite de pruebas automatizadas y archivos .feature
+Tecnologías: Cucumber, Gherkin, Cypress, Postman Collections
+
+Implementación de GitFlow
+
+El equipo implementará el modelo de branching GitFlow
+
+Estructura de Branches (Ramas)
+1. Rama Principal (Main Branch)
+2. Rama de Desarrollo (Develop Branch)
+3. Feature Branches
+4. Release Branches
+5. Hotfix Branches
+
+
+Conventional Commits
+
+El equipo aplicará el estándar Conventional Commits para mantener un historial de commits claro y automatizar procesos de versionado.
+
 ### 7.1.3 Source Code Style Guide & Conventions
+
+Establecer convenciones estándares de nomenclatura y codificación para mantener consistencia, legibilidad y mantenibilidad del código en todos los lenguajes utilizados en la solución VeriMed.
+
+Idioma de Desarrollo
+
+Todos los elementos del código (variables, funciones, clases, comentarios) deben nombrarse en inglés para mantener consistencia internacional y facilitar la colaboración con desarrolladores de diferentes países.
+
+JavaScript/TypeScript - Google Style Guide
+
+Referencia Principal
+
+Google TypeScript Style Guide: https://google.github.io/styleguide/tsguide.html
+
+Airbnb JavaScript Style Guide: https://github.com/airbnb/javascript
+
 ### 7.1.4 Software Deployment Configuration
+
+En esta sección se especifica la configuración del despliegue de la solución VeriMed, incluyendo los pasos necesarios para que, a partir de los repositorios de código fuente, se pueda lograr el despliegue o publicación satisfactorio de cada uno de los productos digitales que componen la solución.
+Arquitectura de Despliegue
+La solución VeriMed está compuesta por los siguientes productos digitales que requieren configuración de despliegue específica:
+
+Frontend Web Application (Vue.js)
+Backend API Services (Spring Boot)
+Database Services (PostgreSQL)
+Blockchain Integration Services
+
+Entornos de Despliegue
+1. Entorno de Desarrollo (Development)
+
+Propósito: Desarrollo local y testing individual
+Ubicación: Máquinas locales de desarrolladores
+Acceso: http://localhost:5173 (Frontend), http://localhost:8080 (Backend)
+
+2. Entorno de Staging (Pre-producción)
+
+Propósito: Testing integrado y validación antes de producción
+Ubicación: Servidor en la nube (AWS/Azure)
+Acceso: https://staging.verimed.com
+
+3. Entorno de Producción (Production)
+
+Propósito: Sistema en vivo para usuarios finales
+Ubicación: Infraestructura en la nube con alta disponibilidad
+Acceso: https://www.verimed.com
+
+
+Configuración de Despliegue Frontend (Vue.js)
+Repositorio
+
+URL: https://github.com/VeriMed-Team/verimed-frontend
+Tecnología: Vue 3 + Vite + JavaScript
+
+Configuración de Despliegue Backend (Spring Boot)
+Repositorio
+
+URL: https://github.com/VeriMed-Team/verimed-backend
+Tecnología: Java Spring Boot + PostgreSQL
+
+Flujo de Deployment
+
+Developer commits → GitHub Repository
+GitHub Actions triggered → Build & Test
+Frontend: Build estático → Deploy a Netlify
+Backend: Build Docker image → Deploy a ECS
+Database migrations ejecutadas automáticamente
+Health checks y validación post-deployment
+
+Seguridad y Monitoreo
+
+AWS WAF: Protección contra ataques web
+SSL/TLS: Encriptación end-to-end
+Sentry: Tracking de errores en tiempo real
+DataDog: Monitoreo de performance y métricas
+VPC: Aislamiento de red para componentes backend
+
+Esta configuración asegura alta disponibilidad, escalabilidad automática y deployment continuo para la solución VeriMed.
 ## 7.2 Solution Implementation
 ### 7.2.1 Sprint 1
 #### 7.2.1.1 Sprint Planning 1
