@@ -218,6 +218,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>TB2</strong></p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Se estructuró un plan de desarollo para la implementación del backend asegurando una arquitectura DDD escalable para el proyecto. Para ello se llevaron tuvieron diversas reuniones en las que se consolidó el plan.</p>
   <p><strong>Frisancho Lévano, Sebastian:</strong> Coordiné la reunión de planificación del Sprint 1, comunicando con claridad los objetivos y tareas asignadas. Durante las sesiones del equipo, expliqué de forma accesible la integración entre frontend y blockchain, adaptando el lenguaje según el perfil técnico de los participantes y resolviendo dudas sobre la funcionalidad del escaneo de NFTs.</p>
+   <p><strong>TB2</strong></p>
+  <p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
     
 </td>
 <td>
@@ -236,6 +238,7 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>TB2</strong></p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Desarrolló los endpoints de Batch, Product y ProductType siguiendo una arquitectura DDD y CQRS aplicando de manera adecuada los principios de escalabilidad y convenciones definidas durante las reuniones</p>
     <p><strong>Frisancho Lévano, Sebastian:</strong> Documenté el Sprint 1 en el capítulo VII, incluyendo planificación, backlog y evidencia técnica. Redacté el resumen en formato markdown para GitHub, asegurando claridad en los entregables y trazabilidad del desarrollo para facilitar su comprensión por parte de miembros técnicos y no técnicos.</p>
+  <p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
