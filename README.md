@@ -97,6 +97,12 @@
                 <td>Sebastian Frisancho</td>
                 <td>Se desarrollaron los puntos 5 y 6, actualización de unidades anteriores</td>
             </tr>
+            <tr>
+                <th>2.0</th>
+                <td>20/06/2025</td>
+                <td>Sebastian Frisancho</td>
+                <td>Se desarrollaron los puntos 7 y 8, actualización de unidades anteriores</td>
+            </tr>
        </tbody>
 </table>
 
@@ -211,6 +217,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>Zagal Vallejo, Nicolás:</strong> Al elaborar el diagrama C4 del bounded context, me aseguré de representar con precisión los componentes, sus interacciones y dependencias, lo que permitió al equipo técnico y a los stakeholders tener una visión clara y compartida de la arquitectura del sistema, facilitando la planificación y ejecución del proyecto.</p>
   <p><strong>TB2</strong></p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Se estructuró un plan de desarollo para la implementación del backend asegurando una arquitectura DDD escalable para el proyecto. Para ello se llevaron tuvieron diversas reuniones en las que se consolidó el plan.</p>
+  <p><strong>Frisancho Lévano, Sebastian:</strong> Coordiné la reunión de planificación del Sprint 1, comunicando con claridad los objetivos y tareas asignadas. Durante las sesiones del equipo, expliqué de forma accesible la integración entre frontend y blockchain, adaptando el lenguaje según el perfil técnico de los participantes y resolviendo dudas sobre la funcionalidad del escaneo de NFTs.</p>
+    
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -218,7 +226,7 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>TP</strong></p>
   <p>En conclusión: La integración de roles mediante documentación clara, diseño visual y diagramas permitió al equipo compartir una visión común, lo que fortaleció la colaboración y el desarrollo integral del proyecto, mejorando la calidad y cohesión del trabajo final.</p>
 </td>
-</tr> <tr> <td> <p><b>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Presentó al equipo los puntos clave del Capítulo III para facilitar el desarrollo progresivo del proyecto y la elaboración del diagrama C4.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Expuso de forma clara y estructurada el event storming y los diagramas C4, garantizando que todos los miembros comprendieran la línea de trabajo establecida.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Redactó con precisión y claridad el capítulo IV, adaptando el lenguaje a públicos con distintos niveles técnicos, lo que permitió una comunicación transparente y objetiva del diseño.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso las ideas y resultados obtenidos de forma clara, asegurando la comprensión y alineación del equipo, tomando en cuenta las distintas especializaciones y niveles jerárquicos.</p>
+</tr> <tr> <td> <p><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Presentó al equipo los puntos clave del Capítulo III para facilitar el desarrollo progresivo del proyecto y la elaboración del diagrama C4.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Expuso de forma clara y estructurada el event storming y los diagramas C4, garantizando que todos los miembros comprendieran la línea de trabajo establecida.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Redactó con precisión y claridad el capítulo IV, adaptando el lenguaje a públicos con distintos niveles técnicos, lo que permitió una comunicación transparente y objetiva del diseño.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso las ideas y resultados obtenidos de forma clara, asegurando la comprensión y alineación del equipo, tomando en cuenta las distintas especializaciones y niveles jerárquicos.</p>
   <p><strong>TP</strong></p>
   <p><strong>Frisancho Lévano, Sebastian:</strong> Diseñó y documentó wireframes y wireflows detallados en el capítulo 6.4, buscando representar de manera gráfica cada interacción y paso del usuario para asegurar la comprensión y alineación entre diseñadores, desarrolladores y stakeholders, incluso aquellos sin formación técnica.</p>
   <p><strong>Luna Morales, Gianfranco:</strong> En la landing page, desarrollé una presentación visual que destaca las funcionalidades y beneficios del producto, enfocándome en que el mensaje sea claro y atractivo para un público diverso, contribuyendo a una comunicación efectiva.</p>
@@ -227,6 +235,7 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>Zagal Vallejo, Nicolás:</strong> Representó el diagrama C4 con precisión, destacando los componentes y su interacción, lo que ayudó a todos los miembros del equipo a entender la arquitectura y coordinar las actividades de desarrollo.</p>
   <p><strong>TB2</strong></p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Desarrolló los endpoints de Batch, Product y ProductType siguiendo una arquitectura DDD y CQRS aplicando de manera adecuada los principios de escalabilidad y convenciones definidas durante las reuniones</p>
+    <p><strong>Frisancho Lévano, Sebastian:</strong> Documenté el Sprint 1 en el capítulo VII, incluyendo planificación, backlog y evidencia técnica. Redacté el resumen en formato markdown para GitHub, asegurando claridad en los entregables y trazabilidad del desarrollo para facilitar su comprensión por parte de miembros técnicos y no técnicos.</p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
