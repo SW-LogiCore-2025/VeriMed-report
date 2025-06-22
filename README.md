@@ -197,14 +197,20 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 ## [Anexos](#anexos)
 
 # Student Outcome
-
-<table> <tr> <td><b>Criterio específico</b></td> <td><b>Acciones realizadas</b></td> <td><b>Conclusiones</b></td> </tr> <tr> <td> <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.</p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó de forma proactiva con su compañero para comprender mejor el As-Is, logrando un entendimiento profundo de los beneficios de utilizar la aplicación y facilitando la coordinación del equipo.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Mantuvo una comunicación constante con todo el equipo para asegurar el cumplimiento de los objetivos, además de ofrecer retroalimentación constructiva sobre los entregables, lo que contribuyó a mejorar la calidad del trabajo colaborativo.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Explicó claramente las decisiones estratégicas del diseño arquitectónico en el capítulo IV, adaptando su lenguaje a diferentes niveles de especialización, lo que permitió una comprensión efectiva por parte de todos los involucrados.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Comunico de manera clara los procesos actuales y las posibles mejoras durante el As-Is Scenario Mapping, ajustando su discurso según el nivel técnico del interlocutor y alineando al equipo con la visión centrada en el usuario final.</p>
+<table> <tr> <td><b>Criterio específico</b></td> <td><b>Acciones realizadas</b></td> <td><b>Conclusiones</b></td> </tr> <tr> <td> <p>Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.</p> </td> <td> 
+  <p><strong>TB1</strong></p> 
+  <p><strong>Luna Morales, Gianfranco:</strong> Durante el desarrollo del To-be se comunicó de forma proactiva con su compañero para comprender mejor el As-Is, logrando un entendimiento profundo de los beneficios de utilizar la aplicación y facilitando la coordinación del equipo.</p> 
+  <p><strong>Zagal Vallejo, Nicolás:</strong> Mantuvo una comunicación constante con todo el equipo para asegurar el cumplimiento de los objetivos, además de ofrecer retroalimentación constructiva sobre los entregables, lo que contribuyó a mejorar la calidad del trabajo colaborativo.</p> 
+  <p><strong>Frisancho Lévano, Sebastian:</strong> Explicó claramente las decisiones estratégicas del diseño arquitectónico en el capítulo IV, adaptando su lenguaje a diferentes niveles de especialización, lo que permitió una comprensión efectiva por parte de todos los involucrados.</p> 
+  <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Comunico de manera clara los procesos actuales y las posibles mejoras durante el As-Is Scenario Mapping, ajustando su discurso según el nivel técnico del interlocutor y alineando al equipo con la visión centrada en el usuario final.</p>
   <p><strong>TP</strong></p>
   <p><strong>Frisancho Lévano, Sebastian:</strong> Durante el desarrollo del capítulo 6.4, al diseñar y documentar los wireframes y wireflows de la aplicación, me aseguré de representar visualmente cada paso del flujo del usuario de forma intuitiva. Esta representación gráfica no solo mejora la comunicación con diseñadores y desarrolladores, sino que también permite a stakeholders sin perfil técnico comprender fácilmente la funcionalidad y experiencia esperada, facilitando la toma de decisiones informadas.</p>
   <p><strong>Luna Morales, Gianfranco:</strong> En la creación de la landing page, trabajé en la composición visual y textual para transmitir claramente la propuesta de valor de la aplicación, utilizando elementos gráficos y lenguaje accesible para captar la atención de diversos públicos, incluyendo clientes potenciales y usuarios finales.</p>
   <p><strong>Cabrera Camizan, Jeferson Smith:</strong> En la documentación del Domain Layer, me enfoqué en detallar las entidades, atributos y relaciones clave de manera estructurada y clara, para asegurar que tanto desarrolladores como analistas pudieran entender la arquitectura conceptual y técnica del sistema sin ambigüedades.</p>
   <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Contribuí en la definición y formalización del Domain Layer, aportando en la organización y presentación de la información para que el equipo pudiera mantener una visión común y facilitar la implementación coherente del modelo de dominio.</p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Al elaborar el diagrama C4 del bounded context, me aseguré de representar con precisión los componentes, sus interacciones y dependencias, lo que permitió al equipo técnico y a los stakeholders tener una visión clara y compartida de la arquitectura del sistema, facilitando la planificación y ejecución del proyecto.</p>
+  <p><strong>TB2</strong></p>
+  <p><strong>Zagal Vallejo, Nicolás:</strong> Se estructuró un plan de desarollo para la implementación del backend asegurando una arquitectura DDD escalable para el proyecto. Para ello se llevaron tuvieron diversas reuniones en las que se consolidó el plan.</p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -219,6 +225,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Elaboró con detalle la documentación del Domain Layer, asegurando que la estructura y relaciones estuvieran bien definidas para facilitar la comprensión técnica y conceptual del proyecto.</p>
   <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Participó activamente en la documentación del Domain Layer, aportando claridad en la organización y presentación del modelo, lo que permitió una mejor alineación del equipo y una implementación más coherente.</p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Representó el diagrama C4 con precisión, destacando los componentes y su interacción, lo que ayudó a todos los miembros del equipo a entender la arquitectura y coordinar las actividades de desarrollo.</p>
+  <p><strong>TB2</strong></p>
+  <p><strong>Zagal Vallejo, Nicolás:</strong> Desarrolló los endpoints de Batch, Product y ProductType siguiendo una arquitectura DDD y CQRS aplicando de manera adecuada los principios de escalabilidad y convenciones definidas durante las reuniones</p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -1790,9 +1798,224 @@ Estos diagramas ayudan a identificar puntos críticos en la navegación, optimiz
 ## Chapter VII: Product Implementation, Validation & Deployment
 ## 7.1. Software Configuration Management
 ### 7.1.1 Software Development Environment Configuration
+En esta sección se especifican los productos de software, herramientas y servicios que deben utilizar los miembros del equipo para colaborar efectivamente en todas las actividades del ciclo de vida de VeriMed, incluyendo Project Management, Requirements Management, Product Design, Software Development, Software Testing, Software Deployment y Software Documentation.
+
+Herramientas de Desarrollo
+Project Management
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **GitHub Projects** | Gestión de tareas, sprints y seguimiento del progreso del proyecto | SaaS | https://github.com/features/project-management |
+| **GitHub Issues** | Tracking de bugs, features y tareas | SaaS | Integrado en repositorio GitHub |
+
+Requirements Management
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **GitHub Wiki** | Documentación de requerimientos y especificaciones | SaaS | Integrado en repositorio GitHub |
+| **Markdown** | Formato estándar para documentación | Lenguaje | https://daringfireball.net/projects/markdown/ |
+
+Product Design
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **Figma** | Diseño de interfaces UI/UX y prototipado | SaaS | https://www.figma.com/ |
+| **Lucidchart** | Diagramas de arquitectura y flujos de usuario | SaaS | https://www.lucidchart.com/ |
+
+Software Development
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **Visual Studio Code** | IDE principal para desarrollo frontend | Desktop | https://code.visualstudio.com/ |
+| **Node.js** | Runtime de JavaScript para desarrollo | Desktop | https://nodejs.org/ (LTS v18.x) |
+| **npm** | Gestor de paquetes para JavaScript | Desktop | Incluido con Node.js |
+| **Vue.js 3** | Framework frontend principal | Package | https://vuejs.org/ |
+| **Vite** | Build tool y dev server | Package | https://vitejs.dev/ |
+| **Git** | Sistema de control de versiones | Desktop | https://git-scm.com/ |
+
+Extensions de Visual Studio Code Requeridas
+
+| Extensión | Propósito | ID de Extensión |
+|-----------|-----------|----------------|
+| **Vue - Official** | Soporte completo para Vue 3 | Vue.volar |
+| **ESLint** | Linting de código JavaScript/TypeScript | dbaeumer.vscode-eslint |
+| **Prettier** | Formateo automático de código | esbenp.prettier-vscode |
+| **Tailwind CSS IntelliSense** | Autocompletado para Tailwind CSS | bradlc.vscode-tailwindcss |
+| **GitLens** | Funcionalidades avanzadas de Git | eamodio.gitlens |
+
+Software Testing
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **Vitest** | Framework de testing unitario para Vue | Package | https://vitest.dev/ |
+| **Vue Test Utils** | Utilidades para testing de componentes Vue | Package | https://test-utils.vuejs.org/ |
+| **Cypress** | Testing end-to-end | Package | https://www.cypress.io/ |
+
+Software Deployment
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **GitHub Actions** | CI/CD pipeline automatizado | SaaS | Integrado en GitHub |
+| **Netlify** | Hosting y deployment de aplicación frontend | SaaS | https://www.netlify.com/ |
+| **Vercel** | Plataforma alternativa de deployment | SaaS | https://vercel.com/ |
+
+Software Documentation
+
+| Producto | Propósito | Tipo | Referencia/Descarga |
+|----------|-----------|------|---------------------|
+| **VuePress** | Generación de documentación técnica | Package | https://vuepress.vuejs.org/ |
+| **JSDoc** | Documentación de código JavaScript | Package | https://jsdoc.app/ |
+
+Configuración del Entorno de Desarrollo
+
+Requisitos del Sistema
+
+bash# Versiones mínimas requeridas
+
+Node.js: v18.17.0 LTS
+
+npm: v9.6.7
+
+Git: v2.40.0
+
+Chrome/Firefox: Última versión estable
+
+Proceso de Configuración
+
+1. Verificar instalaciones
+
+node --version && npm --version && git --version
+
+2. Configurar Git globalmente
+
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu-email@ejemplo.com"
+
+3. Clonar repositorio y configurar proyecto
+
+git clone https://github.com/VeriMed-Team/verimed-frontend.git
+cd verimed-frontend
+npm install
+
+4. Configurar variables de entorno
+cp .env.example .env.local
+
 ### 7.1.2 Source Code Management
+Plataforma de Control de Versiones
+El equipo utilizará GitHub como plataforma principal para el sistema de control de versiones, aprovechando sus capacidades de colaboración, integración continua y gestión de proyectos.
+Repositorios del Proyecto
+Repositorio Frontend
+
+URL: https://github.com/VeriMed-Team/verimed-frontend
+Descripción: Aplicación web Vue.js para la interfaz de usuario
+Tecnologías: Vue 3, Vite, JavaScript, CSS3, HTML5
+
+Repositorio Backend (API)
+
+URL: https://github.com/VeriMed-Team/verimed-backend
+Descripción: API RESTful para servicios de verificación de medicamentos
+Tecnologías: Java Spring Boot, PostgreSQL, Docker
+
+Repositorio de Testing
+
+URL: https://github.com/VeriMed-Team/verimed-testing
+Descripción: Suite de pruebas automatizadas y archivos .feature
+Tecnologías: Cucumber, Gherkin, Cypress, Postman Collections
+
+Implementación de GitFlow
+
+El equipo implementará el modelo de branching GitFlow
+
+Estructura de Branches (Ramas)
+1. Rama Principal (Main Branch)
+2. Rama de Desarrollo (Develop Branch)
+3. Feature Branches
+4. Release Branches
+5. Hotfix Branches
+
+
+Conventional Commits
+
+El equipo aplicará el estándar Conventional Commits para mantener un historial de commits claro y automatizar procesos de versionado.
+
 ### 7.1.3 Source Code Style Guide & Conventions
+
+Establecer convenciones estándares de nomenclatura y codificación para mantener consistencia, legibilidad y mantenibilidad del código en todos los lenguajes utilizados en la solución VeriMed.
+
+Idioma de Desarrollo
+
+Todos los elementos del código (variables, funciones, clases, comentarios) deben nombrarse en inglés para mantener consistencia internacional y facilitar la colaboración con desarrolladores de diferentes países.
+
+JavaScript/TypeScript - Google Style Guide
+
+Referencia Principal
+
+Google TypeScript Style Guide: https://google.github.io/styleguide/tsguide.html
+
+Airbnb JavaScript Style Guide: https://github.com/airbnb/javascript
+
 ### 7.1.4 Software Deployment Configuration
+
+En esta sección se especifica la configuración del despliegue de la solución VeriMed, incluyendo los pasos necesarios para que, a partir de los repositorios de código fuente, se pueda lograr el despliegue o publicación satisfactorio de cada uno de los productos digitales que componen la solución.
+Arquitectura de Despliegue
+La solución VeriMed está compuesta por los siguientes productos digitales que requieren configuración de despliegue específica:
+
+Frontend Web Application (Vue.js)
+Backend API Services (Spring Boot)
+Database Services (PostgreSQL)
+Blockchain Integration Services
+
+Entornos de Despliegue
+1. Entorno de Desarrollo (Development)
+
+Propósito: Desarrollo local y testing individual
+Ubicación: Máquinas locales de desarrolladores
+Acceso: http://localhost:5173 (Frontend), http://localhost:8080 (Backend)
+
+2. Entorno de Staging (Pre-producción)
+
+Propósito: Testing integrado y validación antes de producción
+Ubicación: Servidor en la nube (AWS/Azure)
+Acceso: https://staging.verimed.com
+
+3. Entorno de Producción (Production)
+
+Propósito: Sistema en vivo para usuarios finales
+Ubicación: Infraestructura en la nube con alta disponibilidad
+Acceso: https://www.verimed.com
+
+
+Configuración de Despliegue Frontend (Vue.js)
+Repositorio
+
+URL: https://github.com/VeriMed-Team/verimed-frontend
+Tecnología: Vue 3 + Vite + JavaScript
+
+Configuración de Despliegue Backend (Spring Boot)
+Repositorio
+
+URL: https://github.com/VeriMed-Team/verimed-backend
+Tecnología: Java Spring Boot + PostgreSQL
+
+Flujo de Deployment
+
+Developer commits → GitHub Repository
+GitHub Actions triggered → Build & Test
+Frontend: Build estático → Deploy a Netlify
+Backend: Build Docker image → Deploy a ECS
+Database migrations ejecutadas automáticamente
+Health checks y validación post-deployment
+
+Seguridad y Monitoreo
+
+AWS WAF: Protección contra ataques web
+SSL/TLS: Encriptación end-to-end
+Sentry: Tracking de errores en tiempo real
+DataDog: Monitoreo de performance y métricas
+VPC: Aislamiento de red para componentes backend
+
+Esta configuración asegura alta disponibilidad, escalabilidad automática y deployment continuo para la solución VeriMed.
+
 ## 7.2. Solution Implementation
 
 La implementación de Verimed se llevó a cabo mediante una metodología ágil, dividida en Sprints iterativos. Cada Sprint se centró en la entrega de incrementos de funcionalidad valiosos y probables.
@@ -1890,10 +2113,223 @@ Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de tr
 ![img.png](static/img/Chapter%207/blockchain-evidence.png)
 
 ## 7.3 Validation Interviews
-### 7.3.1 Diseño de entrevistas
+A continuación, se muestran las Validation Interviews, una etapa clave para nuestro equipo, ya que nos permitirán validar directamente con los usuarios reales, como laboratorios, distribuidores, farmacias y pacientes, si el sistema VeriMed responde adecuadamente a sus necesidades. A través de estas entrevistas, podremos recoger comentarios valiosos sobre la utilidad, usabilidad y relevancia de las funcionalidades implementadas. Esta retroalimentación nos servirá para realizar ajustes oportunos, reforzar aspectos positivos y garantizar que la solución tenga un verdadero impacto en la mejora de la trazabilidad y autenticidad de medicamentos en la cadena de suministro.
+
+## 6.3.1. Diseño de Entrevistas
+
+### 👥 Usuarios Finales (Pacientes o Consumidores)
+
+#### 🔍 Contexto de uso y conocimiento
+- ¿Cómo suele verificar actualmente que un medicamento es auténtico?
+- ¿Ha escuchado antes sobre medicamentos falsificados o adulterados?
+- ¿Conoce qué es la tecnología blockchain o los tokens NFT? ¿La ha usado antes?
+
+#### 💊 Preocupaciones y necesidades
+- ¿Qué tan importante es para usted saber el origen y recorrido de un medicamento?
+- ¿Ha tenido alguna vez dudas sobre la autenticidad de un medicamento que ha comprado?
+- ¿Le gustaría tener una herramienta que le muestre la trazabilidad completa de un medicamento antes de consumirlo?
+
+#### 📱 Validación del sistema propuesto
+- ¿Qué le parecería escanear un código QR en el empaque de un medicamento y ver todos los pasos por los que ha pasado hasta llegar a sus manos?
+- ¿Se sentiría más seguro al consumir un medicamento que esté respaldado por un sistema en blockchain?
+- ¿Qué tan fácil cree que sería usar una app o página web para verificar esta información?
+
+#### 🛠️ Implementación y soporte
+- ¿Qué barreras cree que tendría al usar esta tecnología (por ejemplo: acceso, comprensión, confianza)?
+- ¿Qué necesitaría para confiar en que esta información es verídica y útil?
+- ¿Estaría dispuesto a recomendar este tipo de sistema a otros usuarios?
+
+---
+
+### 🧪 Laboratorios y Fabricantes de Medicamentos
+
+#### 🏭 Procesos actuales y tecnologías
+- ¿Qué mecanismos utilizan actualmente para garantizar la trazabilidad de sus productos?
+- ¿Qué tan frecuente es la falsificación o adulteración de sus medicamentos en el mercado?
+- ¿Qué tecnologías digitales utilizan en su cadena de producción y distribución?
+
+#### 📦 Necesidades y motivaciones
+- ¿Qué tan importante considera que es ofrecer trazabilidad transparente a sus consumidores?
+- ¿Cuál cree que es el impacto reputacional o económico de los medicamentos falsificados en su marca?
+- ¿Estaría interesado en mejorar la confianza del consumidor mediante herramientas tecnológicas?
+
+#### 🔐 Validación del sistema basado en blockchain
+- ¿Qué le parecería usar tecnología blockchain para registrar cada etapa del ciclo de vida del medicamento?
+- ¿Le interesaría tokenizar sus productos mediante NFTs que garanticen unicidad y trazabilidad?
+- ¿Cree que esto podría reducir la circulación de productos falsificados o no autorizados?
+
+#### 🤝 Implementación y colaboración
+- ¿Qué requerimientos técnicos, regulatorios o logísticos cree que deberían cumplirse para implementar este sistema?
+- ¿Estaría dispuesto a colaborar en una prueba piloto o integración con su sistema actual?
+- ¿Qué beneficios espera obtener si se integra un sistema de trazabilidad NFT en su cadena de producción?
+
 ### 7.3.2 Registro de entrevistas
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Yoleny Cordova<br>
+      <b>Edad:</b> 18 años <br>
+      <b>Distrito:</b> San Borja <br>
+      <b>Duración:</b>  minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
+      <br>
+      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
+    </td>
+  </tr>
+</tbody></table>
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Brucce Ciprano<br>
+      <b>Edad:</b> 21 años <br>
+      <b>Distrito:</b> San Juan de Lurigancho <br>
+      <b>Duración:</b>  06:04 minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1750557805/imagen_2025-06-21_210324634_fnvp1r.png" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/Ednsae2-24hHu84ZLjDXA7sBaDSxx_i050Y2eC3AjDwnKw?e=PBmRxc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" rel="nofollow">http://bit.ly/4k2iPyz</a>
+      <br>
+      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a un estudiante de la UPC que compra medicamentos con frecuencia. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. El entrevistado mostró interés en la propuesta, especialmente en la posibilidad de garantizar la autenticidad de los medicamentos que consume regularmente. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos. Aunque no ha tenido problemas con medicamentos falsificados, valoró la idea de contar con una herramienta que respalde la seguridad de los productos farmacéuticos..
+    </td>
+  </tr>
+</tbody></table>
+
+
 ### 7.3.3 Evaluación según heurísticas
+<p align="center">
+  <strong>## UX Heuristics & Principles Evaluation</strong><br>
+  <em>Usability – Inclusive Design – Information Architecture</em>
+</p>
+
+**CARRERA**: Ingeniería de Software  
+**CURSO**: Arquitecturas De Software Emergentes 
+**SECCIÓN**: 4281  
+**PROFESORES**: Royer Edelwer Rojas Malasquez
+**AUDITOR**: LogiTech  
+**CLIENTE(S)**: Pacientes individuales, farmacias y laboratorioas farmacéuticos
+
+**SITE o APP A EVALUAR**: VeriMed – Plataforma de trazabilidad de medicamentos (Web, Mobile y Blockchain)
+
+## TAREAS A EVALUAR:
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas en el sistema VeriMed:
+
+1. Escaneo de un código QR para verificar la autenticidad de un medicamento (Mobile).
+2. Registro de un lote de medicamentos en la blockchain (Web).
+3. Visualización de la trazabilidad completa de un medicamento desde su fabricación hasta el consumidor final (Web y Mobile).
+4. Generación de alertas por escaneos sospechosos de medicamentos (Web).
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Reporte de medicamentos sospechosos a las autoridades.
+2. Configuración avanzada de permisos para usuarios del sistema.
+3. Integración con sistemas externos de análisis logístico.
+
+## ESCALA DE SEVERIDAD:
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a menos que haya tiempo disponible. |
+| **2** | Problema menor: ocurre con algo más de frecuencia o es un poco más difícil de resolver para el usuario. Debería corregirse con baja prioridad en la siguiente versión. |
+| **3** | Problema mayor: ocurre con frecuencia o el usuario no puede resolverlo. Es importante corregirlo con alta prioridad. |
+| **4** | Problema muy grave: impide al usuario continuar usando la herramienta. Debe corregirse antes del despliegue. |
+
+## TABLA RESUMEN DE PROBLEMAS DETECTADOS
+
+| #  | Problema                                                                                   | Escala de Severidad | Heurística / Principio Violado                                     |
+|----|--------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------|
+| 1  | Escaneo de un código QR no responde en dispositivos con cámaras de baja calidad           | 3                   | Usability: Flexibilidad y eficiencia de uso                        |
+| 2  | Registro de un lote en la blockchain no muestra mensajes claros de error en caso de fallos | 2                   | Usability: Ayuda y documentación                                   |
+| 3  | La visualización de trazabilidad no es intuitiva para usuarios sin experiencia técnica     | 3                   | Usability: Consistencia y estándares                               |
+| 4  | Las alertas generadas por escaneos sospechosos no notifican en tiempo real                | 4                   | Usability: Visibilidad del estado del sistema                      |
+
+### PROBLEMA #1: Escaneo de un código QR no responde en dispositivos con cámaras de baja calidad
+
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Flexibilidad y eficiencia de uso
+
+**Problema:**  
+En dispositivos móviles con cámaras de baja calidad, el escaneo de códigos QR no funciona correctamente, lo que impide a los usuarios verificar la autenticidad de los medicamentos. Esto afecta principalmente a usuarios con dispositivos más antiguos o de gama baja, limitando la accesibilidad y la experiencia de uso.
+
+**Recomendación:**  
+Implementar un sistema de mejora de imagen o permitir la introducción manual del código QR como alternativa. Esto garantizará que todos los usuarios puedan acceder a la funcionalidad independientemente de las limitaciones de su dispositivo.
+
+### PROBLEMA #2: Registro de un lote en la blockchain no muestra mensajes claros de error en caso de fallos
+
+**Severidad:** 2  
+**Heurística violada:** Usabilidad – Ayuda y documentación
+
+**Problema:**  
+Cuando ocurre un error durante el registro de un lote en la blockchain, el sistema no proporciona mensajes claros que expliquen la causa del fallo. Esto dificulta que los usuarios identifiquen y solucionen el problema, generando confusión y retrasos en el proceso.
+
+**Recomendación:**  
+Agregar mensajes de error descriptivos que incluyan información sobre la causa del fallo y posibles soluciones. Además, proporcionar un enlace a la documentación o soporte técnico para casos más complejos.
+
+**Evidencia visual:**  
+![Captura del problema](https://res.cloudinary.com/drkelnilg/image/upload/v1750554966/imagen_2025-06-21_201605989_ixas5l.png)
+
+### PROBLEMA #3: La visualización de trazabilidad no es intuitiva para usuarios sin experiencia técnica
+
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Consistencia y estándares
+
+**Problema:**  
+La interfaz de visualización de trazabilidad presenta información técnica compleja que no es fácilmente comprensible para usuarios sin experiencia técnica. Esto dificulta la interpretación de los datos y reduce la efectividad de la funcionalidad.
+
+**Recomendación:**  
+Simplificar la presentación de la información utilizando gráficos, diagramas y descripciones claras. Incluir una guía interactiva o tutorial para ayudar a los usuarios a entender los datos mostrados.
+
+**Evidencia visual:**  
+![Captura del problema](https://res.cloudinary.com/drkelnilg/image/upload/v1750555014/imagen_2025-06-21_201653403_vi7tzy.png)
+
+### PROBLEMA #4: Las alertas generadas por escaneos sospechosos no notifican en tiempo real
+
+**Severidad:** 4  
+**Heurística violada:** Usabilidad – Visibilidad del estado del sistema
+
+**Problema:**  
+El sistema no notifica en tiempo real cuando se detectan escaneos sospechosos de medicamentos, lo que retrasa la respuesta ante posibles problemas de seguridad. Esto puede comprometer la confianza de los usuarios y la efectividad del sistema.
+
+**Recomendación:**  
+Implementar un sistema de notificaciones en tiempo real que alerte inmediatamente a los usuarios y administradores sobre escaneos sospechosos. Esto puede incluir notificaciones push, correos electrónicos o alertas en la interfaz.
+
 ## 7.4 Video About-the-Product
+
+Como parte de la estrategia de difusión del sistema **VeriMed**, el equipo desarrolló un video explicativo orientado a dos públicos clave:
+
+- 🏥 **Pacientes y Consumidores**: usuarios interesados en conocer cómo el sistema garantiza la autenticidad y trazabilidad de los medicamentos, mostrando sus beneficios y el impacto positivo en la seguridad del consumidor.
+- 🧪 **Laboratorios y Farmacias**: actores clave que desean entender cómo utilizar las funcionalidades principales del sistema para registrar lotes, verificar medicamentos y generar alertas en tiempo real.
+
+El video adopta un tono profesional, claro y accesible, alineado con la identidad visual de VeriMed. Se presenta una visión general del sistema, incluyendo su modelo de negocio, arquitectura modular (web, móvil, backend y blockchain), así como ejemplos prácticos de uso.
+
+📺 **Captura del video**  
+![Screenshot del Video](https://res.cloudinary.com/drkelnilg/image/upload/v1750556422/imagen_2025-06-21_204021226_wokqwa.png)
+
+🔗 **Enlaces del video**
+- Versión publicada en **Microsoft Stream**:  
+  👉 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ)
+
+
+⏱️ **Duración del video**: 3 minutos y 8 segundos
+
+---
+
+
 
 # Conclusiones
 
