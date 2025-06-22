@@ -2260,6 +2260,27 @@ Implementar un sistema de notificaciones en tiempo real que alerte inmediatament
 
 ## 7.4 Video About-the-Product
 
+Como parte de la estrategia de difusión del sistema **VeriMed**, el equipo desarrolló un video explicativo orientado a dos públicos clave:
+
+- 🏥 **Pacientes y Consumidores**: usuarios interesados en conocer cómo el sistema garantiza la autenticidad y trazabilidad de los medicamentos, mostrando sus beneficios y el impacto positivo en la seguridad del consumidor.
+- 🧪 **Laboratorios y Farmacias**: actores clave que desean entender cómo utilizar las funcionalidades principales del sistema para registrar lotes, verificar medicamentos y generar alertas en tiempo real.
+
+El video adopta un tono profesional, claro y accesible, alineado con la identidad visual de VeriMed. Se presenta una visión general del sistema, incluyendo su modelo de negocio, arquitectura modular (web, móvil, backend y blockchain), así como ejemplos prácticos de uso.
+
+📺 **Captura del video**  
+![Screenshot del Video](https://res.cloudinary.com/drkelnilg/image/upload/v1750556422/imagen_2025-06-21_204021226_wokqwa.png)
+
+🔗 **Enlaces del video**
+- Versión publicada en **Microsoft Stream**:  
+  👉 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ)
+
+
+⏱️ **Duración del video**: 3 minutos y 8 segundos
+
+---
+
+
+
 # Conclusiones
 
 * El sistema VeriMed tiene un impacto significativo en la industria farmacéutica y en la vida de los pacientes al garantizar la autenticidad y trazabilidad de los medicamentos mediante el uso de blockchain y NFTs. Al permitir la verificación en tiempo real de los productos a través de códigos QR, se reduce el riesgo de consumo de medicamentos falsificados, protegiendo la salud de los usuarios y fortaleciendo la confianza en la cadena de suministro.
