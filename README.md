@@ -218,15 +218,19 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>TB2</strong></p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Se estructuró un plan de desarollo para la implementación del backend asegurando una arquitectura DDD escalable para el proyecto. Para ello se llevaron tuvieron diversas reuniones en las que se consolidó el plan.</p>
   <p><strong>Frisancho Lévano, Sebastian:</strong> Coordiné la reunión de planificación del Sprint 1, comunicando con claridad los objetivos y tareas asignadas. Durante las sesiones del equipo, expliqué de forma accesible la integración entre frontend y blockchain, adaptando el lenguaje según el perfil técnico de los participantes y resolviendo dudas sobre la funcionalidad del escaneo de NFTs.</p>
-   <p><strong>TB2</strong></p>
-  <p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
-    
+  <p><strong>Zagal Vallejo, Nicolás:</strong> Participó activamente en la reunión de planificación del Sprint 1, explicando de manera clara la lógica y funciones del contrato inteligente, lo que permitió al equipo entender su integración con el sistema y facilitar el desarrollo conjunto entre backend y frontend.</p>
+<p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
+<p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso al equipo los pasos necesarios para la conexión con la blockchain usando Alchemy y Pinata, aclarando el flujo de datos desde el backend. Su explicación permitió comprender cómo se gestiona la emisión y lectura de NFTs.</p>
+<p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Explicó la estructura de los servicios backend para generar reportes y validar integridad de datos. Su comunicación permitió que los desarrolladores frontend comprendieran mejor los endpoints disponibles y su funcionalidad.</p>
+
 </td>
 <td>
   <p><strong>TB1</strong></p>
   <p>En conclusión: La comunicación efectiva y constante entre los miembros favoreció la coordinación y el avance armónico del proyecto.</p>
   <p><strong>TP</strong></p>
   <p>En conclusión: La integración de roles mediante documentación clara, diseño visual y diagramas permitió al equipo compartir una visión común, lo que fortaleció la colaboración y el desarrollo integral del proyecto, mejorando la calidad y cohesión del trabajo final.</p>
+    <p><strong>TB2</strong></p>
+    <p>En conclusión: Durante la TB2, el equipo demostró una comunicación oral efectiva y adaptada a distintos niveles de especialización. Cada integrante supo expresar claramente su aporte técnico, facilitando la coordinación entre frontend, backend y blockchain. Las reuniones virtuales permitieron resolver dudas, alinear expectativas y garantizar que todos los miembros comprendieran tanto la lógica funcional como técnica del sistema.</p>
 </td>
 </tr> <tr> <td> <p><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Presentó al equipo los puntos clave del Capítulo III para facilitar el desarrollo progresivo del proyecto y la elaboración del diagrama C4.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Expuso de forma clara y estructurada el event storming y los diagramas C4, garantizando que todos los miembros comprendieran la línea de trabajo establecida.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Redactó con precisión y claridad el capítulo IV, adaptando el lenguaje a públicos con distintos niveles técnicos, lo que permitió una comunicación transparente y objetiva del diseño.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso las ideas y resultados obtenidos de forma clara, asegurando la comprensión y alineación del equipo, tomando en cuenta las distintas especializaciones y niveles jerárquicos.</p>
   <p><strong>TP</strong></p>
@@ -238,13 +242,18 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p><strong>TB2</strong></p>
   <p><strong>Zagal Vallejo, Nicolás:</strong> Desarrolló los endpoints de Batch, Product y ProductType siguiendo una arquitectura DDD y CQRS aplicando de manera adecuada los principios de escalabilidad y convenciones definidas durante las reuniones</p>
     <p><strong>Frisancho Lévano, Sebastian:</strong> Documenté el Sprint 1 en el capítulo VII, incluyendo planificación, backlog y evidencia técnica. Redacté el resumen en formato markdown para GitHub, asegurando claridad en los entregables y trazabilidad del desarrollo para facilitar su comprensión por parte de miembros técnicos y no técnicos.</p>
-  <p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
+    <p><strong>Zagal Vallejo, Nicolás:</strong> Documentó las funciones del contrato inteligente VeriMedTraceability.sol con claridad, incluyendo convenciones de codificación y comentarios explicativos, facilitando la comprensión y uso por parte del equipo de backend.</p>
+<p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
+<p><strong>Cabrera Camizan, Jeferson Smith:</strong> Redactó código backend bien comentado, especialmente en los servicios relacionados a la interacción con la blockchain. Sus commits y mensajes fueron claros, lo que ayudó a mantener la trazabilidad del proyecto.</p>
+<p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Documentó los servicios de generación de reportes y códigos QR, asegurando que sus funcionalidades y uso estuvieran descritos de manera clara para el resto del equipo y stakeholders técnicos.</p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
   <p>En conclusión: La comunicación interdisciplinaria permitió un mejor desarrollo y entendimiento del proyecto en todas sus fases.</p>
   <p><strong>TP</strong></p>
   <p>En conclusión: La elaboración detallada de wireframes y wireflows, junto con una documentación clara y estructurada, permitió comunicar de manera efectiva las ideas y resultados a públicos diversos, incluyendo técnicos y no técnicos. Esta comunicación visual y técnica facilitó la comprensión compartida, promovió la alineación del equipo y fortaleció la toma de decisiones colaborativa a lo largo del desarrollo del proyecto.</p>
+    <p><strong>TB2</strong></p>
+    <p>En conclusión: La documentación elaborada en la TB2 mostró claridad, estructura y adecuación al público objetivo. Los miembros del equipo generaron entregables escritos comprensibles para distintos perfiles técnicos, desde comentarios en el código hasta redacción de secciones del informe. Esto permitió una trazabilidad efectiva del desarrollo, fortaleciendo la colaboración y facilitando la validación del avance del proyecto por parte de los stakeholders.</p>
 </td>
 </tr> </table>
 
