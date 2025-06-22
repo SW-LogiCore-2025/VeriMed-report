@@ -2214,7 +2214,28 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
     <td colspan="2">
       <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/Ednsae2-24hHu84ZLjDXA7sBaDSxx_i050Y2eC3AjDwnKw?e=PBmRxc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" rel="nofollow">http://bit.ly/4k2iPyz</a>
       <br>
-      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a un estudiante de la UPC que compra medicamentos con frecuencia. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. El entrevistado mostró interés en la propuesta, especialmente en la posibilidad de garantizar la autenticidad de los medicamentos que consume regularmente. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos. Aunque no ha tenido problemas con medicamentos falsificados, valoró la idea de contar con una herramienta que respalde la seguridad de los productos farmacéuticos..
+      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a un estudiante de la UPC que compra medicamentos con frecuencia. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. El entrevistado mostró interés en la propuesta, especialmente en la posibilidad de garantizar la autenticidad de los medicamentos que consume regularmente. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos. Aunque no ha tenido problemas con medicamentos falsificados, valoró la idea de contar con una herramienta que respalde la seguridad de los productos farmacéuticos.
+    </td>
+  </tr>
+</tbody></table>
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Ariana Espinoza<br>
+      <b>Edad:</b> 21 años <br>
+      <b>Distrito:</b> San Isidro <br>
+      <b>Duración:</b>  04:34 minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="https://res.cloudinary.com/drkelnilg/image/upload/v1750563698/imagen_2025-06-21_224136403_iq1yui.png" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224392_upc_edu_pe/EQ04wZU1UtxFpo9DaLMiB-sBXF9_qJUhED670QuxhetVZg?e=MwuugG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" rel="nofollow">http://bit.ly/4kUVjox</a>
+      <br>
+      <b>Resumen:</b> La entrevista se centró en explicar el producto VeriMed a una joven de San Isidro que mostró interés en la autenticidad de los medicamentos que consume. Durante la conversación, se le presentó el sistema de trazabilidad basado en blockchain y NFTs, destacando cómo permite verificar la autenticidad de los medicamentos mediante el escaneo de un código QR. La entrevistada valoró la propuesta, especialmente por la posibilidad de garantizar la seguridad de los productos farmacéuticos. Consideró útil la funcionalidad de escanear un código QR para obtener información sobre el fabricante, la fecha de fabricación y la trazabilidad del medicamento. Indicó que sí usaría el sistema, ya que le brindaría mayor confianza al adquirir medicamentos.
     </td>
   </tr>
 </tbody></table>
