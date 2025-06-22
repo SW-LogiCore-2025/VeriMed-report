@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Update link and enhance conclusions in README.md for clarity and detail">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +36,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Chapter-7",
-    "last_opened_file_path": "E:/VeriMedFrontend",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/ARQUI. SWFT EMERGENTES/VERIMED/FREONTED/verimed-frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,7 +55,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
       </set>
     </attachedChunks>
   </component>
@@ -76,6 +77,7 @@
       <workItem from="1747592728776" duration="1780000" />
       <workItem from="1748047798990" duration="2139000" />
       <workItem from="1750535380472" duration="435000" />
+      <workItem from="1750546735522" duration="1617000" />
     </task>
     <task id="LOCAL-00001" summary="docs: Update with new diagrams and descriptions for Bounded Contexts">
       <option name="closed" value="true" />

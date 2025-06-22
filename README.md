@@ -2055,9 +2055,201 @@ Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de tr
 ![img.png](static/img/Chapter%207/blockchain-evidence.png)
 
 ## 7.3 Validation Interviews
-### 7.3.1 Diseño de entrevistas
+A continuación, se muestran las Validation Interviews, una etapa clave para nuestro equipo, ya que nos permitirán validar directamente con los usuarios reales, como laboratorios, distribuidores, farmacias y pacientes, si el sistema VeriMed responde adecuadamente a sus necesidades. A través de estas entrevistas, podremos recoger comentarios valiosos sobre la utilidad, usabilidad y relevancia de las funcionalidades implementadas. Esta retroalimentación nos servirá para realizar ajustes oportunos, reforzar aspectos positivos y garantizar que la solución tenga un verdadero impacto en la mejora de la trazabilidad y autenticidad de medicamentos en la cadena de suministro.
+
+## 6.3.1. Diseño de Entrevistas
+
+### 👥 Usuarios Finales (Pacientes o Consumidores)
+
+#### 🔍 Contexto de uso y conocimiento
+- ¿Cómo suele verificar actualmente que un medicamento es auténtico?
+- ¿Ha escuchado antes sobre medicamentos falsificados o adulterados?
+- ¿Conoce qué es la tecnología blockchain o los tokens NFT? ¿La ha usado antes?
+
+#### 💊 Preocupaciones y necesidades
+- ¿Qué tan importante es para usted saber el origen y recorrido de un medicamento?
+- ¿Ha tenido alguna vez dudas sobre la autenticidad de un medicamento que ha comprado?
+- ¿Le gustaría tener una herramienta que le muestre la trazabilidad completa de un medicamento antes de consumirlo?
+
+#### 📱 Validación del sistema propuesto
+- ¿Qué le parecería escanear un código QR en el empaque de un medicamento y ver todos los pasos por los que ha pasado hasta llegar a sus manos?
+- ¿Se sentiría más seguro al consumir un medicamento que esté respaldado por un sistema en blockchain?
+- ¿Qué tan fácil cree que sería usar una app o página web para verificar esta información?
+
+#### 🛠️ Implementación y soporte
+- ¿Qué barreras cree que tendría al usar esta tecnología (por ejemplo: acceso, comprensión, confianza)?
+- ¿Qué necesitaría para confiar en que esta información es verídica y útil?
+- ¿Estaría dispuesto a recomendar este tipo de sistema a otros usuarios?
+
+---
+
+### 🧪 Laboratorios y Fabricantes de Medicamentos
+
+#### 🏭 Procesos actuales y tecnologías
+- ¿Qué mecanismos utilizan actualmente para garantizar la trazabilidad de sus productos?
+- ¿Qué tan frecuente es la falsificación o adulteración de sus medicamentos en el mercado?
+- ¿Qué tecnologías digitales utilizan en su cadena de producción y distribución?
+
+#### 📦 Necesidades y motivaciones
+- ¿Qué tan importante considera que es ofrecer trazabilidad transparente a sus consumidores?
+- ¿Cuál cree que es el impacto reputacional o económico de los medicamentos falsificados en su marca?
+- ¿Estaría interesado en mejorar la confianza del consumidor mediante herramientas tecnológicas?
+
+#### 🔐 Validación del sistema basado en blockchain
+- ¿Qué le parecería usar tecnología blockchain para registrar cada etapa del ciclo de vida del medicamento?
+- ¿Le interesaría tokenizar sus productos mediante NFTs que garanticen unicidad y trazabilidad?
+- ¿Cree que esto podría reducir la circulación de productos falsificados o no autorizados?
+
+#### 🤝 Implementación y colaboración
+- ¿Qué requerimientos técnicos, regulatorios o logísticos cree que deberían cumplirse para implementar este sistema?
+- ¿Estaría dispuesto a colaborar en una prueba piloto o integración con su sistema actual?
+- ¿Qué beneficios espera obtener si se integra un sistema de trazabilidad NFT en su cadena de producción?
+
 ### 7.3.2 Registro de entrevistas
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Yoleny Cordova<br>
+      <b>Edad:</b> 18 años <br>
+      <b>Distrito:</b> San Borja <br>
+      <b>Duración:</b>  minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
+      <br>
+      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
+    </td>
+  </tr>
+</tbody></table>
+
+<table border="1">
+  <tbody><tr>
+    <td>
+      <b>Nombres y apellidos:</b> Brucce Ciprano<br>
+      <b>Edad:</b> 21 años <br>
+      <b>Distrito:</b> San Juan de Lurigancho <br>
+      <b>Duración:</b>  minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/drkelnilg/image/upload/v1745570702/imagen_2025-04-25_034500919_qqjn48.png"><img src="" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EeyE9IEt8IJLtzdf9v5RI5IB3wneTgVX4TpWHYBud7vSXQ?e=YfyVPs" rel="nofollow">https://bit.ly/4dCnohE</a>
+      <br>
+      <b>Resumen:</b> La entrevistada es una estudiante de 18 años que vive en Jaén. Ella toma medicamentos de forma esporádica y ha escuchado sobre el problema de los medicamentos falsificados. Le gustaría poder verificar la autenticidad de los medicamentos que consume, pero no tiene experiencia previa con códigos QR. Se siente cómoda usando su celular para temas de salud y le gustaría ver información sobre el fabricante y la fecha de fabricación al escanear un código.
+    </td>
+  </tr>
+</tbody></table>
+
+
 ### 7.3.3 Evaluación según heurísticas
+<p align="center">
+  <strong>## UX Heuristics & Principles Evaluation</strong><br>
+  <em>Usability – Inclusive Design – Information Architecture</em>
+</p>
+
+**CARRERA**: Ingeniería de Software  
+**CURSO**: Arquitecturas De Software Emergentes 
+**SECCIÓN**: 4281  
+**PROFESORES**: Royer Edelwer Rojas Malasquez
+**AUDITOR**: LogiTech  
+**CLIENTE(S)**: Pacientes individuales, farmacias y laboratorioas farmacéuticos
+
+**SITE o APP A EVALUAR**: VeriMed – Plataforma de trazabilidad de medicamentos (Web, Mobile y Blockchain)
+
+## TAREAS A EVALUAR:
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas en el sistema VeriMed:
+
+1. Escaneo de un código QR para verificar la autenticidad de un medicamento (Mobile).
+2. Registro de un lote de medicamentos en la blockchain (Web).
+3. Visualización de la trazabilidad completa de un medicamento desde su fabricación hasta el consumidor final (Web y Mobile).
+4. Generación de alertas por escaneos sospechosos de medicamentos (Web).
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Reporte de medicamentos sospechosos a las autoridades.
+2. Configuración avanzada de permisos para usuarios del sistema.
+3. Integración con sistemas externos de análisis logístico.
+
+## ESCALA DE SEVERIDAD:
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a menos que haya tiempo disponible. |
+| **2** | Problema menor: ocurre con algo más de frecuencia o es un poco más difícil de resolver para el usuario. Debería corregirse con baja prioridad en la siguiente versión. |
+| **3** | Problema mayor: ocurre con frecuencia o el usuario no puede resolverlo. Es importante corregirlo con alta prioridad. |
+| **4** | Problema muy grave: impide al usuario continuar usando la herramienta. Debe corregirse antes del despliegue. |
+
+## TABLA RESUMEN DE PROBLEMAS DETECTADOS
+
+| #  | Problema                                                                                   | Escala de Severidad | Heurística / Principio Violado                                     |
+|----|--------------------------------------------------------------------------------------------|---------------------|---------------------------------------------------------------------|
+| 1  | Escaneo de un código QR no responde en dispositivos con cámaras de baja calidad           | 3                   | Usability: Flexibilidad y eficiencia de uso                        |
+| 2  | Registro de un lote en la blockchain no muestra mensajes claros de error en caso de fallos | 2                   | Usability: Ayuda y documentación                                   |
+| 3  | La visualización de trazabilidad no es intuitiva para usuarios sin experiencia técnica     | 3                   | Usability: Consistencia y estándares                               |
+| 4  | Las alertas generadas por escaneos sospechosos no notifican en tiempo real                | 4                   | Usability: Visibilidad del estado del sistema                      |
+
+### PROBLEMA #1: Escaneo de un código QR no responde en dispositivos con cámaras de baja calidad
+
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Flexibilidad y eficiencia de uso
+
+**Problema:**  
+En dispositivos móviles con cámaras de baja calidad, el escaneo de códigos QR no funciona correctamente, lo que impide a los usuarios verificar la autenticidad de los medicamentos. Esto afecta principalmente a usuarios con dispositivos más antiguos o de gama baja, limitando la accesibilidad y la experiencia de uso.
+
+**Recomendación:**  
+Implementar un sistema de mejora de imagen o permitir la introducción manual del código QR como alternativa. Esto garantizará que todos los usuarios puedan acceder a la funcionalidad independientemente de las limitaciones de su dispositivo.
+
+### PROBLEMA #2: Registro de un lote en la blockchain no muestra mensajes claros de error en caso de fallos
+
+**Severidad:** 2  
+**Heurística violada:** Usabilidad – Ayuda y documentación
+
+**Problema:**  
+Cuando ocurre un error durante el registro de un lote en la blockchain, el sistema no proporciona mensajes claros que expliquen la causa del fallo. Esto dificulta que los usuarios identifiquen y solucionen el problema, generando confusión y retrasos en el proceso.
+
+**Recomendación:**  
+Agregar mensajes de error descriptivos que incluyan información sobre la causa del fallo y posibles soluciones. Además, proporcionar un enlace a la documentación o soporte técnico para casos más complejos.
+
+**Evidencia visual:**  
+![Captura del problema](https://res.cloudinary.com/drkelnilg/image/upload/v1750554966/imagen_2025-06-21_201605989_ixas5l.png)
+
+### PROBLEMA #3: La visualización de trazabilidad no es intuitiva para usuarios sin experiencia técnica
+
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Consistencia y estándares
+
+**Problema:**  
+La interfaz de visualización de trazabilidad presenta información técnica compleja que no es fácilmente comprensible para usuarios sin experiencia técnica. Esto dificulta la interpretación de los datos y reduce la efectividad de la funcionalidad.
+
+**Recomendación:**  
+Simplificar la presentación de la información utilizando gráficos, diagramas y descripciones claras. Incluir una guía interactiva o tutorial para ayudar a los usuarios a entender los datos mostrados.
+
+**Evidencia visual:**  
+![Captura del problema](https://res.cloudinary.com/drkelnilg/image/upload/v1750555014/imagen_2025-06-21_201653403_vi7tzy.png)
+
+### PROBLEMA #4: Las alertas generadas por escaneos sospechosos no notifican en tiempo real
+
+**Severidad:** 4  
+**Heurística violada:** Usabilidad – Visibilidad del estado del sistema
+
+**Problema:**  
+El sistema no notifica en tiempo real cuando se detectan escaneos sospechosos de medicamentos, lo que retrasa la respuesta ante posibles problemas de seguridad. Esto puede comprometer la confianza de los usuarios y la efectividad del sistema.
+
+**Recomendación:**  
+Implementar un sistema de notificaciones en tiempo real que alerte inmediatamente a los usuarios y administradores sobre escaneos sospechosos. Esto puede incluir notificaciones push, correos electrónicos o alertas en la interfaz.
+
 ## 7.4 Video About-the-Product
 
 # Conclusiones
