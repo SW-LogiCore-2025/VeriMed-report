@@ -2113,6 +2113,12 @@ El Sprint 1 fue fundamental para establecer las bases del proyecto Verimed y val
 | VeriMedFrontend  | main           | f125853   | feat: Log in and register                                                       | -                    | 21/06/2025           |
 
 #### 7.2.1.4 Testing Suite Evidence for Sprint Review
+<p>
+  <img src="https://res.cloudinary.com/dydklnicb/image/upload/v1750561407/Verimed-IntegralTest.png" alt="Verimed_IntegralTest">
+</p>
+
+La imagen muestra una prueba integral exitosa del backend del proyecto Verimed, donde un usuario autenticado realiza una solicitud POST al endpoint /api/v1/blockchain/create para registrar un nuevo bloque en la cadena. La evidencia confirma que el token JWT fue validado correctamente, la petición fue autorizada y el hash se generó y persistió con éxito, devolviendo una respuesta HTTP 201 con los datos esperados. Este test valida la funcionalidad central del sistema de trazabilidad mediante blockchain y demuestra que el flujo completo —desde la autenticación hasta la persistencia— funciona de forma robusta y segura, cumpliendo los criterios técnicos y funcionales establecidos para la Sprint Review.
+
 #### 7.2.1.5 Execution Evidence for Sprint Review
 En el Sprint 1, se logró desarrollar la aplicación web y el backend que usará nuestra aplicación. Asi mismo, se desarrolló la conexión con blockchain donde se registrarán los NFTs de los lotes de medicamentos.
 ![img.png](static/img/Chapter%207/frontend-home.png)
