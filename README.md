@@ -2381,6 +2381,8 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 
 * Este proyecto tiene un impacto social positivo al ofrecer una solución tecnológica que mejora la seguridad de los pacientes y fomenta la transparencia en la distribución de medicamentos. Además, contribuye a la prevención de fraudes y a la detección temprana de irregularidades en la cadena de suministro, beneficiando tanto a los consumidores como a los laboratorios y distribuidores. La implementación de VeriMed no solo refuerza la confianza en el mercado farmacéutico, sino que también promueve la innovación y el cumplimiento de normativas internacionales.
 
+* La solución VeriMed se alinea con las tendencias actuales en la industria farmacéutica, donde la digitalización y el uso de tecnologías emergentes como blockchain son cada vez más relevantes. Al integrar estas tecnologías, VeriMed no solo mejora la trazabilidad y autenticidad de los medicamentos, sino que también establece un estándar para futuras iniciativas en el sector, impulsando una transformación hacia un sistema más seguro y eficiente.
+
 # Bibliografía
 
 1. Organización Mundial de la Salud (OMS). "Falsificación de medicamentos: impacto global". Disponible en: [https://www.who.int](https://www.who.int)
@@ -2388,6 +2390,12 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 3. Hyperledger Foundation. "Documentación oficial de Hyperledger Fabric". Disponible en: [https://hyperledger-fabric.readthedocs.io](https://hyperledger-fabric.readthedocs.io)
 4. Ethereum Foundation. "Introducción a los contratos inteligentes". Disponible en: [https://ethereum.org](https://ethereum.org)
 5. W3C. "Documentación sobre códigos QR". Disponible en: [https://www.w3.org](https://www.w3.org)
+6. Introducción a los contratos inteligentes y NFTs. Disponible en: https://ethereum.org/en/nft/ 
+7. Guía para crear y desplegar NFTs en Ethereum. Disponible en: https://www.dappuniversity.com/
+8. Estándares globales para la trazabilidad de medicamentos. Disponible en: https://www.gs1.org
+
+
+
 # Anexos
 
 ### Enlace al repositorio de GitHub
