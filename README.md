@@ -2406,14 +2406,21 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 
 # Bibliografía
 
-1. Organización Mundial de la Salud (OMS). "Falsificación de medicamentos: impacto global". Disponible en: [https://www.who.int](https://www.who.int)
-2. Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System". Disponible en: [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
-3. Hyperledger Foundation. "Documentación oficial de Hyperledger Fabric". Disponible en: [https://hyperledger-fabric.readthedocs.io](https://hyperledger-fabric.readthedocs.io)
-4. Ethereum Foundation. "Introducción a los contratos inteligentes". Disponible en: [https://ethereum.org](https://ethereum.org)
-5. W3C. "Documentación sobre códigos QR". Disponible en: [https://www.w3.org](https://www.w3.org)
-6. Introducción a los contratos inteligentes y NFTs. Disponible en: https://ethereum.org/en/nft/ 
-7. Guía para crear y desplegar NFTs en Ethereum. Disponible en: https://www.dappuniversity.com/
-8. Estándares globales para la trazabilidad de medicamentos. Disponible en: https://www.gs1.org
+Organización Mundial de la Salud. (2017). Falsificación de medicamentos: Un problema de salud pública global. Organización Mundial de la Salud. Disponible en: https://www.who.int
+
+Nakamoto, S. (2008). Bitcoin: A peer-to-peer electronic cash system. Disponible en: https://bitcoin.org/bitcoin.pdf
+
+Hyperledger Foundation. (2024). Documentación oficial de Hyperledger Fabric: Plataforma modular para blockchain empresarial. Disponible en: https://hyperledger-fabric.readthedocs.io
+
+Ethereum Foundation. (2023). Guía para desarrolladores: Introducción a contratos inteligentes en Ethereum. Disponible en: https://ethereum.org
+
+World Wide Web Consortium (W3C). (2022). Documentación técnica sobre códigos QR y su implementación en la web. Disponible en: https://www.w3.org
+
+Ethereum Foundation. (2023). Introducción a los tokens no fungibles (NFTs) y su uso en trazabilidad digital. Disponible en: https://ethereum.org/en/nft/
+
+Dapp University. (2023). Guía completa para crear y desplegar NFTs en Ethereum utilizando Solidity y herramientas como Hardhat. Disponible en: https://www.dappuniversity.com/
+
+GS1 Global. (2021). Global Traceability Standard for Healthcare (GTSH). Disponible en: https://www.gs1.org
 
 
 
