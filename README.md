@@ -2108,21 +2108,21 @@ El Sprint 1 fue fundamental para establecer las bases del proyecto Verimed y val
 | VeriMedFrontend  | main           | 0b8b183   | feat: initialize project Verimed                                                | -                    | 16/06/2025           |
 | VeriMedFrontend  | main           | f125853   | feat: Log in and register                                                       | -                    | 21/06/2025           |
 
-#### 7.2.1.4 Testing Suite Evidence for Sprint Review
+### 7.2.1.4 Testing Suite Evidence for Sprint Review
 <p>
   <img src="https://res.cloudinary.com/dydklnicb/image/upload/v1750561407/Verimed-IntegralTest.png" alt="Verimed_IntegralTest">
 </p>
 
 La imagen muestra una prueba integral exitosa del backend del proyecto Verimed, donde un usuario autenticado realiza una solicitud POST al endpoint /api/v1/blockchain/create para registrar un nuevo bloque en la cadena. La evidencia confirma que el token JWT fue validado correctamente, la petición fue autorizada y el hash se generó y persistió con éxito, devolviendo una respuesta HTTP 201 con los datos esperados. Este test valida la funcionalidad central del sistema de trazabilidad mediante blockchain y demuestra que el flujo completo —desde la autenticación hasta la persistencia— funciona de forma robusta y segura, cumpliendo los criterios técnicos y funcionales establecidos para la Sprint Review.
 
-#### 7.2.1.5 Execution Evidence for Sprint Review
+### 7.2.1.5 Execution Evidence for Sprint Review
 En el Sprint 1, se logró desarrollar la aplicación web y el backend que usará nuestra aplicación. Asi mismo, se desarrolló la conexión con blockchain donde se registrarán los NFTs de los lotes de medicamentos.
 ![img.png](static/img/Chapter%207/frontend-home.png)
 ![img.png](static/img/Chapter%207/frontend-search.png)
 ![backend.png](static/img/Chapter%207/backend.png)
 ![swagger1.png](static/img/Chapter%207/swagger1.png)
 ![swagger2.png](static/img/Chapter%207/swagger2.png)
-#### 7.2.1.6 Services Documentation Evidence for Sprint Review
+### 7.2.1.6 Services Documentation Evidence for Sprint Review
 | **Endpoint**                     | Método | Controlador                | Descripción                                          |
 |----------------------------------|--------|----------------------------|------------------------------------------------------|
 | `/api/v1/authentication/sign-up` | `POST` | `AuthenticationController` | Registra un nuevo perfil                             |
@@ -2137,10 +2137,9 @@ En el Sprint 1, se logró desarrollar la aplicación web y el backend que usará
 | `/api/verimed/batch`             | `GET`  | `BatchController`          | Lista todos los lotes                                |
 | `/api/verimed/batch`             | `POST` | `BatchController`          | Crea un nuevo lote                                   |
 | `/blockchain/contract-name`      | `GET`  | `BlockchainController`     | Obtiene todos los contratos creados en la blockchain |
-
-#### 7.2.1.7 Software Deployment Evidence for Sprint Review
+### 7.2.1.7 Software Deployment Evidence for Sprint Review
 Para este primer Srint, no se consideró necesario desplegar la aplicación en un servidor, ya que se enfocó en el desarrollo del backend y la conexión con blockchain. Sin embargo, se preparó un entorno de desarrollo local para facilitar la ejecución y pruebas del sistema.
-#### 7.2.1.8 Team Collaboration Insights during Sprint
+### 7.2.1.8 Team Collaboration Insights during Sprint
 Durante el Sprint 1, el equipo utilizó GitHub para la gestión del código. Se realizaron reuniones diarias para revisar el progreso y resolver bloqueos. La comunicación fue fluida, permitiendo ajustes rápidos en las prioridades y enfoques de desarrollo. El uso de pull requests facilitó la revisión del código y la integración continua, asegurando que todos los miembros estuvieran alineados con los objetivos del sprint.
 Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de trabajo, uno enfocado en el desarrollo del frontend y otro en el backend. Esta división permitió una mayor especialización y eficiencia en las tareas, ya que cada equipo pudo concentrarse en su área de expertise. El equipo de frontend se encargó de diseñar y desarrollar la interfaz de usuario, mientras que el equipo de backend se enfocó en la lógica del servidor, la conexión con blockchain y la gestión de datos.
 
@@ -2152,9 +2151,66 @@ Para el desarrollo del proyecto, se dividió el trabajo en dos sub-equipos de tr
 **Integrantes:** Sebastián Frisancho, Gian Franco Luna y Nicolás Zagal
 ![frontend-evidence.png](static/img/Chapter%207/frontend-evidence.png)
 
-### **Blockchain Contracts**
+#### **Blockchain Contracts**
 **Integrantes:** Jeferson Cabrera
 ![img.png](static/img/Chapter%207/blockchain-evidence.png)
+
+### 7.2.2. Sprint 2
+El sprint 2 se enfocó en mejorar la interfaz de usuario, implementar el registro de fabricas para almacenar la información de estas en los tokens y en la lectura de los QRs para mostrar al usuario final
+#### 7.2.2.1 Sprint Planning 2
+| **Sprint #**                         | Sprint 2                                                                                                                                                                                                                         |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Date**                             | 2025-06-22                                                                                                                                                                                                                       |
+| **Time**                             | 07:00 PM                                                                                                                                                                                                                         |
+| **Location**                         | Reunión virtual (Discord)                                                                                                                                                                                                        |
+| **Prepared By**                      | Frisancho Lévano, Sebastian Mathias Salomon                                                                                                                                                                                      |
+| **Attendees**                        | Nicolás Zagal Vallejo, Gianfranco Luna Morales, Jeferson Smith Cabrera Camizam, Carlos Daniel Pingus Rodríguez                                                                                                                   |
+| **Sprint 1 Review Summary**          | Se establecieron las mejoras de la UI, definió la implementacion del IAM para almacenar informaciónd e fabricas en la blockchain y estableció el desarrollo móvil en flutter para la lectura de QRs y despliegue de información. |
+| **Sprint 1 Retrospective Summary**   | Buena coordinación en el desarrollo del frontend y backend. Se propuso mejorar la integración de la blockchain y definir claramente los endpoints necesarios para el registro de fabricas y lectura de QRs.                      |
+| **Sprint 2 Goal**                    | Implementar la interfaz de usuario mejorada, registrar fabricas en la blockchain y permitir la lectura de QRs para mostrar información al usuario final.                                                                         |
+| **Sprint 2 Velocity**                | 32 Story Points                                                                                                                                                                                                                  |
+| **Sum of Story Points**              | 32 Story Points                                                                                                                                                                                                                  |
+
+#### 7.2.2.2 Sprint Backlog 2
+| Sprint # | User Story             | Task ID | Título del Task                  | Descripción                                                           | Estimación (SP) | Responsable                   | Estado |
+|----------|------------------------|---------|----------------------------------|-----------------------------------------------------------------------|-----------------|-------------------------------|--------|
+| 2        | UI Mejorada            | UI-01   | Diseñar componentes UI           | Crear componentes consistentes con el nuevo diseño system             | 2               | Gian Franco Luna              | Done   |
+| 2        | UI Mejorada            | UI-02   | Implementar layout responsivo    | Desarrollo de layouts para desktop/móvil con breakpoints definidos    | 3               | Sebastian Frisancho           | Done   |
+| 2        | UI Mejorada            | UI-03   | Integración de assets gráficos   | Cargar y configurar nueva paleta de colores, iconos e imágenes        | 1               | Gian Franco Luna              | Done   |
+| 2        | UI Mejorada            | UI-04   | Ajustar animaciones              | Implementar transiciones y micro-interacciones según especificaciones | 2               | Sebastian Frisancho           | Done   |
+| 2        | Registro en Blockchain | BC-01   | Implementar smart contract       | Desarrollo y testing de contrato para registro de fábricas            | 4               | Jeferson Smith                | Done   |
+| 2        | Registro en Blockchain | BE-01   | Crear endpoints API              | Desarrollo de endpoints para integración frontend-blockchain          | 7               | Carlos Pingus / Nicolás Zagal | Done   |
+| 2        | Registro en Blockchain | UI-05   | Formulario de registro           | Implementar UI para ingreso de datos de nuevas fábricas               | 2               | Sebastian Frisancho           | Done   |
+| 2        | Registro en Blockchain | BE-02   | Validación de datos              | Implementar validaciones backend antes de enviar a blockchain         | 1               | Nicolás Zagal                 | Done   |
+| 2        | Lectura QR             | MOB-01  | Integrar librería QR             | Configurar librería de escaneo en aplicación móvil (Flutter)          | 2               | Sebastian Frisancho           | Done   |
+| 2        | Lectura QR             | MOB-02  | Pantalla de escaneo              | Diseñar e implementar UI para cámara/scanner de QR                    | 2               | ian Franco Luna               | Done   |
+| 2        | Lectura QR             | MOB-03  | Visualización de información     | Pantalla para mostrar detalles de fábrica al escanear QR              | 3               | Sebastian Frisancho           | Done   |
+| 2        | Deployment             | CLD-01  | Deployment de frontend y backend | Deployment de la aplicación en Netlify y AWS ECS                      | 2               | Sebastian Frisancho           | Done   |
+
+#### 7.2.2.3 Development Evidence for Sprint Review.
+| Repository      | Branch                 | Commit Id                                  | Commit Message                                                                                | Commit Message Body | Committed on (Date) |
+|-----------------|------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------|---------------------|---------------------|
+| VeriMedFrontend | feat/refactor-Lote     | 3d030cb7c94a3ef24853c0a05a151a108bb88017   | feat: enhance authentication flow and add contract name retrieval in dashboard                | -                   | 2025-07-10          |
+| VeriMedFrontend | feat/refactor-product  | 959b746ad68ea00831eb40a8e8b703672b8d57ee   | feat: Updated auth                                                                            | -                   | 2025-07-10          |
+| VeriMedMobile   | main                   | 848316c401823dca947265fe1b2d6e47f92aa73c   | fix: Update API base URL for product repository                                               | -                   | 2025-07-10          |
+| VeriMedBackend  | feat/refactor-product  | 800ffd441b25e8b483ce302313ba67c3819d4f4d   | feat: update Product model and controller to enhance image handling and integrate NFT minting | -                   | 2025-07-10          |
+| VeriMedBackend  | feat/tracking          | b824210c8cd38027c2d8d6aa182670839601fc85   | fix(): Batch name                                                                             | -                   | 2025-06-26          |
+
+#### 7.2.2.4 Testing Suite Evidence for Sprint Review
+
+#### 7.2.2.5 Execution Evidence for Sprint Review
+
+#### 7.2.2.6 Services Documentation Evidence for Sprint Review
+
+#### 7.2.2.7 Software Deployment Evidence for Sprint Review
+
+#### 7.2.2.8 Team Collaboration Insights during Sprint
+##### **Frontend**
+![Captura de pantalla 2025-07-10 a las 16.08.27.png](static/img/Chapter%207/Sprint%202/Captura%20de%20pantalla%202025-07-10%20a%20las%2016.08.27.png)
+![Captura de pantalla 2025-07-10 a las 16.10.29.png](static/img/Chapter%207/Sprint%202/Captura%20de%20pantalla%202025-07-10%20a%20las%2016.10.29.png)
+##### **Backend**
+![Captura de pantalla 2025-07-10 a las 16.11.57.png](static/img/Chapter%207/Sprint%202/Captura%20de%20pantalla%202025-07-10%20a%20las%2016.11.57.png)
+
 
 ## 7.3 Validation Interviews
 A continuación, se muestran las Validation Interviews, una etapa clave para nuestro equipo, ya que nos permitirán validar directamente con los usuarios reales, como laboratorios, distribuidores, farmacias y pacientes, si el sistema VeriMed responde adecuadamente a sus necesidades. A través de estas entrevistas, podremos recoger comentarios valiosos sobre la utilidad, usabilidad y relevancia de las funcionalidades implementadas. Esta retroalimentación nos servirá para realizar ajustes oportunos, reforzar aspectos positivos y garantizar que la solución tenga un verdadero impacto en la mejora de la trazabilidad y autenticidad de medicamentos en la cadena de suministro.
