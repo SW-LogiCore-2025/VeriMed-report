@@ -2481,16 +2481,12 @@ Capturas de Pantalla
 
 
 #### Video de demostración
-Enlace a video: 
+Enlace a video: http://bit.ly/4kzhEXF
 
 Este video muestra:
+<img src="https://res.cloudinary.com/dydklnicb/image/upload/v1752256876/about-the-product.png">
 
-El proceso de registro de una fábrica desde la web.
-
-La creación del NFT con los datos registrados.
-
-El escaneo de un QR desde la app móvil y visualización de los datos del NFT.
-
+En este video se muestra el flujo principal de la aplicación VeriMed, iniciando con el registro de una fábrica farmacéutica a través de la plataforma web, donde se validan sus datos como entidad autorizada. Una vez registrada, la fábrica puede crear un NFT para cada medicamento, ingresando información como el nombre, lote y fecha de fabricación, asegurando así la trazabilidad y autenticidad del producto. Finalmente, mediante la app móvil, los usuarios pueden escanear el código QR del medicamento para acceder a los metadatos almacenados en la blockchain, verificando en tiempo real su autenticidad y procedencia.
 
 
 #### 7.2.2.6 Services Documentation Evidence for Sprint Review
@@ -2646,48 +2642,48 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
 
 ## 7.3.1. Diseño de Entrevistas
 
-### 👥 Usuarios Finales (Pacientes o Consumidores)
+### Usuarios Finales (Pacientes o Consumidores)
 
-#### 🔍 Contexto de uso y conocimiento
+#### Contexto de uso y conocimiento
 - ¿Cómo suele verificar actualmente que un medicamento es auténtico?
 - ¿Ha escuchado antes sobre medicamentos falsificados o adulterados?
 - ¿Conoce qué es la tecnología blockchain o los tokens NFT? ¿La ha usado antes?
 
-#### 💊 Preocupaciones y necesidades
+#### Preocupaciones y necesidades
 - ¿Qué tan importante es para usted saber el origen y recorrido de un medicamento?
 - ¿Ha tenido alguna vez dudas sobre la autenticidad de un medicamento que ha comprado?
 - ¿Le gustaría tener una herramienta que le muestre la trazabilidad completa de un medicamento antes de consumirlo?
 
-#### 📱 Validación del sistema propuesto
+#### Validación del sistema propuesto
 - ¿Qué le parecería escanear un código QR en el empaque de un medicamento y ver todos los pasos por los que ha pasado hasta llegar a sus manos?
 - ¿Se sentiría más seguro al consumir un medicamento que esté respaldado por un sistema en blockchain?
 - ¿Qué tan fácil cree que sería usar una app o página web para verificar esta información?
 
-#### 🛠️ Implementación y soporte
+#### Implementación y soporte
 - ¿Qué barreras cree que tendría al usar esta tecnología (por ejemplo: acceso, comprensión, confianza)?
 - ¿Qué necesitaría para confiar en que esta información es verídica y útil?
 - ¿Estaría dispuesto a recomendar este tipo de sistema a otros usuarios?
 
 ---
 
-### 🧪 Laboratorios y Fabricantes de Medicamentos
+### Laboratorios y Fabricantes de Medicamentos
 
-#### 🏭 Procesos actuales y tecnologías
+#### Procesos actuales y tecnologías
 - ¿Qué mecanismos utilizan actualmente para garantizar la trazabilidad de sus productos?
 - ¿Qué tan frecuente es la falsificación o adulteración de sus medicamentos en el mercado?
 - ¿Qué tecnologías digitales utilizan en su cadena de producción y distribución?
 
-#### 📦 Necesidades y motivaciones
+#### Necesidades y motivaciones
 - ¿Qué tan importante considera que es ofrecer trazabilidad transparente a sus consumidores?
 - ¿Cuál cree que es el impacto reputacional o económico de los medicamentos falsificados en su marca?
 - ¿Estaría interesado en mejorar la confianza del consumidor mediante herramientas tecnológicas?
 
-#### 🔐 Validación del sistema basado en blockchain
+#### Validación del sistema basado en blockchain
 - ¿Qué le parecería usar tecnología blockchain para registrar cada etapa del ciclo de vida del medicamento?
 - ¿Le interesaría tokenizar sus productos mediante NFTs que garanticen unicidad y trazabilidad?
 - ¿Cree que esto podría reducir la circulación de productos falsificados o no autorizados?
 
-#### 🤝 Implementación y colaboración
+#### Implementación y colaboración
 - ¿Qué requerimientos técnicos, regulatorios o logísticos cree que deberían cumplirse para implementar este sistema?
 - ¿Estaría dispuesto a colaborar en una prueba piloto o integración con su sistema actual?
 - ¿Qué beneficios espera obtener si se integra un sistema de trazabilidad NFT en su cadena de producción?
@@ -2760,7 +2756,7 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
 
 ### 7.3.3 Evaluación según heurísticas
 <p align="center">
-  <strong>## UX Heuristics & Principles Evaluation</strong><br>
+  <strong>UX Heuristics & Principles Evaluation</strong><br>
   <em>Usability – Inclusive Design – Information Architecture</em>
 </p>
 
@@ -2862,20 +2858,20 @@ Implementar un sistema de notificaciones en tiempo real que alerte inmediatament
 
 Como parte de la estrategia de difusión del sistema **VeriMed**, el equipo desarrolló un video explicativo orientado a dos públicos clave:
 
-- 🏥 **Pacientes y Consumidores**: usuarios interesados en conocer cómo el sistema garantiza la autenticidad y trazabilidad de los medicamentos, mostrando sus beneficios y el impacto positivo en la seguridad del consumidor.
-- 🧪 **Laboratorios y Farmacias**: actores clave que desean entender cómo utilizar las funcionalidades principales del sistema para registrar lotes, verificar medicamentos y generar alertas en tiempo real.
+-  **Pacientes y Consumidores**: usuarios interesados en conocer cómo el sistema garantiza la autenticidad y trazabilidad de los medicamentos, mostrando sus beneficios y el impacto positivo en la seguridad del consumidor.
+-  **Laboratorios y Farmacias**: actores clave que desean entender cómo utilizar las funcionalidades principales del sistema para registrar lotes, verificar medicamentos y generar alertas en tiempo real.
 
 El video adopta un tono profesional, claro y accesible, alineado con la identidad visual de VeriMed. Se presenta una visión general del sistema, incluyendo su modelo de negocio, arquitectura modular (web, móvil, backend y blockchain), así como ejemplos prácticos de uso.
 
-📺 **Captura del video**  
+ **Captura del video**  
 ![Screenshot del Video](https://res.cloudinary.com/drkelnilg/image/upload/v1750556422/imagen_2025-06-21_204021226_wokqwa.png)
 
-🔗 **Enlaces del video**
+ **Enlaces del video**
 - Versión publicada en **Microsoft Stream**:  
-  👉 [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ)
+   [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ)
 
 
-⏱️ **Duración del video**: 3 minutos y 8 segundos
+**Duración del video**: 3 minutos y 8 segundos
 
 ---
 
