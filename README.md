@@ -2583,25 +2583,23 @@ Scripts de Deployment Frontend
 
 Configuración Vercel (Staging)
 ```
-vercel.json
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
+  "platform": "Netlify",
+  "build": {
+    "command": "npm run build:staging",
+    "publish": "dist"
+  },
+  "environment": {
     "VITE_BACKEND_URL": "https://api-staging.verimed.app",
     "VITE_ENVIRONMENT": "staging"
-  }
+  },
+  "redirects": [
+    {
+      "from": "/*",
+      "to": "/index.html",
+      "status": 200
+    }
+  ]
 }
 ```
 2. Backend (Spring Boot)
@@ -2630,6 +2628,17 @@ authorization.jwt.expiration.days=7
 # CORS Configuration
 app.cors.allowed-origins=http://localhost:5173,https://staging.verim
 ```
+
+
+### Capturas de Despliegue 
+![Despliegue 1](static/img/Chapter%207/Sprint%202/despliegue1.jpg)
+
+
+![Despliegue 2](static/img/Chapter%207/Sprint%202/despliegue2.jpg)
+
+
+![Despliegue 3](static/img/Chapter%207/Sprint%202/despliegue3.jpg)
+
 
 
 
