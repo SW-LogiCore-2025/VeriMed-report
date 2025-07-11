@@ -243,6 +243,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
 <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso al equipo los pasos necesarios para la conexión con la blockchain usando Alchemy y Pinata, aclarando el flujo de datos desde el backend. Su explicación permitió comprender cómo se gestiona la emisión y lectura de NFTs.</p>
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Explicó la estructura de los servicios backend para generar reportes y validar integridad de datos. Su comunicación permitió que los desarrolladores frontend comprendieran mejor los endpoints disponibles y su funcionalidad.</p>
+<p><strong>TF</strong></p> 
+<p><strong>Luna Morales, Gianfranco:</strong> Se presentó el nuevo diseño del front, explotando las herramientas de vue para una UI más elaborada Se disiparon los errores de las tablas de las listas.</p>
 
 </td>
 <td>
@@ -267,6 +269,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Luna Morales, Giafranco:</strong> Se diseñó los mockups de la aplicación y expuso los posibles cambios o mejoras que podrían tener. Se estableció que podrían tener los 2 usuarios para seleccionar. </p>
 <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Redactó código backend bien comentado, especialmente en los servicios relacionados a la interacción con la blockchain. Sus commits y mensajes fueron claros, lo que ayudó a mantener la trazabilidad del proyecto.</p>
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Documentó los servicios de generación de reportes y códigos QR, asegurando que sus funcionalidades y uso estuvieran descritos de manera clara para el resto del equipo y stakeholders técnicos.</p>
+<p><strong>TF</strong></p> 
+<p><strong>Luna Morales, Gianfranco:</strong> Se expuso las dificultades en publicar el front para que pueda integrase correctamente con el backend con el equipo.</p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -275,6 +279,7 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
   <p>En conclusión: La elaboración detallada de wireframes y wireflows, junto con una documentación clara y estructurada, permitió comunicar de manera efectiva las ideas y resultados a públicos diversos, incluyendo técnicos y no técnicos. Esta comunicación visual y técnica facilitó la comprensión compartida, promovió la alineación del equipo y fortaleció la toma de decisiones colaborativa a lo largo del desarrollo del proyecto.</p>
     <p><strong>TB2</strong></p>
     <p>En conclusión: La documentación elaborada en la TB2 mostró claridad, estructura y adecuación al público objetivo. Los miembros del equipo generaron entregables escritos comprensibles para distintos perfiles técnicos, desde comentarios en el código hasta redacción de secciones del informe. Esto permitió una trazabilidad efectiva del desarrollo, fortaleciendo la colaboración y facilitando la validación del avance del proyecto por parte de los stakeholders.</p>
+    
 </td>
 </tr> </table>
 
