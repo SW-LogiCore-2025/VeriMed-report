@@ -2757,7 +2757,7 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
 
 ### 7.3.3 Evaluación según heurísticas
 <p align="center">
-  <strong>## UX Heuristics & Principles Evaluation</strong><br>
+  <strong>UX Heuristics & Principles Evaluation</strong><br>
   <em>Usability – Inclusive Design – Information Architecture</em>
 </p>
 
@@ -2875,8 +2875,6 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 ⏱️ **Duración del video**: 3 minutos y 8 segundos
 
 ---
-
-
 
 # Conclusiones
 
