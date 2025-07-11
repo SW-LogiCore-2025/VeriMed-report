@@ -2198,11 +2198,437 @@ El sprint 2 se enfocó en mejorar la interfaz de usuario, implementar el registr
 
 #### 7.2.2.4 Testing Suite Evidence for Sprint Review
 
+Esta sección presenta el conjunto completo de Unit Tests, Integration Tests y Acceptance Tests automatizados para el sistema VeriMed desarrollados durante el sprint actual. El enfoque de testing abarca la verificación de funcionalidades críticas del sistema de autenticación con Spring Security + JWT, gestión de lotes farmacéuticos, generación de códigos QR y verificación blockchain con NFT e IPFS.
+
+1. Unit Tests
+Objetivo: Verificar el comportamiento individual de componentes y servicios aislados.
+Frontend Unit Tests (Vue.js/PrimeVue)
+
+Componentes de Autenticación
+
+- Login.vue - Validación de credenciales y JWT handling
+- Register.vue - Registro laboratory/patient con role validation
+- NavbarLayout.vue - Navegación condicional según tipo usuario
+
+
+Componentes de Gestión
+
+- CreateBatch.vue - Creación de lotes con certificateUrl
+- AddProductToBatch.vue - Agregado productos con QR generation
+- BatchList.vue - Listado y filtrado por usuario
+
+
+Stores y Composables
+
+- useAuthStore - Gestión JWT tokens y roles
+- useBatches - Manejo CRUD de batches
+- useProducts - Gestión productos por batch
+
+
+
+#### Backend Unit Tests (Spring Boot)
+
+Authentication Service Tests
+
+- UserDetailsServiceImpl - Carga de user details desde UserRepository
+- BCryptHashingService - Encriptación de passwords
+- BearerTokenService - Generación y validación JWT tokens
+- UnauthorizedRequestHandlerEntryPoint - Manejo de requests no autorizados
+
+
+Batch Management Service Tests
+
+- BatchCommandServiceImpl - Creación lotes con código único (12 chars)
+- BatchRepository - Persistencia JPA de batches
+- CreateBatchCommand - Validación de commands
+
+
+Product Management Service Tests
+
+- ProductCommandServiceImpl - Agregado productos a batches
+- QrCodeService - Generación códigos QR base64
+- ProductRepository - Queries por batch code y serial number
+- AddProductToBatchCommand - Validación quantity y productType
+
+
+Security Configuration Tests
+
+- WebSecurityConfiguration - Filter chain y CORS setup
+- BearerAuthorizationRequestFilter - Interceptor de JWT tokens
+- DaoAuthenticationProvider - Authentication provider setup
+
+
+
+2. Integration Tests
+Objetivo: Verificar la interacción entre diferentes módulos y servicios.
+API Integration Tests
+
+Authentication Flow
+
+- POST /api/v1/authentication/sign-in → JWT token generation
+- POST /api/v1/authentication/sign-up → User creation con roles
+- Bearer token validation en protected endpoints
+
+
+Batch-Product Lifecycle
+
+- Crear batch → Agregar productos → Generar QRs → Verificar integridad
+- API endpoint: /api/verimed/product/batch (AddProductToBatchCommand)
+- Validación de relaciones Batch-User y Product-ProductType
+
+
+Database Integration
+
+- JPA repositories con @EnableJpaAuditing
+- Transactional operations entre Batch y Product entities
+- Foreign key constraints User-Batch-Product
+
+
+Blockchain Integration
+
+- BlockchainService - Creación NFTs para productos
+- PinataService - Almacenamiento metadata en IPFS
+- QR codes linking to blockchain verification
+
+
+3. Acceptance Tests (BDD)
+Objetivo: Validar que el sistema cumple con los requisitos del negocio desde la perspectiva del usuario.
+
+#### Evidencias de Testing por User Stories
+
+User Story 1: Autenticación JWT
+- **Como** laboratorio farmacéutico
+- **Quiero** autenticarme con JWT tokens
+- **Para** acceder de forma segura a la gestión de lotes
+
+Archivo Feature: autenticacion_jwt.feature
+
+### Característica: Autenticación JWT
+
+Como un **laboratorio farmacéutico**  
+Quiero **autenticarme usando tokens JWT**  
+Para **acceder de forma segura a la gestión de lotes**
+
+---
+
+### Escenario: Registro exitoso de laboratorio con asignación de rol
+
+- **Dado** que estoy en la página de registro  
+- **Cuando** lleno el formulario de registro con credenciales de laboratorio  
+- **Y** envío la solicitud a `"/api/v1/authentication/sign-up"`  
+- **Entonces** se debe crear una entidad `User` con rol `LABORATORY`  
+- **Y** debo recibir una respuesta de éxito  
+
+---
+
+### Escenario: Generación de token JWT al iniciar sesión
+
+- **Dado** que soy un usuario de laboratorio registrado  
+- **Cuando** envío credenciales válidas por `POST` a `"/api/v1/authentication/sign-in"`  
+- **Entonces** debo recibir un token JWT válido  
+- **Y** el token debe contener mi ID de usuario y roles  
+- **Y** debo poder acceder a endpoints protegidos  
+
+---
+
+### Escenario: Validación de token Bearer
+
+- **Dado** que tengo un token JWT válido  
+- **Cuando** hago solicitudes con `"Authorization: Bearer <token>"`  
+- **Entonces** el `BearerAuthorizationRequestFilter` debe validar el token  
+- **Y** debo acceder exitosamente a recursos protegidos
+
+
+User Story 2: Gestión de Lotes con Códigos Únicos
+- **Como** laboratorio autenticado
+- **Quiero** crear lotes con códigos únicos de 12 caracteres
+- **Para** mantener trazabilidad específica de VeriMed
+
+Archivo Feature: gestion_lotes.feature
+
+### Característica: Gestión de Lotes con Códigos Únicos
+
+Como un **laboratorio autenticado**  
+Quiero **crear lotes con códigos únicos de 12 caracteres**  
+Para **mantener trazabilidad específica de VeriMed**
+
+---
+
+### Escenario: Creación de lote con código auto-generado
+
+- **Dado** que estoy autenticado como usuario de laboratorio  
+- **Cuando** envío `CreateBatchCommand` con:
+
+  | Campo           | Valor                                                 |
+  |------------------|---------------------------------------------------------|
+  | `nameBatch`      | Lote Paracetamol 500mg                                  |
+  | `certificateUrl` | https://certificates.verimed.com/cert123               |
+  | `userId`         | 1                                                       |
+
+- **Entonces** `BatchCommandServiceImpl` debe generar un código alfanumérico de 12 caracteres  
+- **Y** el lote debe guardarse con timestamp `createdAt`  
+- **Y** el lote debe asociarse con mi entidad `User`
+
+---
+
+### Escenario: Agregado de productos a lote existente
+
+- **Dado** que tengo un lote con código `"A1B2C3D4E5F6"`  
+- **Cuando** envío `AddProductToBatchCommand` con cantidad **100**  
+- **Entonces** `ProductCommandServiceImpl` debe crear **100 entidades Product**  
+- **Y** cada producto debe tener `serialNumber` alfanumérico único  
+- **Y** cada producto debe estar vinculado al lote  
+- **Y** se deben generar códigos QR usando `QrCodeService`
+
+User Story 3: Verificación con Blockchain y NFT
+Como paciente/consumidor
+Quiero verificar medicamentos via QR con blockchain
+Para validar autenticidad mediante NFT
+Archivo Feature: verificacion_blockchain.feature
+
+### Característica: Verificación con Blockchain y NFT
+
+Como un **paciente/consumidor**  
+Quiero **verificar medicamentos vía códigos QR vinculados a NFTs en blockchain**  
+Para **asegurar autenticidad mediante registros inmutables**
+
+---
+
+### Escenario: Generación de código QR con metadata blockchain
+
+- **Dado** que existe una entidad `Product` con `serialNumber` `"PROD123456789"`  
+- **Cuando** `QrCodeService` genera el código QR para el producto  
+- **Entonces** el QR debe contener el **hash de transacción blockchain**  
+- **Y** la metadata debe almacenarse en **IPFS** vía `PinataService`  
+- **Y** se debe crear un **NFT** vía `BlockchainService`
+
+---
+
+### Escenario: Verificación de producto vía escaneo QR
+
+- **Dado** que escaneo un código QR que contiene hash blockchain  
+- **Cuando** consulto la blockchain usando el hash  
+- **Entonces** debo recuperar **metadata inmutable** del producto  
+- **Y** debo ver la **cadena de trazabilidad completa**  
+- **Y** el estado de verificación debe mostrar `"Auténtico"` con prueba NFT
+
+
+#### Estructura de Testing Implementada
+
+#### Backend Tests (Java)
+
+| **Repositorio**       | **Rama**                      | **Commit Id** | **Mensaje del Commit**                                    | **Cuerpo del Commit**                                                                                                                           | **Fecha de Commit** |
+| --------------------- | ----------------------------- | ------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| verimed-backend-tests | feature/auth-service-tests    | b8e7f4a1      | feat: implementar tests UserDetailsServiceImplTests       | Unitarios para `loadUserByUsername`, validación de `authorities` y `UsernameNotFoundException` con mock de `UserRepository`                     | 02/07/2025          |
+| verimed-backend-tests | feature/batch-command-tests   | c9d6e2b3      | feat: agregar suite de tests BatchCommandServiceImplTests | Tests para `handle(CreateBatchCommand)`, generación de códigos únicos de 12 chars, asociación `User-Batch` y persistencia con `BatchRepository` | 05/07/2025          |
+| verimed-backend-tests | feature/product-service-tests | a4f8d1c7      | feat: implementar tests ProductCommandServiceImplTests    | Tests para `AddProductToBatchCommand`, validación de `quantity`, generación de `serialNumbers` e integración con `QrCodeService`                | 05/07/2025          |
+| verimed-backend-tests | feature/security-config-tests | d2g5h9k8      | feat: tests de integración configuración seguridad        | Pruebas para `WebSecurityConfiguration`, JWT, filter chain, configuración CORS y flujo completo de autorización                                 | 06/07/2025          |
+| verimed-backend-tests | feature/repository-tests      | e1j7m3n2      | feat: tests de integración repositorios JPA               | Pruebas de `ProductRepository.findByBatchCode`, queries de `BatchRepository`, validaciones de relaciones con `@DataJpaTest`                     | 08/07/2025          |
+
+
+#### Herramientas y Frameworks Utilizados
+
+Stack de Testing Backend
+
+- JUnit 5 - Framework principal de testing
+- Mockito - Mocking para servicios y repositorios
+- Spring Boot Test - @SpringBootTest, @DataJpaTest
+
+Testing BDD
+
+- Cucumber-JVM - Framework BDD para backend
+- Cypress-Cucumber-Preprocessor - BDD para E2E frontend
+- Gherkin - Archivos de características con escenarios reales
+
+Testing Blockchain
+
+- Ganache - Blockchain local para testing
+- Web3j - Testing de smart contracts desde Java
+- Nodo IPFS de Testing - Testing de integración Pinata
+
 #### 7.2.2.5 Execution Evidence for Sprint Review
+
+Durante el Sprint 2 se logró un avance significativo en la experiencia del usuario y en la interacción con la blockchain. Se implementaron mejoras visuales a la interfaz de usuario (UI), se construyó el flujo completo de registro de fábricas con integración a smart contracts en blockchain, y se desarrolló una versión móvil con Flutter para la lectura de códigos QR, permitiendo así mostrar información relevante al usuario final sin necesidad de autenticación.
+
+Entre los principales logros se incluyen:
+
+- Implementación de una UI moderna y responsiva para el registro y gestión de fábricas.
+
+- Integración completa del registro de datos en la blockchain, incluyendo validaciones y endpoints funcionales.
+
+- Desarrollo de la aplicación móvil en Flutter con escaneo de QR y visualización de datos.
+
+- Despliegue exitoso del sistema en Netlify (frontend) y AWS ECS (backend).
+
+A continuación, se presentan capturas de pantalla de las vistas principales del sistema y el enlace al video demostrativo del funcionamiento:
+
+Capturas de Pantalla
+Formulario de registro de fábrica (Web)
+
+
+Dashboard con información de trazabilidad
+
+
+Pantalla de escaneo en la app móvil (Flutter)
+
+
+Visualización de datos al escanear un QR
+
+
+#### Video de demostración
+Enlace a video: 
+
+Este video muestra:
+
+El proceso de registro de una fábrica desde la web.
+
+La creación del NFT con los datos registrados.
+
+El escaneo de un QR desde la app móvil y visualización de los datos del NFT.
+
+
 
 #### 7.2.2.6 Services Documentation Evidence for Sprint Review
 
+Durante este sprint se ha completado la documentación exhaustiva de Web Services para la plataforma VeriMed utilizando OpenAPI 3.0 con Swagger UI. Se han documentado 9 endpoints críticos que cubren autenticación JWT, gestión de usuarios, administración de lotes farmacéuticos y productos con integración blockchain.
+
+#### Logros Alcanzados en Documentación de Web Services
+- Implementación completa de OpenAPI 3.0 con configuración de seguridad Bearer JWT
+- Documentación interactiva desplegada en Swagger UI con ejemplos funcionales
+- 9 endpoints documentados con especificaciones detalladas de request/response
+- Integración de autenticación Bearer en toda la documentación
+- Ejemplos realistas con datos de muestra del dominio farmacéutico
+- Categorización por funcionalidad (Authentication, Users, Roles, Batches, Products)
+
+Endpoints Documentados - Sprint Actual
+
+###  Documentación de Endpoints (Swagger - OpenAPI)
+
+A continuación se listan los endpoints expuestos por la API de VeriMed, organizados por controlador y categoría, con su respectivo estado y enlace a la documentación en Swagger.
+
+| **Endpoint**                             | **Verbo HTTP** | **Controlador**          | **Tag OpenAPI**       | **Estado** | **URL Documentación**                                                                 |
+|------------------------------------------|----------------|---------------------------|------------------------|------------|----------------------------------------------------------------------------------------|
+| `/api/v1/authentication/sign-in`         | POST           | AuthenticationController  | Authentication         | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Authentication)                          |
+| `/api/v1/authentication/sign-up`         | POST           | AuthenticationController  | Authentication         | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Authentication)                          |
+| `/api/v1/users`                          | GET            | UsersController           | Users                  | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Users)                                   |
+| `/api/v1/users/{userId}`                 | GET            | UsersController           | Users                  | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Users)                                   |
+| `/api/v1/roles`                          | GET            | RolesController           | Roles                  | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Roles)                                   |
+| `/api/verimed/batch`                     | POST           | BatchController           | Batch Management       | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Batch%20Management)                      |
+| `/api/verimed/batch`                     | GET            | BatchController           | Batch Management       | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Batch%20Management)                      |
+| `/api/verimed/batch/by-user/{userId}`    | GET            | BatchController           | Batch Management       | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Batch%20Management)                      |
+| `/api/verimed/product/batch`             | POST           | ProductController         | Product Management     | Funcional         | [Ver](http://localhost:8080/swagger-ui.html#/Product%20Management)                    |
+
+
+#### Especificación Detallada de Endpoints
+
+
+
 #### 7.2.2.7 Software Deployment Evidence for Sprint Review
+
+Durante este sprint se ha establecido la infraestructura completa de deployment para la plataforma VeriMed, implementando un pipeline robusto que abarca desde el desarrollo local hasta el despliegue en producción. Se han configurado todos los componentes del sistema: frontend Vue.js, backend Spring Boot, base de datos PostgreSQL, y servicios blockchain.
+
+Actividades de Deployment Realizadas en el Sprint
+- Configuración de entornos de desarrollo, staging y producción
+- Creación de cuentas en cloud providers (AWS, Vercel, Railway)
+- Configuración de CI/CD con GitHub Actions
+- Containerización completa con Docker y Docker Compose
+- Variables de entorno seguras para todos los ambientes
+- Scripts de deployment automatizados
+- Monitoreo y logging básico implementado
+
+
+### Entornos de Despliegue
+
+
+
+| **Entorno**    | **Frontend**              | **Backend**                | **Base de Datos**         | **Blockchain**       | **Estado**     |
+|----------------|---------------------------|----------------------------|----------------------------|-----------------------|----------------|
+| Desarrollo     | `localhost:5173`          | `localhost:8080`           | PostgreSQL Local          | Ganache Local         |  Activo       |
+| Staging        | `staging.verimed.app`     | `api-staging.verimed.app`  | Railway PostgreSQL        | Polygon Mumbai        |  Activo       |
+| Producción     | `verimed.app`             | `api.verimed.app`          | AWS RDS PostgreSQL        | Polygon Mainnet       |  Activo   |
+
+Configuración de Productos Digitales
+
+1. Frontend (Vue.js + Vite)
+Configuración Local
+```
+bash# Archivo: .env.development
+VITE_BACKEND_URL=http://localhost:8080/
+VITE_APP_NAME=VeriMed Development
+VITE_ENVIRONMENT=development
+VITE_BLOCKCHAIN_NETWORK=localhost
+VITE_GANACHE_URL=http://127.0.0.1:7545
+```
+Scripts de Deployment Frontend
+
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:staging": "vite build --mode staging",
+    "build:production": "vite build --mode production",
+    "deploy:staging": "npm run build:staging && vercel --prod",
+    "deploy:production": "npm run build:production && aws s3 sync"
+  }
+}
+```
+
+Configuración Vercel (Staging)
+```
+vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_BACKEND_URL": "https://api-staging.verimed.app",
+    "VITE_ENVIRONMENT": "staging"
+  }
+}
+```
+2. Backend (Spring Boot)
+
+Configuración application.properties
+```
+ Desarrollo Local
+server.port=8080
+spring.application.name=verimed-backend
+
+# Base de Datos Desarrollo
+spring.datasource.url=jdbc:postgresql://localhost:5432/verimed_dev
+spring.datasource.username=verimed_user
+spring.datasource.password=${DB_PASSWORD}
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA/Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# JWT Configuration
+authorization.jwt.secret=${JWT_SECRET}
+authorization.jwt.expiration.days=7
+
+# CORS Configuration
+app.cors.allowed-origins=http://localhost:5173,https://staging.verim
+```
+
+
+#### Dashboard AWS - ECS Service
+#### Vercel Dashboard - Frontend Staging
+#### GitHub Actions - CI/CD Pipeline
 
 #### 7.2.2.8 Team Collaboration Insights during Sprint
 ##### **Frontend**
