@@ -245,6 +245,7 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Explicó la estructura de los servicios backend para generar reportes y validar integridad de datos. Su comunicación permitió que los desarrolladores frontend comprendieran mejor los endpoints disponibles y su funcionalidad.</p>
 <p><strong>TF</strong></p> 
 <p><strong>Luna Morales, Gianfranco:</strong> Se presentó el nuevo diseño del front, explotando las herramientas de vue para una UI más elaborada Se disiparon los errores de las tablas de las listas.</p>
+<p><strong>Zagal Vallejo, Nicolás:</strong>Se definieron los nuevos endpoints necesarios para el funcionamiento de la aplicación. Se desarrolló una comunicación activa que buscara solucionar los problemas planteados a lo largo del proyecto</p>
 
 </td>
 <td>
@@ -270,7 +271,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Redactó código backend bien comentado, especialmente en los servicios relacionados a la interacción con la blockchain. Sus commits y mensajes fueron claros, lo que ayudó a mantener la trazabilidad del proyecto.</p>
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Documentó los servicios de generación de reportes y códigos QR, asegurando que sus funcionalidades y uso estuvieran descritos de manera clara para el resto del equipo y stakeholders técnicos.</p>
 <p><strong>TF</strong></p> 
-<p><strong>Luna Morales, Gianfranco:</strong> Se expuso las dificultades en publicar el front para que pueda integrase correctamente con el backend con el equipo.</p>
+<p><strong>Luna Morales, Gianfranco:</strong> Se expuso las dificultades en publicar el front para que pueda integrarse correctamente con el backend con el equipo.</p>
+<p><strong>Zagal Vallejo, Nicolás:</strong>Se documentaron las modificaciones en el backend, buscando un pleno entendimiento del proyecto para cualquier desarrollador. Se utilizó una arquitectura basada en DDD y principios SOLID, así como convenciones de nomeclatura en el control de versiones GIT. </p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
@@ -2878,11 +2880,11 @@ Como parte de la estrategia de difusión del sistema **VeriMed**, el equipo desa
 El video adopta un tono profesional, claro y accesible, alineado con la identidad visual de VeriMed. Se presenta una visión general del sistema, incluyendo su modelo de negocio, arquitectura modular (web, móvil, backend y blockchain), así como ejemplos prácticos de uso.
 
  **Captura del video**  
-![Screenshot del Video](https://res.cloudinary.com/drkelnilg/image/upload/v1750556422/imagen_2025-06-21_204021226_wokqwa.png)
+![Captura de pantalla 2025-07-11 a las 15.30.42.png](static/img/Captura%20de%20pantalla%202025-07-11%20a%20las%2015.30.42.png)
 
  **Enlaces del video**
-- Versión publicada en **Microsoft Stream**:  
-   [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211c211_upc_edu_pe/EVXQWYN3yXhKgEFK7aILT4sB_nlQ2KQHeBb9exeY6Ha8tQ?e=IglwkZ)
+- Versión publicada en **YouTube**:
+- https://youtu.be/aPHYCa7xe5Y
 
 
 **Duración del video**: 3 minutos y 8 segundos
