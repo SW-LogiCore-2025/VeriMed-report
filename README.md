@@ -245,6 +245,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Explicó la estructura de los servicios backend para generar reportes y validar integridad de datos. Su comunicación permitió que los desarrolladores frontend comprendieran mejor los endpoints disponibles y su funcionalidad.</p>
 <p><strong>TF</strong></p> 
 <p><strong>Luna Morales, Gianfranco:</strong> Se presentó el nuevo diseño del front, explotando las herramientas de vue para una UI más elaborada Se disiparon los errores de las tablas de las listas.</p>
+<p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Se concretaron las versiones finales de los productos backend y frontend, así como también de móvil, finalizando esta entrega el respectivo despliegue de productos.</p>
+<p><strong>Frisancho Lévano, Sebastian Mathias Salomón:</strong> Se presentó el diseño final del mobile app, haciendo uso de herramientas nuevas como un scanner QR para poder obtener los metadatos del NFT del medicamento registrado en blockchain.</p>
 <p><strong>Zagal Vallejo, Nicolás:</strong>Se definieron los nuevos endpoints necesarios para el funcionamiento de la aplicación. Se desarrolló una comunicación activa que buscara solucionar los problemas planteados a lo largo del proyecto</p>
 
 </td>
@@ -272,6 +274,8 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Pingus Rodríguez, Carlos Daniel:</strong> Documentó los servicios de generación de reportes y códigos QR, asegurando que sus funcionalidades y uso estuvieran descritos de manera clara para el resto del equipo y stakeholders técnicos.</p>
 <p><strong>TF</strong></p> 
 <p><strong>Luna Morales, Gianfranco:</strong> Se expuso las dificultades en publicar el front para que pueda integrarse correctamente con el backend con el equipo.</p>
+<p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Se organizaron las tareas y reforzamos la coordinación entre los miembros del equipo para logar cumplir con el objetivo final de esta entrega.</p>
+<p><strong>Frisancho Lévano, Sebastian Mathias Salomón:</strong> Se compartieron las inquietudes y dificultades de la solución al equipo las cuales se logaron dilucidar con los esfuerzos en conjunto del equipo.</p>
 <p><strong>Zagal Vallejo, Nicolás:</strong>Se documentaron las modificaciones en el backend, buscando un pleno entendimiento del proyecto para cualquier desarrollador. Se utilizó una arquitectura basada en DDD y principios SOLID, así como convenciones de nomeclatura en el control de versiones GIT. </p>
 </td>
 <td>
