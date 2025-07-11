@@ -2462,17 +2462,22 @@ Entre los principales logros se incluyen:
 
 A continuación, se presentan capturas de pantalla de las vistas principales del sistema y el enlace al video demostrativo del funcionamiento:
 
-Capturas de Pantalla
-Formulario de registro de fábrica (Web)
+Capturas de Pantalla 
 
+### Nft en la vista de Etherscan
+![NFT Etherscan](static/img/Chapter%207/Sprint%202/nft_etherscan.jpg)
 
-Dashboard con información de trazabilidad
+![NFT Etherscan 2](static/img/Chapter%207/Sprint%202/nft_etherscan_2.jpg)
 
+### Nft en opensea
+![NFT OpenSea](static/img/Chapter%207/Sprint%202/nft_opensea.jpg)
 
-Pantalla de escaneo en la app móvil (Flutter)
+### Transaccion
+![Transacción](static/img/Chapter%207/Sprint%202/transaccion.jpg)
 
+### Wallet de metamask
+![Wallet MetaMask](static/img/Chapter%207/Sprint%202/wallet_metamask.jpg)
 
-Visualización de datos al escanear un QR
 
 
 #### Video de demostración
@@ -2626,9 +2631,7 @@ app.cors.allowed-origins=http://localhost:5173,https://staging.verim
 ```
 
 
-#### Dashboard AWS - ECS Service
-#### Vercel Dashboard - Frontend Staging
-#### GitHub Actions - CI/CD Pipeline
+
 
 #### 7.2.2.8 Team Collaboration Insights during Sprint
 ##### **Frontend**
@@ -2757,7 +2760,7 @@ A continuación, se muestran las Validation Interviews, una etapa clave para nue
 
 ### 7.3.3 Evaluación según heurísticas
 <p align="center">
-  <strong>UX Heuristics & Principles Evaluation</strong><br>
+  <strong>## UX Heuristics & Principles Evaluation</strong><br>
   <em>Usability – Inclusive Design – Information Architecture</em>
 </p>
 
@@ -2875,6 +2878,8 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 ⏱️ **Duración del video**: 3 minutos y 8 segundos
 
 ---
+
+
 
 # Conclusiones
 
