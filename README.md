@@ -633,7 +633,26 @@ Los segmentos objetivos son los siguientes:<br>
 ## 2.2.2. Registro de entrevistas
 
 <table border="1">
-  <tbody><tr>
+  <tbody>
+  <tr>
+    <td>
+      <b>Nombres y apellidos:</b> Luis Moreno<br>
+      <b>Edad:</b> 28 años <br>
+      <b>Distrito:</b> Jaén <br>
+      <b>Duración:</b> 06:00 minutos
+    </td>
+    <td align="center">
+      <a target="_blank" rel="noopener noreferrer" href="https://res.cloudinary.com/dydklnicb/image/upload/v1752271456/entrevista-luis-verimed.png"><img src="https://res.cloudinary.com/dydklnicb/image/upload/v1752271456/entrevista-luis-verimed.png" alt="img" width="80%" style="max-width: 100%;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <b>Enlace:</b> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202113280_upc_edu_pe/ERjTWynWrBtImRRYpxdpQmoBkPTOZgj0ooSyGXIudqEc0g?e=WdcY5M&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">https://acortar.link/z4OCQc</a>
+      <br>
+      <b>Resumen:</b> El entrevistado es un trabajador de laboratiorio de 28 años que vive en Lima. Él es parte del proceso de control de calidad y es consciente sobre el problema de los medicamentos falsificados. Le gustaría poder contar con un sistema de trazabilidad seguro, integral y transparente para mejorar la imagen del laboratorio, sin embargo no cuenta con los recursos necesarios para la implementación de estas tecnologías emergentes. 
+    </td>
+  </tr>
+  <tr>
     <td>
       <b>Nombres y apellidos:</b> Yoleny Cordova<br>
       <b>Edad:</b> 18 años <br>
