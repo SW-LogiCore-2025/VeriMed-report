@@ -2502,7 +2502,7 @@ Capturas de Pantalla
 ### Nft en opensea
 ![NFT OpenSea](static/img/Chapter%207/Sprint%202/nft_opensea.jpg)
 
-### Transaccion
+### Transacción
 ![Transacción](static/img/Chapter%207/Sprint%202/transaccion.jpg)
 
 ### Wallet de metamask
@@ -2560,7 +2560,7 @@ Durante este sprint se ha establecido la infraestructura completa de deployment 
 
 Actividades de Deployment Realizadas en el Sprint
 - Configuración de entornos de desarrollo, staging y producción
-- Creación de cuentas en cloud providers (AWS, Vercel, Railway)
+- Creación de cuentas en cloud providers (AWS, Netlify, Railway)
 - Configuración de CI/CD con GitHub Actions
 - Containerización completa con Docker y Docker Compose
 - Variables de entorno seguras para todos los ambientes
@@ -2600,13 +2600,13 @@ Scripts de Deployment Frontend
     "preview": "vite preview",
     "build:staging": "vite build --mode staging",
     "build:production": "vite build --mode production",
-    "deploy:staging": "npm run build:staging && vercel --prod",
+    "deploy:staging": "npm run build:staging && netlify --prod",
     "deploy:production": "npm run build:production && aws s3 sync"
   }
 }
 ```
 
-Configuración Vercel (Staging)
+Configuración Deploy Netlify (Staging)
 ```
 {
   "platform": "Netlify",
@@ -2913,8 +2913,6 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 **Duración del video**: 3 minutos y 8 segundos
 
 ---
-
-
 
 # Conclusiones
 
