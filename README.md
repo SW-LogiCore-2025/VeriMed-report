@@ -2927,7 +2927,7 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 - https://youtu.be/aPHYCa7xe5Y
 
 
-**Duración del video**: 3 minutos y 8 segundos
+**Duración del video**: 58 segundos
 
 ---
 
