@@ -2612,7 +2612,7 @@ Scripts de Deployment Frontend
 }
 ```
 
-Configuración Vercel (Staging)
+Configuración Netlify
 ```
 {
   "platform": "Netlify",
