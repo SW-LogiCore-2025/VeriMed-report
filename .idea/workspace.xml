@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Update link and enhance conclusions in README.md for clarity and detail" />
+    <list default="true" id="0d0fa648-fa7c-486a-9290-5ecc7aaaeeea" name="Changes" comment="docs: Update link and enhance conclusions in README.md for clarity and detail">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +79,7 @@
       <workItem from="1748047798990" duration="2139000" />
       <workItem from="1750535380472" duration="435000" />
       <workItem from="1750546735522" duration="1617000" />
+      <workItem from="1752278105212" duration="1279000" />
     </task>
     <task id="LOCAL-00001" summary="docs: Update with new diagrams and descriptions for Bounded Contexts">
       <option name="closed" value="true" />
