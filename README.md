@@ -214,6 +214,17 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
     - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
     - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
     - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+    - [7.2.2. Sprint 2](#722-sprint-2)
+
+    - [7.2.2.1. Sprint Planning 2](#7221-sprint-planning-2)
+    - [7.2.2.2. Sprint Backlog 2](#7222-sprint-backlog-2)
+    - [7.2.2.3. Development Evidence for Sprint Review](#7223-development-evidence-for-sprint-review)
+    - [7.2.2.4. Testing Suite Evidence for Sprint Review](#7224-testing-suite-evidence-for-sprint-review)
+    - [7.2.2.5. Execution Evidence for Sprint Review](#7225-execution-evidence-for-sprint-review)
+    - [7.2.2.6. Services Documentation Evidence for Sprint Review](#7226-services-documentation-evidence-for-sprint-review)
+    - [7.2.2.7. Software Deployment Evidence for Sprint Review](#7227-software-deployment-evidence-for-sprint-review)
+
+- [7.2.2.8. Team Collaboration Insights during Sprint](#7228-team-collaboration-insights-during-sprint)
 - [7.3. Validation Interviews](#73-validation-interviews)
   - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)
   - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
@@ -248,15 +259,18 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Se concretaron las versiones finales de los productos backend y frontend, así como también de móvil, finalizando esta entrega el respectivo despliegue de productos.</p>
 <p><strong>Frisancho Lévano, Sebastian Mathias Salomón:</strong> Se presentó el diseño final del mobile app, haciendo uso de herramientas nuevas como un scanner QR para poder obtener los metadatos del NFT del medicamento registrado en blockchain.</p>
 <p><strong>Zagal Vallejo, Nicolás:</strong>Se definieron los nuevos endpoints necesarios para el funcionamiento de la aplicación. Se desarrolló una comunicación activa que buscara solucionar los problemas planteados a lo largo del proyecto</p>
-
+<p><strong>Cabrera Camizan, Jeferson Smith:</strong>Comunique de forma clara y objetiva el flujo de trabajo basado en tecnología blockchain, explicando su funcionamiento, propósito y beneficios a los laboratorios, destacando cómo la solución mejora la trazabilidad, seguridad y autenticidad en el registro de productos farmacéuticos  </p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
   <p>En conclusión: La comunicación efectiva y constante entre los miembros favoreció la coordinación y el avance armónico del proyecto.</p>
   <p><strong>TP</strong></p>
   <p>En conclusión: La integración de roles mediante documentación clara, diseño visual y diagramas permitió al equipo compartir una visión común, lo que fortaleció la colaboración y el desarrollo integral del proyecto, mejorando la calidad y cohesión del trabajo final.</p>
-    <p><strong>TB2</strong></p>
-    <p>En conclusión: Durante la TB2, el equipo demostró una comunicación oral efectiva y adaptada a distintos niveles de especialización. Cada integrante supo expresar claramente su aporte técnico, facilitando la coordinación entre frontend, backend y blockchain. Las reuniones virtuales permitieron resolver dudas, alinear expectativas y garantizar que todos los miembros comprendieran tanto la lógica funcional como técnica del sistema.</p>
+  <p><strong>TB2</strong></p>
+  <p>En conclusión: Durante la TB2, el equipo demostró una comunicación oral efectiva y adaptada a distintos niveles de especialización. Cada integrante supo expresar claramente su aporte técnico, facilitando la coordinación entre frontend, backend y blockchain. Las reuniones virtuales permitieron resolver dudas, alinear expectativas y garantizar que todos los miembros comprendieran tanto la lógica funcional como técnica del sistema.</p>
+  <p><strong>TF</strong></p>
+  <p>En conclusión: El equipo demostró la capacidad de comunicar oralmente ideas y resultados con claridad y objetividad. Se presentaron los diseños finales del frontend y la aplicación móvil, explicando sus funcionalidades y mejoras. Se expusieron los avances técnicos como el uso del escáner QR y la integración con blockchain, así como la definición de nuevos endpoints y el despliegue completo de las versiones de producto.</p>
+
 </td>
 </tr> <tr> <td> <p><b>Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</b></p> </td> <td> <p><strong>TB1</strong></p> <p><strong>Luna Morales, Gianfranco:</strong> Presentó al equipo los puntos clave del Capítulo III para facilitar el desarrollo progresivo del proyecto y la elaboración del diagrama C4.</p> <p><strong>Zagal Vallejo, Nicolás:</strong> Expuso de forma clara y estructurada el event storming y los diagramas C4, garantizando que todos los miembros comprendieran la línea de trabajo establecida.</p> <p><strong>Frisancho Lévano, Sebastian:</strong> Redactó con precisión y claridad el capítulo IV, adaptando el lenguaje a públicos con distintos niveles técnicos, lo que permitió una comunicación transparente y objetiva del diseño.</p> <p><strong>Cabrera Camizan, Jeferson Smith:</strong> Expuso las ideas y resultados obtenidos de forma clara, asegurando la comprensión y alineación del equipo, tomando en cuenta las distintas especializaciones y niveles jerárquicos.</p>
   <p><strong>TP</strong></p>
@@ -277,15 +291,18 @@ Se desarrollaron las secciones respectivas, elavoraciones principales: Event Sto
 <p><strong>Pingus Rodriguez, Carlos Daniel:</strong> Se organizaron las tareas y reforzamos la coordinación entre los miembros del equipo para logar cumplir con el objetivo final de esta entrega.</p>
 <p><strong>Frisancho Lévano, Sebastian Mathias Salomón:</strong> Se compartieron las inquietudes y dificultades de la solución al equipo las cuales se logaron dilucidar con los esfuerzos en conjunto del equipo.</p>
 <p><strong>Zagal Vallejo, Nicolás:</strong>Se documentaron las modificaciones en el backend, buscando un pleno entendimiento del proyecto para cualquier desarrollador. Se utilizó una arquitectura basada en DDD y principios SOLID, así como convenciones de nomeclatura en el control de versiones GIT. </p>
+<p><strong>Cabrera Camizan Jeferson Smith</strong> Redacté de forma clara y objetiva la documentación técnica del flujo blockchain desarrollado para registrar NFTs de medicamentos, explicando los resultados, beneficios y procesos involucrados.  </p>
 </td>
 <td>
   <p><strong>TB1</strong></p>
   <p>En conclusión: La comunicación interdisciplinaria permitió un mejor desarrollo y entendimiento del proyecto en todas sus fases.</p>
   <p><strong>TP</strong></p>
   <p>En conclusión: La elaboración detallada de wireframes y wireflows, junto con una documentación clara y estructurada, permitió comunicar de manera efectiva las ideas y resultados a públicos diversos, incluyendo técnicos y no técnicos. Esta comunicación visual y técnica facilitó la comprensión compartida, promovió la alineación del equipo y fortaleció la toma de decisiones colaborativa a lo largo del desarrollo del proyecto.</p>
-    <p><strong>TB2</strong></p>
-    <p>En conclusión: La documentación elaborada en la TB2 mostró claridad, estructura y adecuación al público objetivo. Los miembros del equipo generaron entregables escritos comprensibles para distintos perfiles técnicos, desde comentarios en el código hasta redacción de secciones del informe. Esto permitió una trazabilidad efectiva del desarrollo, fortaleciendo la colaboración y facilitando la validación del avance del proyecto por parte de los stakeholders.</p>
-    
+  <p><strong>TB2</strong></p>
+  <p>En conclusión: La documentación elaborada en la TB2 mostró claridad, estructura y adecuación al público objetivo. Los miembros del equipo generaron entregables escritos comprensibles para distintos perfiles técnicos, desde comentarios en el código hasta redacción de secciones del informe. Esto permitió una trazabilidad efectiva del desarrollo, fortaleciendo la colaboración y facilitando la validación del avance del proyecto por parte de los stakeholders.</p>
+  <p><strong>TF</strong></p>
+  <p>En conclusión: A lo largo del proyecto, el equipo logró comunicar por escrito de manera clara y objetiva las ideas, dificultades y avances técnicos. Se documentaron problemas de integración, organización de tareas y soluciones compartidas, fortaleciendo la colaboración. Además, se registraron las modificaciones del backend con enfoque en buenas prácticas y se elaboró la documentación técnica del flujo blockchain para el registro de NFTs de medicamentos. </p>
+
 </td>
 </tr> </table>
 
@@ -2606,7 +2623,11 @@ Scripts de Deployment Frontend
 }
 ```
 
+<<<<<<< HEAD
 Configuración Deploy Netlify (Staging)
+=======
+Configuración Netlify
+>>>>>>> c3e389cb8ec721da94d6975979400147847b7c19
 ```
 {
   "platform": "Netlify",
@@ -2910,7 +2931,7 @@ El video adopta un tono profesional, claro y accesible, alineado con la identida
 - https://youtu.be/aPHYCa7xe5Y
 
 
-**Duración del video**: 3 minutos y 8 segundos
+**Duración del video**: 58 segundos
 
 ---
 
